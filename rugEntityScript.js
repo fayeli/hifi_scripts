@@ -11,5 +11,6 @@
 	this.leaveEntity = function(entityID) {
 		print("leave rug");
 		Messages.unsubscribe('Group-Teleport-'+entityID);
+		Messages.messageReceived.disconnect(handleMessages);
 	}
 });
