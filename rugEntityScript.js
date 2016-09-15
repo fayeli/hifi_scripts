@@ -7,7 +7,7 @@
 		var newLocation = Vec3.sum(message, offset);
 		print('Teleport avatar to: ' + newLocation);
 		MyAvatar.goToLocation(newLocation);
-	}
+	};
 	this.enterEntity = function(entityID) {
 		print("enter rug");
 		print('subsribe to Group-Teleport-'+entityID);
@@ -19,5 +19,5 @@
 		print('unsubsribe from Group-Teleport-'+entityID);
 		Messages.unsubscribe('Group-Teleport-'+entityID);
 		Messages.messageReceived.disconnect(handleMessages);
-	}
+	};
 });
