@@ -1,9 +1,12 @@
 (function(){
 	print("running rug entity script");
 	var handleMessages = function(channel, message, sender) {
-		print(message);
-		print('recieved location: ' + JSON.stringify(message));
-		MyAvatar.goToLocation(message);
+		print('recieved message, location: ' + JSON.stringify(message));
+		var offset = Quat.getFront(MyAvatar.orientation);
+        offset = Vec3.multiply(offset,3);
+		var newLocation = Vec3.sum(message, offset);
+		print('Teleport avatar to: ' + newLocation);
+		MyAvatar.goToLocation(newLocation);
 	}
 	this.enterEntity = function(entityID) {
 		print("enter rug");

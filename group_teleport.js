@@ -46,12 +46,12 @@
 //[09/15 13:43:04] [DEBUG] script:print()<< {"x":0,"y":-0.3993147611618042,"z":0,"w":0.9168139100074768}
 //[09/15 13:43:04] [DEBUG] script:print()<< {"x":0.7321946620941162,"y":0,"z":-0.6810954809188843}
           var vecBehind = Quat.getFront(MyAvatar.orientation);
-          print(JSON.stringify(vecBehind));
+          //print(JSON.stringify(vecBehind));
           //vecBehind = Vec3.multiplyVbyV(vecBehind, Vec3.UNIT_NEG_X);
           //vecBehind = Vec3.multiplyVbyV(vecBehind, Vec3.UNIT_NEG_Z);
           //print(JSON.stringify(vecBehind));
           vecBehind = Vec3.multiply(vecBehind,2);
-          print(JSON.stringify(vecBehind));
+          //print(JSON.stringify(vecBehind));
           var position = Vec3.sum(MyAvatar.position, vecBehind);
      //    	var properties = {
      //    		type: "Model",
@@ -74,7 +74,7 @@
 					y: 2,
 					z: 2.5
 				},
-				ignoreForCollisions: true,
+				    ignoreForCollisions: true,
       			script: "https://raw.githubusercontent.com/fayeli/hifi_scripts/2300e589f323956f94cd2c9366376a70802cd875/rugEntityScript.js"
       		}
 
