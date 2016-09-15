@@ -7,14 +7,14 @@
 	}
 	this.enterEntity = function(entityID) {
 		print("enter rug");
-		Messages.subscribe('Group-Teleport-'+entityID);
 		print('subsribe to Group-Teleport-'+entityID);
+		Messages.subscribe('Group-Teleport-'+entityID);
 		Messages.messageReceived.connect(handleMessages);
 	};
 	this.leaveEntity = function(entityID) {
 		print("leave rug");
-		Messages.unsubscribe('Group-Teleport-'+entityID);
 		print('unsubsribe from Group-Teleport-'+entityID);
+		Messages.unsubscribe('Group-Teleport-'+entityID);
 		Messages.messageReceived.disconnect(handleMessages);
 	}
 });
