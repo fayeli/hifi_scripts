@@ -1,8 +1,9 @@
 (function(){
 	print("running rug entity script");
-	var handleHandMessages = function(channel, message, sender) {
+	var handleMessages = function(channel, message, sender) {
 		print(message);
 		print('recieved location: ' + JSON.stringify(message));
+		MyAvatar.goToLocation(message);
 	}
 	this.enterEntity = function(entityID) {
 		print("enter rug");
