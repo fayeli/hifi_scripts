@@ -75,7 +75,7 @@
 					z: 2.5
 				},
 				    ignoreForCollisions: true,
-      			script: "https://raw.githubusercontent.com/fayeli/hifi_scripts/021c620a12a68a4650269a8537bbb0ba5391f9c4/rugEntityScript.js"
+      			script: "atp:/rugEntityScript.js"
       		}
 
         	rugID = Entities.addEntity(properties);
