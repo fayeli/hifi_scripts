@@ -1,10 +1,11 @@
 (function(){
 	print("running rug entity script");
 	var handleMessages = function(channel, message, sender) {
-		print('recieved message, location: ' + JSON.stringify(message));
+		var vec = JSON.parse(message);
+		print('recieved message, leader position: ' + JSON.stringify(vec));
 		var offset = Quat.getFront(MyAvatar.orientation);
         offset = Vec3.multiply(offset,3);
-		var newLocation = Vec3.sum(message, offset);
+		var newLocation = Vec3.sum(vec, offset);
 		print('Teleport avatar to: ' + newLocation);
 		MyAvatar.goToLocation(newLocation);
 	};
@@ -20,4 +21,4 @@
 		Messages.unsubscribe('Group-Teleport-'+entityID);
 		Messages.messageReceived.disconnect(handleMessages);
 	};
-});
+}());

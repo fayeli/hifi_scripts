@@ -1,35 +1,30 @@
 (function(){
-	print('running group teleport script');
+  print('running group teleport script');
 
 	var inGroupTeleportMode = false;
 
 	function ThumbPad(hand) {
-	    this.hand = hand;
-	    var _thisPad = this;
-
-	    this.buttonPress = function(value) {
-	        _thisPad.buttonValue = value;
-	    };
-
-	    this.down = function() {
-	    	var down = _thisPad.buttonValue === 1 ? 1.0 : 0.0;
-	        return down;
-	    };
+    this.hand = hand;
+    var _thisPad = this;
+    this.buttonPress = function(value) {
+      _thisPad.buttonValue = value;
+    };
+    this.down = function() {
+      var down = _thisPad.buttonValue === 1 ? 1.0 : 0.0;
+      return down;
+	   };
 	}
 
 	function Trigger(hand) {
-	    this.hand = hand;
-	    var _this = this;
-
-	    this.buttonPress = function(value) {
-	        _this.buttonValue = value;
-
-	    };
-
-	    this.down = function() {
-	        var down = _this.buttonValue === 1 ? 1.0 : 0.0;
-	        return down
-	    };
+    this.hand = hand;
+    var _this = this;
+    this.buttonPress = function(value) {
+      _this.buttonValue = value;
+    };
+    this.down = function() {
+      var down = _this.buttonValue === 1 ? 1.0 : 0.0;
+      return down;
+    };
 	}
 
 	function GroupTeleporter() {
@@ -45,14 +40,14 @@
           //print(JSON.stringify(Quat.getFront(MyAvatar.orientation)));
 //[09/15 13:43:04] [DEBUG] script:print()<< {"x":0,"y":-0.3993147611618042,"z":0,"w":0.9168139100074768}
 //[09/15 13:43:04] [DEBUG] script:print()<< {"x":0.7321946620941162,"y":0,"z":-0.6810954809188843}
-          var vecBehind = Quat.getFront(MyAvatar.orientation);
+      var vecBehind = Quat.getFront(MyAvatar.orientation);
           //print(JSON.stringify(vecBehind));
           //vecBehind = Vec3.multiplyVbyV(vecBehind, Vec3.UNIT_NEG_X);
           //vecBehind = Vec3.multiplyVbyV(vecBehind, Vec3.UNIT_NEG_Z);
           //print(JSON.stringify(vecBehind));
-          vecBehind = Vec3.multiply(vecBehind,2);
+      vecBehind = Vec3.multiply(vecBehind,2);
           //print(JSON.stringify(vecBehind));
-          var position = Vec3.sum(MyAvatar.position, vecBehind);
+      var position = Vec3.sum(MyAvatar.position, vecBehind);
      //    	var properties = {
      //    		type: "Model",
      //    		position: position,
@@ -66,40 +61,39 @@
   			// 	animationIsPlaying: true,
   			// 	script: "https://raw.githubusercontent.com/fayeli/hifi_scripts/master/rugEntityScript.js"
      //    	};
-      		var properties = {
-      			type: "Box",
-      			position: position,
-      			dimensions: {
+      var properties = {
+        type: "Box",
+        position: position,
+        dimensions: {
 					x: 2,
 					y: 2,
 					z: 2.5
 				},
-				    ignoreForCollisions: true,
-      			script: "atp:/rugEntityScript.js"
-      		}
+        ignoreForCollisions: true,
+        script: "atp:/rugEntityScript.js"
+      };
 
-        	rugID = Entities.addEntity(properties);
-          // TODO: Confirm that we get the official known ID
-        	print("Rug Entity added, entityItemID: " + rugID);
+      rugID = Entities.addEntity(properties);
+      print("Rug Entity added, entityItemID: " + rugID);
 		};
 
-    	this.enterGroupTeleportMode = function() {
-        	print('enter group teleport mode');
-        	inGroupTeleportMode = true;
-        	this.createRug();
-        	Script.update.connect(this.update);
-        	this.updateConnected = true;
-    	};
+    this.enterGroupTeleportMode = function() {
+      print('enter group teleport mode');
+      inGroupTeleportMode = true;
+      this.createRug();
+      Script.update.connect(this.update);
+      this.updateConnected = true;
+    };
 
-    	this.exitGroupTeleportMode = function() {
-    		print('exit group teleport mode');
+    this.exitGroupTeleportMode = function() {
+    	  print('exit group teleport mode');
     		inGroupTeleportMode = false;
     		if (this.updateConnected) {
             	Script.update.disconnect(this.update);
         	}
         this.updateConnected = false;
         Entities.deleteEntity(this.rug);
-    	}
+    	};
 
       var prevLocation = null;
       var currLocation = null;
@@ -117,14 +111,14 @@
 
         if (teleported){
           // send new location to other avatars on rug
-          var newLocation = MyAvatar.position;
+          var newLocation = JSON.stringify(MyAvatar.position);
           print(rugID);
           var channel = 'Group-Teleport-'+ rugID;
           Messages.sendMessage(channel, newLocation);
-          print('Sending new location: ' + JSON.stringify(newLocation) +' To Channel: ' + channel);
+          print('Sending new location: ' + newLocation +' To Channel: ' + channel);
         }
         prevLocation = currLocation;
-    	}
+    	};
 	}
 
 	var leftPad = new ThumbPad('left');
