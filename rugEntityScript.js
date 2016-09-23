@@ -4,7 +4,7 @@
 		var vec = JSON.parse(message);
 		print('recieved message, leader position: ' + JSON.stringify(vec));
 		var offset = Quat.getFront(MyAvatar.orientation);
-        offset = Vec3.multiply(offset,3);
+        offset = Vec3.multiply(offset,0.5);
 		var newLocation = Vec3.sum(vec, offset);
 		print('Teleport avatar to new location: ' + JSON.stringify(newLocation));
 		MyAvatar.goToLocation(newLocation, false);
