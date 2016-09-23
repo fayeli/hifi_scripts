@@ -88,11 +88,13 @@
         this.exitGroupTeleportMode = function() {
             print('exit group teleport mode');
             inGroupTeleportMode = false;
+            prevLocation = null;
+            currLocation = null;
             if (this.updateConnected) {
                 Script.update.disconnect(this.update);
             }
             this.updateConnected = false;
-            Entities.deleteEntity(this.rug);
+            Entities.deleteEntity(rugID);
         };
 
         var prevLocation = null;
@@ -100,22 +102,27 @@
 
         this.update = function() {
             var teleported = false;
+
             // check leader avatar's position, when it teleports, send a message to the rug channel.
             currLocation = MyAvatar.position;
+            if (prevLocation === null) {
+                prevLocation = currLocation;
+            }
             var d = Vec3.distance(currLocation, prevLocation);
-            if (prevLocation !== null && d >= 2) {
+            if (d >= 2) {
                 teleported = true;
                 print('Teleported');
             }
             if (teleported){
                 // send new location to other avatars on rug
                 var newLocation = JSON.stringify(MyAvatar.position);
-                print(rugID);
                 var channel = 'Group-Teleport-'+ rugID;
                 Messages.sendMessage(channel, newLocation);
                 print('Sending new location: ' + newLocation +' To Channel: ' + channel);
+                _this.exitGroupTeleportMode();
             }
-            prevLocation = currLocation;
+            // TODO: Uncomment following line to test with actual teleport
+            // prevLocation = currLocation;
         };
     }
 
@@ -129,6 +136,20 @@
     function registerMappings(){
         mappingName = 'Hifi-Group-Teleporter-Dev-' + Math.random();
         teleportMapping = Controller.newMapping(mappingName);
+
+        //Maapping to keyboard space bar for testing
+        teleportMapping.from(Controller.Hardware.Keyboard.Space).to(function(value){
+            if(value===0) {
+                return;
+            }
+            print('Group Teleport Debug: Clicked space bar');
+            if (inGroupTeleportMode){
+                teleporter.exitGroupTeleportMode();
+            } else {
+                teleporter.enterGroupTeleportMode();
+            }
+        });
+
         teleportMapping.from(Controller.Standard.RT).peek().to(rightTrigger.buttonPress);
         teleportMapping.from(Controller.Standard.LT).peek().to(leftTrigger.buttonPress);
         teleportMapping.from(Controller.Standard.RightPrimaryThumb).peek().to(rightPad.buttonPress);

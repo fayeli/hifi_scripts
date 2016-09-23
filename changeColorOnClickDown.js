@@ -11,5 +11,5 @@
             Entities.editEntity(entityID, { color: { red: 255, green: 255, blue: 0} });
             clicked = true; 
         }
-    }; 
+    };
 });

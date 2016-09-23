@@ -6,8 +6,8 @@
 		var offset = Quat.getFront(MyAvatar.orientation);
         offset = Vec3.multiply(offset,3);
 		var newLocation = Vec3.sum(vec, offset);
-		print('Teleport avatar to: ' + newLocation);
-		MyAvatar.goToLocation(newLocation);
+		print('Teleport avatar to new location: ' + JSON.stringify(newLocation));
+		MyAvatar.goToLocation(newLocation, false);
 	};
 	this.enterEntity = function(entityID) {
 		print("enter rug");
@@ -17,8 +17,8 @@
 	};
 	this.leaveEntity = function(entityID) {
 		print("leave rug");
-		print('unsubsribe from Group-Teleport-'+entityID);
+		print('unsubsribe from  Group-Teleport-'+entityID);
 		Messages.unsubscribe('Group-Teleport-'+entityID);
 		Messages.messageReceived.disconnect(handleMessages);
 	};
-}());
+});
