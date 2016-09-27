@@ -122,7 +122,7 @@
                 _this.exitGroupTeleportMode();
             }
             // TODO: Uncomment following line to test with actual teleport
-            // prevLocation = currLocation;
+            prevLocation = currLocation;
         };
     }
 

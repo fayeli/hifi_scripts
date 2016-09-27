@@ -8,6 +8,7 @@
 		var newLocation = Vec3.sum(vec, offset);
 		print('Teleport avatar to new location: ' + JSON.stringify(newLocation));
 		MyAvatar.goToLocation(newLocation, false);
+		//MyAvatar.position = newLocation;
 	};
 	this.enterEntity = function(entityID) {
 		print("enter rug");
