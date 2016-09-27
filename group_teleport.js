@@ -70,7 +70,7 @@
                     z: 2.5
             },
             ignoreForCollisions: true,
-            script: "https://raw.githubusercontent.com/fayeli/hifi_scripts/master/rugEntityScript.js"
+            script: "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rugEntityScript.js"
             };
 
             rugID = Entities.addEntity(properties);
