@@ -33,21 +33,13 @@
         var rugID;
 
         this.createRug = function() {
-            // TODO: Add a rug model
+            // Add a rug model
             // model url: https://www.dropbox.com/s/rygnze069ejqebq/rug.fbx
             // script url: https://raw.githubusercontent.com/fayeli/hifi_scripts/master/rugEntityScript.js
             //print(JSON.stringify(MyAvatar.orientation));
           //print(JSON.stringify(Quat.getFront(MyAvatar.orientation)));
 //[09/15 13:43:04] [DEBUG] script:print()<< {"x":0,"y":-0.3993147611618042,"z":0,"w":0.9168139100074768}
 //[09/15 13:43:04] [DEBUG] script:print()<< {"x":0.7321946620941162,"y":0,"z":-0.6810954809188843}
-            var vecBehind = Quat.getFront(MyAvatar.orientation);
-          //print(JSON.stringify(vecBehind));
-          //vecBehind = Vec3.multiplyVbyV(vecBehind, Vec3.UNIT_NEG_X);
-          //vecBehind = Vec3.multiplyVbyV(vecBehind, Vec3.UNIT_NEG_Z);
-          //print(JSON.stringify(vecBehind));
-            vecBehind = Vec3.multiply(vecBehind,2);
-          //print(JSON.stringify(vecBehind));
-            var position = Vec3.sum(MyAvatar.position, vecBehind);
      //     var properties = {
      //         type: "Model",
      //         position: position,
@@ -61,20 +53,39 @@
             //  animationIsPlaying: true,
             //  script: "https://raw.githubusercontent.com/fayeli/hifi_scripts/master/rugEntityScript.js"
      //     };
+
+
+            // Teleport Cube
+            // var vecBehind = Quat.getFront(MyAvatar.orientation);
+            // vecBehind = Vec3.multiply(vecBehind,2);
+            // var position = Vec3.sum(MyAvatar.position, vecBehind);
+            // var properties = {
+            //     type: "Box",
+            //     position: position,
+            //     dimensions: {
+            //         x: 2,
+            //         y: 2,
+            //         z: 2.5
+            // },
+            // ignoreForCollisions: true,
+            // script: "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rugEntityScript.js"
+            // };
+
+            // Teleport Sphere
+            var position = MyAvatar.position;
             var properties = {
-                type: "Box",
+                type: "Sphere",
                 position: position,
                 dimensions: {
                     x: 2,
                     y: 2,
-                    z: 2.5
-            },
-            ignoreForCollisions: true,
-            script: "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rugEntityScript.js"
+                    z: 2
+                },
+                ignoreForCollisions: true,
+                script: "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rugEntityScript.js"
             };
-
             rugID = Entities.addEntity(properties);
-            print("Rug Entity added, entityItemID: " + rugID);
+            print("Spherical Rug Entity added, entityItemID: " + rugID);
         };
 
         this.enterGroupTeleportMode = function() {
