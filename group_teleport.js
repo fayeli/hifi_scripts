@@ -74,6 +74,7 @@
             // Teleport Sphere
             var position = MyAvatar.position;
             var properties = {
+                name: "Invisible Teleport Sphere",
                 type: "Sphere",
                 position: position,
                 dimensions: {
@@ -82,10 +83,11 @@
                     z: 2
                 },
                 ignoreForCollisions: true,
-                script: "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rugEntityScript.js"
+                script: "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rugEntityScript.js",
+                visible: false
             };
             rugID = Entities.addEntity(properties);
-            print("Spherical Rug Entity added, entityItemID: " + rugID);
+            print("Invisible Spherical Rug Entity added, entityItemID: " + rugID);
         };
 
         this.enterGroupTeleportMode = function() {
