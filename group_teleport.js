@@ -1,30 +1,58 @@
-(function(){
+//
+// group_teleport.js
+//
+// Created by Si Fi Faye Li on 4 Oct, 2016
+//
+
+(function(){ // BEGIN LOCAL_SCOPE
     print('running group teleport script');
 
+    var MODEL_URL = "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rug.fbx";
     var inGroupTeleportMode = false;
 
+    function setupMenu() {
+        print("Group Teleport set up Menu");
+        Menu.addMenuItem({
+            menuName: "Settings",
+            menuItemName: "Customize Group Teleport"
+        });
+    }
+
+    function handleMenuEvent(menuItem) {
+        if (menuItem === "Customize Group Teleport") {
+            print("Customize Group Teleport Clicked");
+            var prompt = Window.prompt("Group Teleport Model URL", "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rug.fbx");
+            if (prompt) {
+                Window.alert("Your Group Teleport Model is changed to: " + prompt);
+            }
+        }
+    }
+
+    setupMenu();
+    Menu.menuItemEvent.connect(handleMenuEvent);
+
     function ThumbPad(hand) {
-    this.hand = hand;
-    var _thisPad = this;
-    this.buttonPress = function(value) {
-      _thisPad.buttonValue = value;
-    };
-    this.down = function() {
-      var down = _thisPad.buttonValue === 1 ? 1.0 : 0.0;
-      return down;
-       };
+        this.hand = hand;
+        var _thisPad = this;
+        this.buttonPress = function(value) {
+            _thisPad.buttonValue = value;
+        };
+        this.down = function() {
+            var down = _thisPad.buttonValue === 1 ? 1.0 : 0.0;
+            return down;
+        };
     }
 
     function Trigger(hand) {
-    this.hand = hand;
-    var _this = this;
-    this.buttonPress = function(value) {
-      _this.buttonValue = value;
-    };
-    this.down = function() {
-      var down = _this.buttonValue === 1 ? 1.0 : 0.0;
-      return down;
-    };
+        this.hand = hand;
+        var _this = this;
+        this.buttonPress = function(value) {
+            _this.buttonValue = value;
+        };
+        this.down = function() {
+            var down = _this.buttonValue === 1 ? 1.0 : 0.0;
+            return down;
+        };
     }
 
     function GroupTeleporter() {
@@ -42,11 +70,11 @@
                 name: "Group Teleportation Rug",
                 position: position,
                 dimensions: {
-                    x: 2.0191,
+                    x: 2.0,
                     y: 0.0067,
-                    z: 1.8574
+                    z: 2.0
                 },
-                modelURL: "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rug.fbx"
+                modelURL: MODEL_URL
             };
             modelID = Entities.addEntity(properties);
             print("Teleport Model added, entityItemID: " + modelID);
@@ -187,7 +215,9 @@
     registerMappings();
     Controller.enableMapping(mappingName);
 
-    Script.scriptEnding.connect(cleanup);
+    function cleanupMenu() {
+        Menu.removeMenuItem("Settings", "Customize Group Teleport");
+    }
 
     function cleanup() {
         print('group teleport script cleanup');
@@ -196,5 +226,9 @@
             Script.update.disconnect(teleporter.update);
             teleporter.updateConnected = false;
         }
+        cleanupMenu();
     }
-}());
+
+    Script.scriptEnding.connect(cleanup);
+
+}()); // END LOCAL_SCOPE
