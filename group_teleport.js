@@ -204,6 +204,7 @@
                 if (leftTrigger.down()) {
                     return;
                 }
+                print('Group Teleport Debug: Clicked both thumbpad');
                 if (inGroupTeleportMode){
                     teleporter.exitGroupTeleportMode();
                 } else {
