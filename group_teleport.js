@@ -104,7 +104,7 @@
                 position: position,
                 dimensions: {
                     x: 2,
-                    y: 2,
+                    y: 0.25,
                     z: 2
                 },
                 ignoreForCollisions: true,
