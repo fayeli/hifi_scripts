@@ -30,30 +30,26 @@
     function GroupTeleporter() {
         var _this = this;
         this.updateConnected = false;
-        var rugID;
+        var sphereID;
+        var modelID;
 
         this.createRug = function() {
-            // Add a rug model
-            // model url: https://www.dropbox.com/s/rygnze069ejqebq/rug.fbx
-            // script url: https://raw.githubusercontent.com/fayeli/hifi_scripts/master/rugEntityScript.js
-            //print(JSON.stringify(MyAvatar.orientation));
-          //print(JSON.stringify(Quat.getFront(MyAvatar.orientation)));
-//[09/15 13:43:04] [DEBUG] script:print()<< {"x":0,"y":-0.3993147611618042,"z":0,"w":0.9168139100074768}
-//[09/15 13:43:04] [DEBUG] script:print()<< {"x":0.7321946620941162,"y":0,"z":-0.6810954809188843}
-     //     var properties = {
-     //         type: "Model",
-     //         position: position,
-     //             //dimensions: {
-         //         //  x: 1,
-        //      //  y: 1,
-        //      //  z: 1
-                // //},
-     //         modelURL: "http://hifi-production.s3.amazonaws.com/tutorials/butterflies/butterfly.fbx",
-     //         animationURL: "http://hifi-production.s3.amazonaws.com/tutorials/butterflies/butterfly.fbx",
-            //  animationIsPlaying: true,
-            //  script: "https://raw.githubusercontent.com/fayeli/hifi_scripts/master/rugEntityScript.js"
-     //     };
-
+            // Rug Model
+            var position = MyAvatar.position;
+            position.y = MyAvatar.getJointPosition("RightToeBase").y;
+            var properties = {
+                type: "Model",
+                name: "Group Teleportation Rug",
+                position: position,
+                dimensions: {
+                    x: 2.0191,
+                    y: 0.0067,
+                    z: 1.8574
+                },
+                modelURL: "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rug.fbx"
+            };
+            modelID = Entities.addEntity(properties);
+            print("Teleport Model added, entityItemID: " + modelID);
 
             // Teleport Cube
             // var vecBehind = Quat.getFront(MyAvatar.orientation);
@@ -86,8 +82,8 @@
                 script: "https://s3-us-west-1.amazonaws.com/hifi-content/faye/rugEntityScript.js",
                 visible: false
             };
-            rugID = Entities.addEntity(properties);
-            print("Invisible Spherical Rug Entity added, entityItemID: " + rugID);
+            sphereID = Entities.addEntity(properties);
+            print("Invisible Spherical Rug Entity added, entityItemID: " + sphereID);
         };
 
         this.enterGroupTeleportMode = function() {
@@ -107,7 +103,8 @@
                 Script.update.disconnect(this.update);
             }
             this.updateConnected = false;
-            Entities.deleteEntity(rugID);
+            Entities.deleteEntity(sphereID);
+            Entities.deleteEntity(modelID);
         };
 
         var prevLocation = null;
@@ -129,7 +126,7 @@
             if (teleported){
                 // send new location to other avatars on rug
                 var newLocation = JSON.stringify(MyAvatar.position);
-                var channel = 'Group-Teleport-'+ rugID;
+                var channel = 'Group-Teleport-'+ sphereID;
                 Messages.sendMessage(channel, newLocation);
                 print('Sending new location: ' + newLocation +' To Channel: ' + channel);
                 _this.exitGroupTeleportMode();
