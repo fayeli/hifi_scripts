@@ -138,10 +138,10 @@
 
         var prevLocation = null;
         var currLocation = null;
+        var teleported = false;
+        var teleporting = false;
 
         this.update = function() {
-            var teleported = false;
-
             // check leader avatar's position, when it teleports, send a message to the rug channel.
             currLocation = MyAvatar.position;
             if (prevLocation === null) {
@@ -149,6 +149,10 @@
             }
             var d = Vec3.distance(currLocation, prevLocation);
             if (d >= 2) {
+                teleporting = true;
+                print('Teleporting');
+            }
+            if (teleporting && d === 0){
                 teleported = true;
                 print('Teleported');
             }
@@ -158,7 +162,7 @@
                 var channel = 'Group-Teleport-'+ sphereID;
                 Messages.sendMessage(channel, newLocation);
                 print('Sending new location: ' + newLocation +' To Channel: ' + channel);
-                //_this.exitGroupTeleportMode();
+                _this.exitGroupTeleportMode();
             }
             // TODO: Uncomment following line to test with actual teleport
             prevLocation = currLocation;
