@@ -142,7 +142,7 @@
         var currLocation = null;
         var teleported = false;
         var teleportCounter = 0;
-        var TELEPORT_THRESHOLD = 3;
+        var TELEPORT_THRESHOLD = 6;
 
         this.update = function() {
             // check leader avatar's position, when it teleports, send a message to the rug channel.
