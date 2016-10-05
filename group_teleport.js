@@ -157,6 +157,7 @@
             }
             if (teleportCounter > 0 && d === 0){
                 teleportCounter = teleportCounter + 1;
+                print('Teleporting, counter = ' + teleportingCounter);
                 if (teleportCounter >= TELEPORT_THRESHOLD){
                     teleported = true;
                     print('Teleported');
