@@ -158,7 +158,7 @@
                 var channel = 'Group-Teleport-'+ sphereID;
                 Messages.sendMessage(channel, newLocation);
                 print('Sending new location: ' + newLocation +' To Channel: ' + channel);
-                _this.exitGroupTeleportMode();
+                //_this.exitGroupTeleportMode();
             }
             // TODO: Uncomment following line to test with actual teleport
             prevLocation = currLocation;
