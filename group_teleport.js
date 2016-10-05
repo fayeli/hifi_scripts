@@ -134,12 +134,15 @@
             this.updateConnected = false;
             Entities.deleteEntity(sphereID);
             Entities.deleteEntity(modelID);
+            teleported = false;
+            teleportCounter = 0;
         };
 
         var prevLocation = null;
         var currLocation = null;
         var teleported = false;
-        var teleporting = false;
+        var teleportCounter = 0;
+        var TELEPORT_THRESHOLD = 3;
 
         this.update = function() {
             // check leader avatar's position, when it teleports, send a message to the rug channel.
@@ -149,12 +152,15 @@
             }
             var d = Vec3.distance(currLocation, prevLocation);
             if (d >= 2) {
-                teleporting = true;
-                print('Teleporting');
+                teleportCounter = teleportCounter + 1;
+                print('Teleporting, counter = ' + teleportingCounter);
             }
-            if (teleporting && d === 0){
-                teleported = true;
-                print('Teleported');
+            if (teleportCounter > 0 && d === 0){
+                teleportCounter = teleportCounter + 1;
+                if (teleportCounter >= TELEPORT_THRESHOLD){
+                    teleported = true;
+                    print('Teleported');
+                }
             }
             if (teleported){
                 // send new location to other avatars on rug
