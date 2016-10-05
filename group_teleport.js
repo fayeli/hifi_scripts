@@ -153,11 +153,11 @@
             var d = Vec3.distance(currLocation, prevLocation);
             if (d >= 2) {
                 teleportCounter = teleportCounter + 1;
-                print('Teleporting, counter = ' + teleportingCounter);
+                print('Teleporting, counter = ' + teleportCounter);
             }
             if (teleportCounter > 0 && d === 0){
                 teleportCounter = teleportCounter + 1;
-                print('Teleporting, counter = ' + teleportingCounter);
+                print('Teleporting, counter = ' + teleportCounter);
                 if (teleportCounter >= TELEPORT_THRESHOLD){
                     teleported = true;
                     print('Teleported');
