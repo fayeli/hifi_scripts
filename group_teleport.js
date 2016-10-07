@@ -186,7 +186,7 @@
                 };
                 var message = JSON.stringify(object);
                 var channel = 'Group-Teleport-'+ sphereID;
-                Messages.sendMessage(channel, newLocation);
+                Messages.sendMessage(channel, message);
                 print('Leader sending message: ' + message +' To Channel: ' + channel);
                 _this.exitGroupTeleportMode();
             }
