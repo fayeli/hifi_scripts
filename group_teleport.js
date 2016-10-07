@@ -136,25 +136,38 @@
             Entities.deleteEntity(modelID);
             teleported = false;
             teleportCounter = 0;
+            beforePosition = null;
+            afterPosition = null;
         };
 
         var prevLocation = null;
         var currLocation = null;
         var teleported = false;
+        // The counter and threshold are used to address having "Smooth Arrival" in teleport
+        // Smooth arrival made the avatar teleports in intervals. Its position changes in multi-steps (set to 6 now in teleport.js) spaced between the original position to the final destination 
         var teleportCounter = 0;
         var TELEPORT_THRESHOLD = 6;
-
+        var beforePosition;
+        var afterPosition;
         this.update = function() {
             // check leader avatar's position, when it teleports, send a message to the rug channel.
+            
             currLocation = MyAvatar.position;
             if (prevLocation === null) {
                 prevLocation = currLocation;
             }
+
             var d = Vec3.distance(currLocation, prevLocation);
-            if (d >= 2) {
+            
+            // when the distance > 2, it means the leader started teleporting
+            if (teleportCounter === 0 && d >= 2) {
+                // save the before teleport position
+                beforePosition = prevLocation;
                 teleportCounter = teleportCounter + 1;
                 print('Teleporting, counter = ' + teleportCounter);
             }
+
+            // after teleporting, the leader position stablelizes (d = 0) and we know leader reached destination
             if (teleportCounter > 0 && d === 0){
                 teleportCounter = teleportCounter + 1;
                 print('Teleporting, counter = ' + teleportCounter);
@@ -164,14 +177,20 @@
                 }
             }
             if (teleported){
-                // send new location to other avatars on rug
-                var newLocation = JSON.stringify(MyAvatar.position);
+                // send leader's before and after teleport position to other avatars on rug
+                //var newLocation = JSON.stringify(MyAvatar.position);
+                afterPosition = currLocation;
+                var object = {
+                    before: beforePosition,
+                    after: afterPosition
+                };
+                var message = JSON.stringify(object);
                 var channel = 'Group-Teleport-'+ sphereID;
                 Messages.sendMessage(channel, newLocation);
-                print('Sending new location: ' + newLocation +' To Channel: ' + channel);
+                print('Leader sending message: ' + message +' To Channel: ' + channel);
                 _this.exitGroupTeleportMode();
             }
-            // TODO: Uncomment following line to test with actual teleport
+            // Comment out following line to test by walking
             prevLocation = currLocation;
         };
     }
@@ -187,7 +206,7 @@
         mappingName = 'Hifi-Group-Teleporter-Dev-' + Math.random();
         teleportMapping = Controller.newMapping(mappingName);
 
-        //Maapping to keyboard space bar for testing
+        //Maapping to keyboard space bar for testing when no vive is available
         teleportMapping.from(Controller.Hardware.Keyboard.Space).to(function(value){
             if(value===0) {
                 return;
