@@ -1,0 +1,15 @@
+Default Dimensions of the ZimberLab blocks
+
+blockname               x           y           z
+
+door                    1.5616      3.1231      0.0906
+door_frame              1.75        3.2047      0.1353
+window                  3.0         1.9812      0.2200
+wall_tsplit             4.0         4.0         7.8
+wall_straight           4.0         4.0         0.2
+wall_rooftriangle
+wall_portal
+wall_corner
+wall_aperture
+roof
+floor
