@@ -46,7 +46,7 @@
         snapblockMapping.from(Controller.Hardware.Keyboard.T).to(function(value) {
             if (value) {
                 print("Snap block debug: Clicked T");
-                spawnBlock("wall_rooftriangle");
+                spawnBlock("floor");
             }
         });        
         snapblockMapping.from(Controller.Hardware.Keyboard.Y).to(function(value) {
