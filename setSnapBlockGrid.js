@@ -10,7 +10,7 @@
 (function(){ // BEGIN LOCAL_SCOPE
     var confirmed = Window.confirm("Thanks for downloading Zimberlab Building Block Kit!\nWould you like to enable Snap To Grid? (Recommended for easy alignment of building blocks)");
     if (confirmed) {
-        var channel = "Snap-Block-" + MyAvatar.sessionUUID;
+        var channel = "Snap-Block-Channel";
         var message = "OH SNAP";
         Messages.sendMessage(channel, message);
         Window.alert("Snap To Grid enabled.\nYou may turn on EDIT mode to start building, enjoy!");
