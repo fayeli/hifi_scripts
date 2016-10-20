@@ -13,3 +13,5 @@ wall_corner             4.0         4.0         4.0
 wall_aperture           4.0         4.0         0.2
 roof                    10.0        4.0         10.0
 floor                   8.0         0.2         8.0
+
+
