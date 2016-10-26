@@ -13,7 +13,11 @@
         var confirmed = Window.confirm("Thanks for downloading Zimberlab Building Block Kit!\nWould you like to enable Snap To Grid? (Recommended for easy alignment of building blocks)");
         if (confirmed) {
             var channel = "Snap-Block-Channel";
-            var message = "OH SNAP";
+            var object = {
+                majorGrid: 1,
+                minorGrid: 0.05
+            };
+            var message = JSON.stringify(object);
             Messages.sendMessage(channel, message);
             // The observer (gridTool.js) does the rest of setting up correct snap grid size
             Window.alert("Snap To Grid enabled.\nYou may turn on EDIT mode to start building, enjoy!");
