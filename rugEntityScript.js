@@ -17,10 +17,10 @@
 				var newLocation = Vec3.sum(afterPos,relativeVec);
 				print('Teleport avatar to new location: ' + JSON.stringify(newLocation));
 				MyAvatar.goToLocation(newLocation, false);
+				print('After teleport, unsubsribe from ' + myRugChannel);
+				Messages.unsubscribe(myRugChannel);
+				Messages.messageReceived.disconnect(handleMessages);
 			}
-			print('After teleport, unsubsribe from ' + myRugChannel);
-			Messages.unsubscribe(myRugChannel);
-			Messages.messageReceived.disconnect(handleMessages);
 		}
 	};
 	this.enterEntity = function(entityID) {
