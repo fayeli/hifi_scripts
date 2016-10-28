@@ -31,9 +31,11 @@
 		Messages.messageReceived.connect(handleMessages);
 	};
 	this.leaveEntity = function(entityID) {
-		print("leave rug");
-		print('unsubsribe from ' + myRugChannel);
-		Messages.unsubscribe(myRugChannel);
-		Messages.messageReceived.disconnect(handleMessages);
+		if (typeof myRugChannel !== "undefined") {
+			print("leave rug");
+			print('unsubsribe from ' + myRugChannel);
+			Messages.unsubscribe(myRugChannel);
+			Messages.messageReceived.disconnect(handleMessages);
+		}
 	};
 });
