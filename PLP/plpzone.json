@@ -1,0 +1,35 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "color": {
+                "blue": 220,
+                "green": 220,
+                "red": 220
+            },
+            "created": "2016-10-31T22:37:34Z",
+            "dimensions": {
+                "x": 4,
+                "y": 4,
+                "z": 4
+            },
+            "id": "{d9c57718-0b17-4fba-924b-c0a6b6f4820c}",
+            "ignoreForCollisions": 1,
+            "marketplaceID": "128b8eac-e70e-4980-91b2-df8f4940edc8",
+            "name": "PLP Maker Zone",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 6.9282031059265137,
+                "x": -3.4641015529632568,
+                "y": -3.4641015529632568,
+                "z": -3.4641015529632568
+            },
+            "script": "https://hifi-content.s3.amazonaws.com/faye/plp/PLPZoneEntityScript.js",
+            "scriptTimestamp": 1477954715409,
+            "type": "Sphere",
+            "userData": "{\"ProceduralEntity\":{\"version\":2,\"shaderUrl\":\"https://s3.amazonaws.com/Oculus/shadertoys/quora2.fs\",\"uniforms\":{\"iSpeed\":1,\"iShell\":1}},\"grabbableKey\":{\"grabbable\":false}}"
+        }
+    ],
+    "Version": 64
+}
