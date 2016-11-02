@@ -19,15 +19,13 @@ function MyController(hand) {
     this.triggerClick = function(value) {
         _this.triggerClicked = value;
         if (value === 1) {
-            // on trigger click, create a sphere at hand position
-            // TODO: set right/left hand pos
-            var palm_pos = MyAvatar.getRightPalmPosition();
-            var rotation = MyAvatar.getRightPalmRotation();
-            var forward = Vec3.normalize(Quat.getFront(rotation));
+            // on trigger click, create a sphere at tip of hand controllers
+            var palm_pos = (_this.hand === RIGHT_HAND ? MyAvatar.getRightPalmPosition() : MyAvatar.getLeftPalmPosition());
+            var rotation = (_this.hand === RIGHT_HAND ? MyAvatar.getRightPalmRotation() : MyAvatar.getLeftPalmRotation());
             var right = Vec3.normalize(Quat.getRight(rotation));
             var up = Vec3.normalize(Quat.getUp(rotation));
             var l = 0.08;
-            var right_offset = Vec3.multiply(l, right);
+            var right_offset = (_this.hand === RIGHT_HAND ? Vec3.multiply(l, right) : Vec3.multiply(-l, right));
             var up_offset = Vec3.multiply(l, up);
             var total_offset = Vec3.sum(up_offset, right_offset);
             var spawn_pos = Vec3.sum(palm_pos, total_offset);
