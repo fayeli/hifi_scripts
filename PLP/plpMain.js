@@ -10,7 +10,7 @@ HMD.requestShowHandControllers();
 // some constants
 var RIGHT_HAND = 1;
 var LEFT_HAND = 0;
-var POINT_RADIUS = 0.04;
+var POINT_DIMENSIONS = {x: 0.05, y: 0.05, z: 0.05};
 function MyController(hand) {
     this.hand = hand;
     var _this = this;
@@ -21,20 +21,28 @@ function MyController(hand) {
         if (value === 1) {
             // on trigger click, create a sphere at hand position
             // TODO: set right/left hand pos
-            var hand_position = MyAvatar.getJointPosition("RightHand");
+            var palm_pos = MyAvatar.getRightPalmPosition();
+            var rotation = MyAvatar.getRightPalmRotation();
+            var forward = Vec3.normalize(Quat.getFront(rotation));
+            var right = Vec3.normalize(Quat.getRight(rotation));
+            var up = Vec3.normalize(Quat.getUp(rotation));
+            var l = 0.08;
+            var right_offset = Vec3.multiply(l, right);
+            var up_offset = Vec3.multiply(l, up);
+            var total_offset = Vec3.sum(up_offset, right_offset);
+            var spawn_pos = Vec3.sum(palm_pos, total_offset);
             var properties = {
                 type: "Sphere",
                 name: "plp_point",
-                dimensions: POINT_RADIUS,
-                position: hand_position
-            }
-            print("PLP DEBUG adding sphere at " + JSON.stringify(hand_position));
+                dimensions: POINT_DIMENSIONS,
+                position: spawn_pos
+            };
+            print("PLP DEBUG adding sphere at " + JSON.stringify(spawn_pos));
             Entities.addEntity(properties);
-
         }
-    }
+    };
     this.update = function(deltaTime, timestamp) {
-    }
+    };
 }
 
 var MAPPING_NAME = "PLP-Dev";
