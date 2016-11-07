@@ -1,0 +1,98 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "created": "2016-11-02T21:31:14Z",
+            "dimensions": {
+                "x": 0.76638245582580566,
+                "y": 0.50317054986953735,
+                "z": 0.6800389289855957
+            },
+            "id": "{0d99e0ac-8d60-4719-afe8-be982c3f4d58}",
+            "marketplaceID": "4f16d0ec-06dc-440c-aa98-0de30b091c72",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Dieffenbachi.fbx",
+            "name": "HiFi Green Plant Stash - Dieffenbach",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{df83944e-c034-4b63-af3e-8af70ccccb46}",
+            "position": {
+                "x": -0.016266975551843643,
+                "y": 0.23155166208744049,
+                "z": -0.0021242988295853138
+            },
+            "queryAACube": {
+                "scale": 3.4244389533996582,
+                "x": -6.7511701583862305,
+                "y": -201.95094299316406,
+                "z": -17.449922561645508
+            },
+            "rotation": {
+                "w": 1.0000066757202148,
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-02T21:31:14Z",
+            "dimensions": {
+                "x": 0.31032466888427734,
+                "y": 0.25313329696655273,
+                "z": 0.31032466888427734
+            },
+            "id": "{df83944e-c034-4b63-af3e-8af70ccccb46}",
+            "marketplaceID": "4f16d0ec-06dc-440c-aa98-0de30b091c72",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/DomainContent/production/garden/gardenpot_filled_VR.fbx",
+            "name": "Garden Pot",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0,
+                "y": 0.60296630859375,
+                "z": 0.02349090576171875
+            },
+            "queryAACube": {
+                "scale": 0.50663524866104126,
+                "x": -0.25331762433052063,
+                "y": 0.34964868426322937,
+                "z": -0.22982671856880188
+            },
+            "rotation": {
+                "w": 0.043564558029174805,
+                "x": 1.52587890625e-05,
+                "y": -0.999053955078125,
+                "z": -1.52587890625e-05
+            },
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-03T21:50:30Z",
+            "dimensions": {
+                "x": 0.65494012832641602,
+                "y": 0.96500778198242188,
+                "z": 0.67698508501052856
+            },
+            "id": "{a0a21f34-7dbd-4ec9-9e50-823214a8f22b}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/jimi/tutorialroom/table3.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.0066695213317871094,
+                "y": 0,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 1.3485159873962402,
+                "x": -0.66758847236633301,
+                "y": -0.67425799369812012,
+                "z": -0.67425799369812012
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        }
+    ],
+    "Version": 64
+}

@@ -1,0 +1,116 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-03T22:07:59Z",
+            "dimensions": {
+                "x": 0.40529942512512207,
+                "y": 0.034761227667331696,
+                "z": 0.84386110305786133
+            },
+            "id": "{5319b44c-b274-433f-8ee9-40dca557fedc}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/jimi/tutorialroom/hewntable2.fbx",
+            "name": "decor/table",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.033403396606445312,
+                "y": 0,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 0.9367910623550415,
+                "x": -0.43499213457107544,
+                "y": -0.46839553117752075,
+                "z": -0.46839553117752075
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-03T21:59:15Z",
+            "dimensions": {
+                "x": 0.27516752481460571,
+                "y": 3.2072484493255615,
+                "z": 0.20236590504646301
+            },
+            "id": "{afae326d-e2d8-45cd-9ca9-1cee5a2839b5}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/jimi/tutorialroom/branch2.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0,
+                "y": 0.5928802490234375,
+                "z": 0.32381248474121094
+            },
+            "queryAACube": {
+                "scale": 3.2253854274749756,
+                "x": -1.6126927137374878,
+                "y": -1.0198124647140503,
+                "z": -1.2888802289962769
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-03T22:16:43Z",
+            "dimensions": {
+                "x": 0.40529942512512207,
+                "y": 0.034761227667331696,
+                "z": 0.84386110305786133
+            },
+            "id": "{2abef763-3e4b-4fa9-9c2b-09eae2523baa}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/jimi/tutorialroom/hewntable2.fbx",
+            "name": "decor/table",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.033403396606445312,
+                "y": 0.2969818115234375,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 0.9367910623550415,
+                "x": -0.43499213457107544,
+                "y": -0.17141371965408325,
+                "z": -0.46839553117752075
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-03T22:16:43Z",
+            "dimensions": {
+                "x": 0.40529942512512207,
+                "y": 0.034761227667331696,
+                "z": 0.84386110305786133
+            },
+            "id": "{48737e52-5df5-45eb-81eb-f61689aa19a2}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/jimi/tutorialroom/hewntable2.fbx",
+            "name": "decor/table",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.033403396606445312,
+                "y": 0.5349884033203125,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 0.9367910623550415,
+                "x": -0.43499213457107544,
+                "y": 0.066592872142791748,
+                "z": -0.46839553117752075
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        }
+    ],
+    "Version": 64
+}

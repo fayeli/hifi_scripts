@@ -1,0 +1,35 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-09-14T22:56:01Z",
+            "dimensions": {
+                "x": 0.73314070701599121,
+                "y": 1.1244708299636841,
+                "z": 0.73314070701599121
+            },
+            "id": "{644d655b-ae66-43b1-9bab-a44b9a8ad632}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/DomainContent/Tutorial/Models/end_table2_small.fbx",
+            "name": "tutorial/nearGrab/table",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 1.5295180082321167,
+                "x": -0.76475900411605835,
+                "y": -0.76475900411605835,
+                "z": -0.76475900411605835
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "simple-compound",
+            "type": "Model",
+            "userData": "{\"tag\":\"nearGrab\"}"
+        }
+    ],
+    "Version": 64
+}
