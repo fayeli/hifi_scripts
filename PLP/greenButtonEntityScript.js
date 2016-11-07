@@ -92,6 +92,8 @@
         var results = Entities.findEntities(centerPos, r);
         var yellowPosArr = [];
         var redPosArr = [];
+        yellowEggies = [];
+        redEggies = [];
         results.forEach(function(itemID) {
             var itemProps = Entities.getEntityProperties(itemID);
             var descriptions = itemProps.description.split(".");
