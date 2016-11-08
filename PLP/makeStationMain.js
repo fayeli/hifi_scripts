@@ -1,3 +1,9 @@
+//
+// makeStationMain.js
+//
+// Created by Si Fi Faye Li on Nov 8, 2016
+//
+
 (function(){ // BEGIN LOCAL SCOPE
 
     var BUTTERFLY_ANIMATION_URL = "http://hifi-production.s3.amazonaws.com/tutorials/butterflies/butterfly.fbx";
@@ -62,26 +68,23 @@
 
     var putEggiesOnShelf = function() {
         print("put eggies on shelf");
-        var i;
+        var i, offset, shelfPos, props;
         for ( i = 0; i < yellowEggies.length; i++ ) {
-            var offset = { x:0, y:0, z:-SHELF_SPACING*i };
-            print(JSON.stringify(offset));
-            print(JSON.stringify(YELLOW_EGGIE_SHELF_POS));
-            var shelfPos = Vec3.sum(YELLOW_EGGIE_SHELF_POS, offset);
-            print(JSON.stringify(YELLOW_EGGIE_SHELF_POS));
-            var props = { position: shelfPos };
+            offset = { x:0, y:0, z:-SHELF_SPACING*i };
+            shelfPos = Vec3.sum(YELLOW_EGGIE_SHELF_POS, offset);
+            props = { position: shelfPos };
             Entities.editEntity(yellowEggies[i], props);
         }
         for ( i = 0; i < redEggies.length; i++ ) {
-            var offset = { x:0, y:0, z:-SHELF_SPACING*i };
-            var shelfPos = Vec3.sum(RED_EGGIE_SHELF_POS, offset);
-            var props = { position: shelfPos };
+            offset = { x:0, y:0, z:-SHELF_SPACING*i };
+            shelfPos = Vec3.sum(RED_EGGIE_SHELF_POS, offset);
+            props = { position: shelfPos };
             Entities.editEntity(redEggies[i], props);
         }
     };
 
     // returns an object with positions of red and yellow eggies within search sphere
-    // with center position centerPos and search radius r
+    // whose center position = centerPos and search radius = r
     var searchForEggies = function(centerPos, r) {
         var results = Entities.findEntities(centerPos, r);
         var yellowPosArr = [];
@@ -105,6 +108,32 @@
         return eggiesPos;
     };
 
+    var myChannel = "MakeStation-Channel";
+    var handleMessages = function(channel, message, sender) {
+        if (channel === myChannel) {
+            print("recieved message: " + JSON.stringify(message));
+            message = JSON.parse(message);
+            if (!message.hasOwnProperty("demoID") || !message.hasOwnProperty("demoPosition") ) {
+                return;
+            }
+            if (message.demoID === 1) {
+                // demo 1a: turn all yellow eggies into butterflies
+                var eggiesPos = searchForEggies(message.demoPosition, 2);
+                eggiesPos["yellow"].forEach(function(pos){
+                    spawnButterfly(pos);
+                });
+                // demo 1b: turn all red eggies into flame
+                eggiesPos["red"].forEach(function(pos){
+                    spawnFlame(pos);
+                });
+                putEggiesOnShelf();
+            }
+        }
+    };
+
+    Messages.subscribe(myChannel);
+    Messages.messageReceived.connect(handleMessages);
+
     var mappingName = 'Faye-Dev-' + Math.random();
     var myMapping;
 
@@ -118,11 +147,14 @@
     });
 
     Controller.enableMapping(mappingName);
+    print("makeStationMain running");
 
     function cleanup () {
         print('clean up');
         Controller.disableMapping(mappingName);
         deleteEntities();
+        Messages.unsubscribe(myChannel);
+        Messages.messageReceived.disconnect(handleMessages);
     }
 
     Script.scriptEnding.connect(cleanup);
