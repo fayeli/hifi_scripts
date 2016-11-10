@@ -5,7 +5,106 @@
 //
 
 (function(){ // BEGIN LOCAL SCOPE
+    // DEMO 3
+    // arrays of entitiyIDs of the lamps, minilamps[i] will bind to largelamps[i]
+    var minilamps = [];
+    var largelamps = [];
+    var update = function() {
+        // Demo 3: binding mini lamp with large lamp
+        
+    };
 
+    // DEMO 2
+    var CONE_SHELF_PROPS = {
+        position: {"x":-16.278244018554688,"y":-200.4762725830078,"z":-14.367652893066406},
+        rotation: {"x":-0.5123276710510254,"y":0.31369853019714355,"z":0.5408604741096497,"w":0.5887387990951538}
+    };
+    var RING_SHELF_PROPS = {
+        position: {"x":-15.983358383178711,"y":-200.43910217285156,"z":-14.820626258850098},
+        rotation: {"x":-0.2808550298213959,"y":-0.793724775314331,"z":0.3891110420227051,"w":0.3738217055797577}
+    };
+    var NOMARKER_SHELF_PROPS = {
+        position: {"x": -16.1338, "y": -200.4626, "z": -13.5830},
+        rotation: {"x":0.9081406593322754,"y":-0.06889450550079346,"z":-0.40819406509399414,"w":-0.0625162124633789}
+    };
+    var headlights = null;
+    var noMarkerEntityID = null;
+
+     var TOGGLE_STATE = 0; // 0: state where markers are shown, 1: state where headlights models are shown
+    
+    // toggle between showing headlights model vs marker elements
+    // also toggle button text between play/pause
+    var toggleHeadLights = function() {
+        print("toggle");
+        if (TOGGLE_STATE === 0) {
+            headlights.forEach(function(obj) {
+                if (obj.hasOwnProperty("marker")) {
+                    setVisiblity(obj.marker, false);
+                }
+                if (obj.hasOwnProperty("lamp")) {
+                    setVisiblity(obj.lamp, true);
+                }
+            });
+
+            TOGGLE_STATE = 1;
+        } else {
+            headlights.forEach(function(obj) {
+                if (obj.hasOwnProperty("marker")) {
+                    setVisiblity(obj.marker, true);
+                }
+                if (obj.hasOwnProperty("lamp")) {
+                    setVisiblity(obj.lamp, false);
+                }
+            });
+            TOGGLE_STATE = 0;
+        }
+    };
+
+    var setVisiblity = function(entityID, visiblity) {
+        var props = {visible: visiblity};
+        Entities.editEntity(entityID, props);
+    };
+
+    // put the headlights markers (cone, ring, and nomarker) back on original position, also hide lamps (except for no marker style)
+    var resetMarkers = function() {
+        print("reset markers to shelf");
+        if (TOGGLE_STATE === 1) {
+            toggleHeadLights();
+        }
+        if (noMarkerEntityID !== null && headlights !== null) {
+            Entities.editEntity(noMarkerEntityID, NOMARKER_SHELF_PROPS);
+            Entities.editEntity(headlights[0].marker, CONE_SHELF_PROPS);
+            Entities.editEntity(headlights[1].marker, RING_SHELF_PROPS);
+        }
+    };
+
+    // search for headlights models and marker element, save their entityIDs.
+    var searchForHeadlights = function(centerPos, r) {
+        var results = Entities.findEntities(centerPos, r);
+        var coneEntityIDs = {};
+        var ringEntityIDs = {};
+        results.forEach(function(itemID) {
+            var itemProps = Entities.getEntityProperties(itemID);
+            var descriptions = itemProps.description.split(".");
+            if (descriptions[0] === "cone") {
+                coneEntityIDs[descriptions[1]] = itemID;
+            } else if (descriptions[0] === "ring") {
+                ringEntityIDs[descriptions[1]] = itemID;
+            } else if (descriptions[0] === "nomarker") {
+                noMarkerEntityID = itemID;
+            }
+        });
+        print("finish searching for headlights");
+        print("coneEntityIDs = " + JSON.stringify(coneEntityIDs));
+        print("ringEntityIDs = " + JSON.stringify(ringEntityIDs));
+
+        // save the ids in the headlights array
+        headlights = [];
+        headlights.push(coneEntityIDs);
+        headlights.push(ringEntityIDs);
+    };
+
+    // DEMO 1 
     var BUTTERFLY_ANIMATION_URL = "http://hifi-production.s3.amazonaws.com/tutorials/butterflies/butterfly.fbx";
     var BUTTERFLY_MODEL_URL = "http://hifi-production.s3.amazonaws.com/tutorials/butterflies/butterfly.fbx";
     var NATURAL_SIZE_OF_BUTTERFLY = { x:0.0732, y:0.0073, z: 0.0816 };
@@ -29,7 +128,7 @@
             var flame = Clipboard.pasteEntities(position);
             flames.push(flame);
         }
-    }
+    };
 
     // spawns a butterfly at given position, saves the entityItemID to the butterflies array
     var spawnButterfly = function(position) {
@@ -48,7 +147,7 @@
                 startAutomatically: false
             },
             modelURL: BUTTERFLY_MODEL_URL
-        }
+        };
         butterflies.push(Entities.addEntity(properties));
     };
 
@@ -127,6 +226,13 @@
                     spawnFlame(pos);
                 });
                 putEggiesOnShelf();
+            } else if (message.demoID === 2) {
+                // demo 2: toggle between showing markers/showing headlights
+                if (headlights === null) {
+                    searchForHeadlights(message.demoPosition, 5);
+                }
+                toggleHeadLights();
+                
             }
         }
     };
@@ -142,7 +248,8 @@
         if ( value === 0 ) {
             return;
         }
-        print("space bar clicked, deleting entities");
+        print("space bar clicked, resetting + deleting entities");
+        resetMarkers();
         deleteEntities();
     });
 
@@ -155,7 +262,9 @@
         deleteEntities();
         Messages.unsubscribe(myChannel);
         Messages.messageReceived.disconnect(handleMessages);
+        Script.update.disconnect(update);
     }
 
+    Script.update.connect(update);
     Script.scriptEnding.connect(cleanup);
 }()); // END LOCAL_SCOPE

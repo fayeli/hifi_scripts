@@ -1,0 +1,116 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-08T22:51:54Z",
+            "description": "ring.lamp",
+            "dimensions": {
+                "x": 0.33059999346733093,
+                "y": 0.36399999260902405,
+                "z": 0.51419997215270996
+            },
+            "id": "{482f0008-6ffd-4c5d-98f8-7b5ced6be047}",
+            "ignoreForCollisions": 1,
+            "modelURL": "http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx",
+            "name": "Lamp Ring",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{a9030d38-2e6a-4dd8-ac2b-6c310ab43af0}",
+            "position": {
+                "x": -0.0069335699081420898,
+                "y": -0.016129426658153534,
+                "z": -0.20622751116752625
+            },
+            "queryAACube": {
+                "scale": 33.941131591796875,
+                "x": -30.784839630126953,
+                "y": -217.02047729492188,
+                "z": -24.718391418457031
+            },
+            "rotation": {
+                "w": 0.087686687707901001,
+                "x": 0.18473847210407257,
+                "y": -0.95790040493011475,
+                "z": 0.20156443119049072
+            },
+            "textures": "{\"Tex.light-off\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-off.jpg\",\"Tex.light.on\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\",\"Texture\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\"}",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}",
+            "visible": 0
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-08T23:48:42Z",
+            "description": "ring.marker",
+            "dimensions": {
+                "x": 0.26229339838027954,
+                "y": 0.26249998807907104,
+                "z": 0.065691150724887848
+            },
+            "id": "{a9030d38-2e6a-4dd8-ac2b-6c310ab43af0}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/plp/assets/plain-ring.fbx",
+            "name": "Ring Marker",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 0.37685462832450867,
+                "x": -0.18842731416225433,
+                "y": -0.18842731416225433,
+                "z": -0.18842731416225433
+            },
+            "rotation": {
+                "w": 0.11587157845497131,
+                "x": -0.63282138109207153,
+                "y": -0.54287987947463989,
+                "z": 0.53983008861541748
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 48,
+                "green": 48,
+                "red": 48
+            },
+            "created": "2016-11-08T21:31:04Z",
+            "cutoff": 45,
+            "description": "ring.light",
+            "dimensions": {
+                "x": 5.6568541526794434,
+                "y": 5.6568541526794434,
+                "z": 8
+            },
+            "exponent": 45,
+            "falloffRadius": 1,
+            "id": "{5ad56033-9fc5-434c-91e9-d357f60e8ed7}",
+            "intensity": 90,
+            "isSpotlight": 1,
+            "name": "Ring Spotlight",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{482f0008-6ffd-4c5d-98f8-7b5ced6be047}",
+            "position": {
+                "x": 0.73318922519683838,
+                "y": 0.73301130533218384,
+                "z": 1.1674873828887939
+            },
+            "queryAACube": {
+                "scale": 33.941123962402344,
+                "x": -30.784839630126953,
+                "y": -217.02047729492188,
+                "z": -24.718391418457031
+            },
+            "rotation": {
+                "w": -0.96861982345581055,
+                "x": 0.20483487844467163,
+                "y": 0.13569673895835876,
+                "z": 0.042963229119777679
+            },
+            "type": "Light"
+        }
+    ],
+    "Version": 64
+}

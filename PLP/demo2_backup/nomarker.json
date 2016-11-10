@@ -1,0 +1,78 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 48,
+                "green": 48,
+                "red": 48
+            },
+            "created": "2016-11-08T22:51:54Z",
+            "cutoff": 45,
+            "description": "nomarker.light",
+            "dimensions": {
+                "x": 5.6568541526794434,
+                "y": 5.6568541526794434,
+                "z": 8
+            },
+            "exponent": 45,
+            "falloffRadius": 1,
+            "id": "{849d895b-69cf-4570-8af1-fe819aa951bf}",
+            "intensity": 90,
+            "isSpotlight": 1,
+            "name": "NoMarker Spotlight",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{4575c891-470c-4486-a385-aa3712717ceb}",
+            "position": {
+                "x": 0.077315613627433777,
+                "y": -0.077235400676727295,
+                "z": -0.18120628595352173
+            },
+            "queryAACube": {
+                "scale": 33.941123962402344,
+                "x": -34.397789001464844,
+                "y": -217.37742614746094,
+                "z": -39.996685028076172
+            },
+            "rotation": {
+                "w": -0.96861982345581055,
+                "x": 0.20483487844467163,
+                "y": 0.13569673895835876,
+                "z": 0.042963229119777679
+            },
+            "type": "Light"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-08T22:51:54Z",
+            "description": "nomarker.lamp",
+            "dimensions": {
+                "x": 0.330558180809021,
+                "y": 0.36398103833198547,
+                "z": 0.51424312591552734
+            },
+            "id": "{4575c891-470c-4486-a385-aa3712717ceb}",
+            "ignoreForCollisions": 1,
+            "modelURL": "http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx",
+            "name": "Lamp No Marker",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 0.7114751935005188,
+                "x": -0.3557375967502594,
+                "y": -0.3557375967502594,
+                "z": -0.3557375967502594
+            },
+            "rotation": {
+                "w": -0.062482837587594986,
+                "x": 0.90819746255874634,
+                "y": -0.068843051791191101,
+                "z": -0.40815961360931396
+            },
+            "textures": "{\"Tex.light-off\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-off.jpg\",\"Tex.light.on\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\",\"Texture\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\"}",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        }
+    ],
+    "Version": 64
+}

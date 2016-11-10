@@ -1,0 +1,999 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-09T23:54:51Z",
+            "dimensions": {
+                "x": 0.330558180809021,
+                "y": 0.36398103833198547,
+                "z": 0.51424312591552734
+            },
+            "id": "{73797992-a8fe-4e78-b371-de2de9518cfe}",
+            "ignoreForCollisions": 1,
+            "modelURL": "http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx",
+            "name": "Demo3 Large Lamp A",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{ee31498c-b311-40e8-8e0b-34eb19ad8b66}",
+            "position": {
+                "x": -0.64399528503417969,
+                "y": 0.0771026611328125,
+                "z": -2.4819173812866211
+            },
+            "queryAACube": {
+                "scale": 33.941123962402344,
+                "x": -55.026588439941406,
+                "y": -217.37135314941406,
+                "z": -46.037582397460938
+            },
+            "textures": "{\"Tex.light-off\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-off.jpg\",\"Tex.light.on\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\",\"Texture\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\"}",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 48,
+                "green": 48,
+                "red": 48
+            },
+            "created": "2016-11-09T23:54:51Z",
+            "cutoff": 45,
+            "description": "nomarker.light",
+            "dimensions": {
+                "x": 5.6568541526794434,
+                "y": 5.6568541526794434,
+                "z": 8
+            },
+            "exponent": 45,
+            "falloffRadius": 1,
+            "id": "{6484a5a8-2abe-4548-a300-5a13545e2309}",
+            "intensity": 90,
+            "isSpotlight": 1,
+            "name": "NoMarker Spotlight",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{73797992-a8fe-4e78-b371-de2de9518cfe}",
+            "position": {
+                "x": 0.077315613627433777,
+                "y": -0.077235400676727295,
+                "z": -0.18120628595352173
+            },
+            "queryAACube": {
+                "scale": 33.941123962402344,
+                "x": -44.412322998046875,
+                "y": -217.37135314941406,
+                "z": -34.711940765380859
+            },
+            "rotation": {
+                "w": -0.9684443473815918,
+                "x": 0.20476078987121582,
+                "y": 0.13563740253448486,
+                "z": 0.042923569679260254
+            },
+            "type": "Light"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 48,
+                "green": 48,
+                "red": 48
+            },
+            "created": "2016-11-10T00:29:48Z",
+            "cutoff": 45,
+            "description": "nomarker.light",
+            "dimensions": {
+                "x": 5.6568541526794434,
+                "y": 5.6568541526794434,
+                "z": 8
+            },
+            "exponent": 45,
+            "falloffRadius": 1,
+            "id": "{c64b92db-72fb-47a2-b045-ac65f63c07aa}",
+            "intensity": 90,
+            "isSpotlight": 1,
+            "name": "NoMarker Spotlight",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{2cb4e0d9-3cb9-4c13-b669-1ecfade669f2}",
+            "position": {
+                "x": 0.077315613627433777,
+                "y": -0.077235400676727295,
+                "z": -0.18120628595352173
+            },
+            "queryAACube": {
+                "scale": 33.941123962402344,
+                "x": -51.777595520019531,
+                "y": -217.37127685546875,
+                "z": -37.133563995361328
+            },
+            "rotation": {
+                "w": -0.9684443473815918,
+                "x": 0.20476078987121582,
+                "y": 0.13563740253448486,
+                "z": 0.042923569679260254
+            },
+            "type": "Light"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-09T23:28:38Z",
+            "dimensions": {
+                "x": 0.082639545202255249,
+                "y": 0.090995259582996368,
+                "z": 0.12856078147888184
+            },
+            "id": "{6c38f80e-e219-4571-bdd4-de44a33e7f84}",
+            "ignoreForCollisions": 1,
+            "modelURL": "http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx",
+            "name": "Demo3 Mini Lamp B",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.5946731567382812,
+                "y": 1.1685638427734375,
+                "z": 3.3512163162231445
+            },
+            "queryAACube": {
+                "scale": 0.1778687983751297,
+                "x": 1.5057387351989746,
+                "y": 1.0796294212341309,
+                "z": 3.2622818946838379
+            },
+            "rotation": {
+                "w": -0.025987837463617325,
+                "x": 0.63729095458984375,
+                "y": -0.08932727575302124,
+                "z": -0.76498508453369141
+            },
+            "textures": "{\"Tex.light-off\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-off.jpg\",\"Tex.light.on\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\",\"Texture\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\"}",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-09T21:48:09Z",
+            "dimensions": {
+                "x": 0.40529942512512207,
+                "y": 0.034761227667331696,
+                "z": 0.84386110305786133
+            },
+            "id": "{a91c7cd3-e92e-4885-8967-25ea5b968522}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/jimi/tutorialroom/hewntable2.fbx",
+            "name": "Demo3 Shelf",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.5172367095947266,
+                "y": 1.08734130859375,
+                "z": 3.286747932434082
+            },
+            "queryAACube": {
+                "scale": 0.9367910623550415,
+                "x": 1.0488412380218506,
+                "y": 0.61894577741622925,
+                "z": 2.8183524608612061
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 220,
+                "green": 220,
+                "red": 220
+            },
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.20000000298023224,
+                "y": 0.20000000298023224,
+                "z": 0.20000000298023224
+            },
+            "id": "{67f74920-6d23-4fc1-a413-6abc65362cae}",
+            "marketplaceID": "128b8eac-e70e-4980-91b2-df8f4940edc8",
+            "name": "Demo3 QuorraBall",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.8892707824707031,
+                "y": 0.9831085205078125,
+                "z": 2.9356899261474609
+            },
+            "queryAACube": {
+                "scale": 0.34641015529632568,
+                "x": 2.7160656452178955,
+                "y": 0.80990344285964966,
+                "z": 2.7624847888946533
+            },
+            "rotation": {
+                "w": 0.70702672004699707,
+                "x": -1.52587890625e-05,
+                "y": -0.70720988512039185,
+                "z": -4.57763671875e-05
+            },
+            "type": "Sphere",
+            "userData": "{\"ProceduralEntity\":{\"version\":2,\"shaderUrl\":\"https://s3.amazonaws.com/Oculus/shadertoys/quora2.fs\",\"uniforms\":{\"iSpeed\":1,\"iShell\":0.4}}}"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 174,
+                "green": 255,
+                "red": 0
+            },
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.20000000298023224,
+                "y": 0.040637210011482239,
+                "z": 0.20000000298023224
+            },
+            "id": "{cc44e669-0e7c-44e2-a0be-17c50ea9bb41}",
+            "name": "Demo3 Green Button Top",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.8860454559326172,
+                "y": 1.0668792724609375,
+                "z": 2.943079948425293
+            },
+            "queryAACube": {
+                "scale": 0.28574708104133606,
+                "x": 2.7431719303131104,
+                "y": 0.92400574684143066,
+                "z": 2.8002064228057861
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "type": "Sphere"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 174,
+                "green": 255,
+                "red": 0
+            },
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.20000000298023224,
+                "y": 0.040637210011482239,
+                "z": 0.20000000298023224
+            },
+            "id": "{29ef9dad-5548-41d6-9e64-93fbfa81fc70}",
+            "name": "Demo3 Green Button Padding Bottom",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.8860454559326172,
+                "y": 0.963043212890625,
+                "z": 2.943079948425293
+            },
+            "queryAACube": {
+                "scale": 0.28574708104133606,
+                "x": 2.7431719303131104,
+                "y": 0.82016968727111816,
+                "z": 2.8002064228057861
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "type": "Sphere"
+        },
+        {
+            "backgroundColor": {
+                "blue": 174,
+                "green": 255,
+                "red": 0
+            },
+            "clientOnly": 0,
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.11077219247817993,
+                "y": 0.085207134485244751,
+                "z": 0.0099999997764825821
+            },
+            "id": "{b062cbe9-9a9b-4e3e-94ca-dca23c9f4fe9}",
+            "lineHeight": 0.059999998658895493,
+            "name": "Demo3 Green Button Text",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.8858184814453125,
+                "y": 1.087860107421875,
+                "z": 2.9526472091674805
+            },
+            "queryAACube": {
+                "scale": 0.14010971784591675,
+                "x": 2.8157637119293213,
+                "y": 1.0178052186965942,
+                "z": 2.8825924396514893
+            },
+            "rotation": {
+                "w": 0.65145337581634521,
+                "x": -0.65169757604598999,
+                "y": -0.27464711666107178,
+                "z": -0.27464711666107178
+            },
+            "text": "OK",
+            "type": "Text"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 220,
+                "green": 220,
+                "red": 220
+            },
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.13333334028720856,
+                "y": 0.13333334028720856,
+                "z": 0.13333334028720856
+            },
+            "id": "{f7e00138-e8c3-4f87-b299-1d92510355cf}",
+            "marketplaceID": "128b8eac-e70e-4980-91b2-df8f4940edc8",
+            "name": "Demo3 QuorraBall",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.8853664398193359,
+                "y": 0.9831085205078125,
+                "z": 2.9467525482177734
+            },
+            "queryAACube": {
+                "scale": 0.23094013333320618,
+                "x": 2.7698962688446045,
+                "y": 0.86763846874237061,
+                "z": 2.831282377243042
+            },
+            "rotation": {
+                "w": 0.92382693290710449,
+                "x": -1.52587890625e-05,
+                "y": -0.38283360004425049,
+                "z": -4.57763671875e-05
+            },
+            "type": "Sphere",
+            "userData": "{\"ProceduralEntity\":{\"version\":2,\"shaderUrl\":\"https://s3.amazonaws.com/Oculus/shadertoys/quora2.fs\",\"uniforms\":{\"iSpeed\":1,\"iShell\":0.2666666666666667}}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.20000000298023224,
+                "y": 0.16154789924621582,
+                "z": 0.20000000298023224
+            },
+            "id": "{ff46927e-d51e-413e-910a-2844ffad1f58}",
+            "ignoreForCollisions": 1,
+            "name": "Demo3 Green Button Invisible Box",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.8836555480957031,
+                "y": 1.0464630126953125,
+                "z": 2.9458208084106445
+            },
+            "queryAACube": {
+                "scale": 0.32572644948959351,
+                "x": 2.720792293548584,
+                "y": 0.88359975814819336,
+                "z": 2.7829575538635254
+            },
+            "rotation": {
+                "w": 0.92379641532897949,
+                "x": -1.52587890625e-05,
+                "y": -0.38286411762237549,
+                "z": -1.52587890625e-05
+            },
+            "script": "https://hifi-content.s3.amazonaws.com/faye/plp/greenButtonEntityScript3.js",
+            "scriptTimestamp": 1478728184065,
+            "shape": "Cube",
+            "type": "Box",
+            "userData": "{\"grabbableKey\":{\"wantsTrigger\":true}}",
+            "visible": 0
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 220,
+                "green": 220,
+                "red": 220
+            },
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.1666666716337204,
+                "y": 0.1666666716337204,
+                "z": 0.1666666716337204
+            },
+            "id": "{247c3e44-0e89-4488-8255-36ccfd554ee1}",
+            "marketplaceID": "128b8eac-e70e-4980-91b2-df8f4940edc8",
+            "name": "Demo3 QuorraBall",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.8795070648193359,
+                "y": 0.9831085205078125,
+                "z": 2.9480009078979492
+            },
+            "queryAACube": {
+                "scale": 0.28867515921592712,
+                "x": 2.7351694107055664,
+                "y": 0.83877092599868774,
+                "z": 2.8036632537841797
+            },
+            "rotation": {
+                "w": 0.81875336170196533,
+                "x": 0.28187990188598633,
+                "y": -0.47286182641983032,
+                "z": -0.16292059421539307
+            },
+            "type": "Sphere",
+            "userData": "{\"ProceduralEntity\":{\"version\":2,\"shaderUrl\":\"https://s3.amazonaws.com/Oculus/shadertoys/quora2.fs\",\"uniforms\":{\"iSpeed\":1,\"iShell\":0.33333333333333337}}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-09T22:31:51Z",
+            "dimensions": {
+                "x": 0.082649998366832733,
+                "y": 0.090999998152256012,
+                "z": 0.12854999303817749
+            },
+            "id": "{ee31498c-b311-40e8-8e0b-34eb19ad8b66}",
+            "ignoreForCollisions": 1,
+            "modelURL": "http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx",
+            "name": "Demo3 Mini Lamp A",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.9920616149902344,
+                "y": 1.1183624267578125,
+                "z": 2.6557445526123047
+            },
+            "queryAACube": {
+                "scale": 0.17786827683448792,
+                "x": 1.9031274318695068,
+                "y": 1.029428243637085,
+                "z": 2.5668103694915771
+            },
+            "textures": "{\"Tex.light-off\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-off.jpg\",\"Tex.light.on\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\",\"Texture\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\"}",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.94014430046081543,
+                "y": 1.0236661434173584,
+                "z": 0.60237765312194824
+            },
+            "id": "{f4f15cc4-f522-4bcf-ad9c-5e1bfac24803}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/jimi/tutorialroom/table3.fbx",
+            "name": "Demo3 Worktable",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.0243320465087891,
+                "y": 0.29058837890625,
+                "z": 2.5838327407836914
+            },
+            "queryAACube": {
+                "scale": 1.5148011445999146,
+                "x": 1.2669315338134766,
+                "y": -0.46681219339370728,
+                "z": 1.8264322280883789
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-09T21:56:53Z",
+            "dimensions": {
+                "x": 1.2906686067581177,
+                "y": 1.1535638570785522,
+                "z": 2.6919403076171875
+            },
+            "id": "{e2c04192-1403-49b7-b384-1e8a77f2caa7}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/plp/assets/mini-cooper_1.fbx",
+            "name": "Demo3 Large Car",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.1606960296630859,
+                "y": 0.51824951171875,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 409.66152954101562,
+                "x": -229.24908447265625,
+                "y": -401.78933715820312,
+                "z": -221.241943359375
+            },
+            "rotation": {
+                "w": 0.70708787441253662,
+                "x": -1.52587890625e-05,
+                "y": 0.70708787441253662,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-08T23:24:40Z",
+            "dimensions": {
+                "x": 0.6701958179473877,
+                "y": 3.0894412994384766,
+                "z": 6.0362682342529297
+            },
+            "id": "{e4bcadc5-4a5f-4da2-9406-c92903ddb33f}",
+            "modelURL": "http://mpassets.highfidelity.com/af67a13f-7610-49b4-9723-b284fb8ff37a-v1/Dungeon-Wall-6X3.fbx",
+            "name": "Demo3 Wall",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 4.8597793579101562,
+                "y": 0.952667236328125,
+                "z": 0.12039947509765625
+            },
+            "queryAACube": {
+                "scale": 6.8139815330505371,
+                "x": 1.4527885913848877,
+                "y": -2.4543235301971436,
+                "z": -3.2865912914276123
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "box",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone5_phys.obj",
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.36823686957359314,
+                "y": 0.5450361967086792,
+                "z": 0.50374740362167358
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9.8000001907348633,
+                "z": 0
+            },
+            "id": "{4661d7ed-d917-4146-b444-2318399761e9}",
+            "ignoreForCollisions": 1,
+            "marketplaceID": "c96f6407-bc01-4187-9d69-f8ea75fdbb95",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone5.fbx",
+            "name": "HiFi Rocks!! - Stone #5",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.3965873718261719,
+                "y": 0.1226654052734375,
+                "z": 3.8745126724243164
+            },
+            "queryAACube": {
+                "scale": 0.82850724458694458,
+                "x": 0.98233377933502197,
+                "y": -0.29158821702003479,
+                "z": 3.460258960723877
+            },
+            "rotation": {
+                "w": 0.73150229454040527,
+                "x": -0.2554207444190979,
+                "y": -0.082871735095977783,
+                "z": 0.62673377990722656
+            },
+            "shapeType": "compound",
+            "type": "Model",
+            "userData": "{}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone3_phys.obj",
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.32930606603622437,
+                "y": 0.16714037954807281,
+                "z": 0.4134661853313446
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9.8000001907348633,
+                "z": 0
+            },
+            "id": "{55219396-040e-4052-afa1-1eda07c943e1}",
+            "ignoreForCollisions": 1,
+            "marketplaceID": "c96f6407-bc01-4187-9d69-f8ea75fdbb95",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone3.fbx",
+            "name": "HiFi Rocks!! - Stone #3",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.5200996398925781,
+                "y": 0.01519775390625,
+                "z": 3.6267127990722656
+            },
+            "queryAACube": {
+                "scale": 0.55437594652175903,
+                "x": 1.242911696434021,
+                "y": -0.26199021935462952,
+                "z": 3.3495247364044189
+            },
+            "rotation": {
+                "w": -0.082352936267852783,
+                "x": -0.018997490406036377,
+                "y": 0.99627685546875,
+                "z": 0.016159296035766602
+            },
+            "shapeType": "compound",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone3_phys.obj",
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.32930606603622437,
+                "y": 0.16714037954807281,
+                "z": 0.4134661853313446
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9.8000001907348633,
+                "z": 0
+            },
+            "id": "{a5e2cae0-60d4-45bc-b40f-198578a9202c}",
+            "ignoreForCollisions": 1,
+            "marketplaceID": "c96f6407-bc01-4187-9d69-f8ea75fdbb95",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone3.fbx",
+            "name": "HiFi Rocks!! - Stone #3",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.2348384857177734,
+                "y": 0.0152435302734375,
+                "z": 3.9924907684326172
+            },
+            "queryAACube": {
+                "scale": 0.55437594652175903,
+                "x": 0.95765054225921631,
+                "y": -0.26194444298744202,
+                "z": 3.7153027057647705
+            },
+            "rotation": {
+                "w": 0.65056836605072021,
+                "x": -0.024917960166931152,
+                "y": 0.75899899005889893,
+                "z": -0.0023041367530822754
+            },
+            "shapeType": "compound",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.25,
+                "y": 1.1217999458312988,
+                "z": 0.25
+            },
+            "id": "{58b6f187-566a-4ee9-9653-2b4bce9f7a01}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/DomainContent/Tutorial/Models/end_table2_small.fbx",
+            "name": "Demo3 Green Button Stand",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.8864307403564453,
+                "y": 0.3999176025390625,
+                "z": 2.9469280242919922
+            },
+            "queryAACube": {
+                "scale": 1.1761951446533203,
+                "x": 2.2983331680297852,
+                "y": -0.18817996978759766,
+                "z": 2.358830451965332
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "simple-compound",
+            "type": "Model",
+            "userData": "{\"tag\":\"nearGrab\"}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-09T21:54:42Z",
+            "dimensions": {
+                "x": 0.32266715168952942,
+                "y": 0.28839096426963806,
+                "z": 0.67298507690429688
+            },
+            "id": "{20897e57-f2db-4ea4-9fa2-d1c2657448f7}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/plp/assets/mini-cooper_1.fbx",
+            "name": "Demo3 Mini Car",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.9963302612304688,
+                "y": 0.9438934326171875,
+                "z": 2.5892200469970703
+            },
+            "queryAACube": {
+                "scale": 409.66152954101562,
+                "x": -229.24908447265625,
+                "y": -401.78933715820312,
+                "z": -221.241943359375
+            },
+            "rotation": {
+                "w": 0.70708787441253662,
+                "x": -1.52587890625e-05,
+                "y": 0.70708787441253662,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone5_phys.obj",
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.36823686957359314,
+                "y": 0.13826200366020203,
+                "z": 0.50374740362167358
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9.8000001907348633,
+                "z": 0
+            },
+            "id": "{b0565f03-34e7-4d31-95c0-08beb2edc878}",
+            "ignoreForCollisions": 1,
+            "marketplaceID": "c96f6407-bc01-4187-9d69-f8ea75fdbb95",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone5.fbx",
+            "name": "HiFi Rocks!! - Stone #5",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.1248626708984375,
+                "y": 0,
+                "z": 3.7463397979736328
+            },
+            "queryAACube": {
+                "scale": 0.63912147283554077,
+                "x": 0.80530190467834473,
+                "y": -0.31956073641777039,
+                "z": 3.42677903175354
+            },
+            "rotation": {
+                "w": 0.94006252288818359,
+                "x": -0.0047150254249572754,
+                "y": -0.34059661626815796,
+                "z": -0.016067743301391602
+            },
+            "shapeType": "compound",
+            "type": "Model",
+            "userData": "{}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone12_phys.obj",
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.35742485523223877,
+                "y": 0.35742485523223877,
+                "z": 0.35742485523223877
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9.8000001907348633,
+                "z": 0
+            },
+            "id": "{18a52406-7cb9-45b1-9146-7f6073666790}",
+            "ignoreForCollisions": 1,
+            "marketplaceID": "c96f6407-bc01-4187-9d69-f8ea75fdbb95",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone2.fbx",
+            "name": "HiFi Rocks! - Stone #2",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.3059024810791016,
+                "y": 0.0779876708984375,
+                "z": 3.4682626724243164
+            },
+            "queryAACube": {
+                "scale": 0.61907798051834106,
+                "x": 0.99636352062225342,
+                "y": -0.23155131936073303,
+                "z": 3.1587235927581787
+            },
+            "rotation": {
+                "w": 0.59166860580444336,
+                "x": -0.29546046257019043,
+                "y": 0.5407034158706665,
+                "z": -0.51985961198806763
+            },
+            "shapeType": "compound",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 48,
+                "green": 48,
+                "red": 48
+            },
+            "created": "2016-11-09T22:31:51Z",
+            "cutoff": 45,
+            "description": "nomarker.light",
+            "dimensions": {
+                "x": 5.6568541526794434,
+                "y": 5.6568541526794434,
+                "z": 8
+            },
+            "exponent": 45,
+            "falloffRadius": 1,
+            "id": "{18643365-006f-43fc-9335-e43ba1051ba4}",
+            "intensity": 90,
+            "isSpotlight": 1,
+            "name": "NoMarker Spotlight",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{ee31498c-b311-40e8-8e0b-34eb19ad8b66}",
+            "position": {
+                "x": 0.077315613627433777,
+                "y": -0.077235400676727295,
+                "z": -0.18120628595352173
+            },
+            "queryAACube": {
+                "scale": 33.941123962402344,
+                "x": -42.033069610595703,
+                "y": -217.08724975585938,
+                "z": -32.389595031738281
+            },
+            "rotation": {
+                "w": -0.9684443473815918,
+                "x": 0.20476078987121582,
+                "y": 0.13563740253448486,
+                "z": 0.042923569679260254
+            },
+            "type": "Light"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-08T19:20:00Z",
+            "dimensions": {
+                "x": 0.27516752481460571,
+                "y": 3.2072484493255615,
+                "z": 0.20236590504646301
+            },
+            "id": "{6207c045-dd5e-4f48-b03c-aba74c4b8cc0}",
+            "ignoreForCollisions": 1,
+            "modelURL": "atp:/jimi/tutorialroom/branch2.fbx",
+            "name": "Demo3 Shelf Pole",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.4838352203369141,
+                "y": 1.38323974609375,
+                "z": 3.610560417175293
+            },
+            "queryAACube": {
+                "scale": 3.2253854274749756,
+                "x": -0.12885749340057373,
+                "y": -0.22945296764373779,
+                "z": 1.9978677034378052
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 48,
+                "green": 48,
+                "red": 48
+            },
+            "created": "2016-11-09T23:28:38Z",
+            "cutoff": 45,
+            "description": "nomarker.light",
+            "dimensions": {
+                "x": 5.6568541526794434,
+                "y": 5.6568541526794434,
+                "z": 8
+            },
+            "exponent": 45,
+            "falloffRadius": 1,
+            "id": "{afe421b5-a612-4ac3-8f0b-9563249afe18}",
+            "intensity": 90,
+            "isSpotlight": 1,
+            "name": "NoMarker Spotlight",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{6c38f80e-e219-4571-bdd4-de44a33e7f84}",
+            "position": {
+                "x": 0.077315613627433777,
+                "y": -0.077235400676727295,
+                "z": -0.18120628595352173
+            },
+            "queryAACube": {
+                "scale": 33.941123962402344,
+                "x": -44.333507537841797,
+                "y": -217.37135314941406,
+                "z": -31.958122253417969
+            },
+            "rotation": {
+                "w": -0.9684443473815918,
+                "x": 0.20476078987121582,
+                "y": 0.13563740253448486,
+                "z": 0.042923569679260254
+            },
+            "type": "Light"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-10T00:29:48Z",
+            "dimensions": {
+                "x": 0.330558180809021,
+                "y": 0.36398103833198547,
+                "z": 0.51424312591552734
+            },
+            "id": "{2cb4e0d9-3cb9-4c13-b669-1ecfade669f2}",
+            "ignoreForCollisions": 1,
+            "modelURL": "http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx",
+            "name": "Demo3 Large Lamp B",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0,
+                "y": 0.9530487060546875,
+                "z": 3.3907852172851562
+            },
+            "queryAACube": {
+                "scale": 0.7114751935005188,
+                "x": -0.3557375967502594,
+                "y": 0.59731113910675049,
+                "z": 3.0350475311279297
+            },
+            "rotation": {
+                "w": -0.062516212463378906,
+                "x": 0.90814065933227539,
+                "y": -0.068894505500793457,
+                "z": -0.40819406509399414
+            },
+            "textures": "{\"Tex.light-off\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-off.jpg\",\"Tex.light.on\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\",\"Texture\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\"}",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        }
+    ],
+    "Version": 64
+}

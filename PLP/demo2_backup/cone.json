@@ -1,0 +1,116 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-08T22:54:05Z",
+            "description": "cone.lamp",
+            "dimensions": {
+                "x": 0.330558180809021,
+                "y": 0.36398103833198547,
+                "z": 0.51424312591552734
+            },
+            "id": "{6ec1647f-a25b-4efd-b875-662a32ec8af9}",
+            "ignoreForCollisions": 1,
+            "modelURL": "http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx",
+            "name": "Lamp Cone",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{887af65b-2912-4ce5-8022-c6d0d52da090}",
+            "position": {
+                "x": 0.0200653076171875,
+                "y": 0.68557262420654297,
+                "z": -0.01519775390625
+            },
+            "queryAACube": {
+                "scale": 33.941131591796875,
+                "x": -29.832775115966797,
+                "y": -217.75198364257812,
+                "z": -24.043914794921875
+            },
+            "rotation": {
+                "w": -0.58442795276641846,
+                "x": 0.49709111452102661,
+                "y": -0.59074145555496216,
+                "z": -0.24984413385391235
+            },
+            "textures": "{\"Tex.light-off\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-off.jpg\",\"Tex.light.on\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\",\"Texture\":\"http://hifi-content.s3.amazonaws.com/james/tracklight/lamp1.fbx/justlamp.fbm/bulb-tex-on.jpg\"}",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}",
+            "visible": 0
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-08T21:20:09Z",
+            "description": "cone.marker",
+            "dimensions": {
+                "x": 0.1970113068819046,
+                "y": 1.0139032602310181,
+                "z": 0.1970113217830658
+            },
+            "id": "{887af65b-2912-4ce5-8022-c6d0d52da090}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://s3-us-west-1.amazonaws.com/hifi-content/jazmin/production/assets/birthday_party/partyhat_orange.fbx",
+            "name": "Cone Marker",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 1.051487922668457,
+                "x": -0.52574396133422852,
+                "y": -0.52574396133422852,
+                "z": -0.52574396133422852
+            },
+            "rotation": {
+                "w": -0.66107892990112305,
+                "x": 0.33299502730369568,
+                "y": 0.007976241409778595,
+                "z": -0.6723359227180481
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 48,
+                "green": 48,
+                "red": 48
+            },
+            "created": "2016-11-08T22:51:54Z",
+            "cutoff": 45,
+            "description": "cone.light",
+            "dimensions": {
+                "x": 5.6568541526794434,
+                "y": 5.6568541526794434,
+                "z": 8
+            },
+            "exponent": 45,
+            "falloffRadius": 1,
+            "id": "{aa4957f8-0725-4b7e-b37a-afb809166195}",
+            "intensity": 90,
+            "isSpotlight": 1,
+            "name": "Cone Spotlight",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{6ec1647f-a25b-4efd-b875-662a32ec8af9}",
+            "position": {
+                "x": 0.077329292893409729,
+                "y": -0.077224493026733398,
+                "z": -0.18119007349014282
+            },
+            "queryAACube": {
+                "scale": 33.941123962402344,
+                "x": -29.832775115966797,
+                "y": -217.75198364257812,
+                "z": -24.043914794921875
+            },
+            "rotation": {
+                "w": -0.96856832504272461,
+                "x": 0.20482397079467773,
+                "y": 0.13568949699401855,
+                "z": 0.042960941791534424
+            },
+            "type": "Light"
+        }
+    ],
+    "Version": 64
+}
