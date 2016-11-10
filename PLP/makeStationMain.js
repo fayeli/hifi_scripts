@@ -6,12 +6,39 @@
 
 (function(){ // BEGIN LOCAL SCOPE
     // DEMO 3
+    var MINILAMPS_DEFAULT_POS = [
+        {"x":-25.66,"y":-200.26,"z":-14.91},
+        {"x":-25.66,"y":-200.26,"z":-15.10}
+    ];
+    var MINILAMPS_DEFAULT_ROT = [
+        {"x":0.37603601813316345,"y":-0.4135432541370392,"z":-0.16529564559459686,"w":0.8124957084655762},
+        {"x":0.37603601813316345,"y":-0.4135432541370392,"z":-0.16529564559459686,"w":0.8124957084655762}
+    ];
     // arrays of entitiyIDs of the lamps, minilamps[i] will bind to largelamps[i]
-    var minilamps = [];
-    var largelamps = [];
-    var update = function() {
-        // Demo 3: binding mini lamp with large lamp
-        
+    var minilamps = ["{ee31498c-b311-40e8-8e0b-34eb19ad8b66}","{6c38f80e-e219-4571-bdd4-de44a33e7f84}"];
+    var largelamps = ["{73797992-a8fe-4e78-b371-de2de9518cfe}","{2cb4e0d9-3cb9-4c13-b669-1ecfade669f2}"];
+
+    var scaleTransformation = function(minilamp, largelamp) {
+        var miniProps = Entities.getEntityProperties(minilamp);
+        var newPos = Vec3.multiply(miniProps.localPosition, 4);
+        var largeProps = {
+            localPosition: newPos, 
+            rotation: miniProps.rotation,
+            visible: true
+        };
+        Entities.editEntity(largelamp, largeProps);
+    };
+
+    var resetDemo3 = function() {
+        setVisiblity(largelamps[0], false);
+        setVisiblity(largelamps[1], false);
+        setPosRot(minilamps[0], MINILAMPS_DEFAULT_POS[0], MINILAMPS_DEFAULT_ROT[0]);
+        setPosRot(minilamps[1], MINILAMPS_DEFAULT_POS[1], MINILAMPS_DEFAULT_ROT[1]);
+    };
+
+    var setPosRot = function(entityID, pos, rot) {
+        var props = {position: pos, rotation: rot};
+        Entities.editEntity(entityID,props);
     };
 
     // DEMO 2
@@ -232,7 +259,9 @@
                     searchForHeadlights(message.demoPosition, 5);
                 }
                 toggleHeadLights();
-                
+            } else if (message.demoID === 3) {
+                scaleTransformation(minilamps[0],largelamps[0]);
+                scaleTransformation(minilamps[1],largelamps[1]);
             }
         }
     };
@@ -251,6 +280,7 @@
         print("space bar clicked, resetting + deleting entities");
         resetMarkers();
         deleteEntities();
+        resetDemo3();
     });
 
     Controller.enableMapping(mappingName);
@@ -262,9 +292,9 @@
         deleteEntities();
         Messages.unsubscribe(myChannel);
         Messages.messageReceived.disconnect(handleMessages);
-        Script.update.disconnect(update);
+        //Script.update.disconnect(update);
     }
 
-    Script.update.connect(update);
+    //Script.update.connect(update);
     Script.scriptEnding.connect(cleanup);
 }()); // END LOCAL_SCOPE
