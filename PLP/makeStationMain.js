@@ -5,6 +5,15 @@
 //
 
 (function(){ // BEGIN LOCAL SCOPE
+    // DEMO 4
+    var miniParts = ["{33b2601c-8813-4ece-9f41-27fc3b663a73}","{57d33a7c-482a-4254-9b7c-29e42b163dd4}","{fe42fe01-304f-40b3-89d5-6c5283e633ff}","{409c0825-0030-4193-b9f8-570ce1912361}","{c93fc2a8-3365-459e-b7f2-a101409a84d8}","{dd0a0ab0-db0e-42fe-b774-4bf65c29f823}","{a7649a66-35d9-41c9-9c80-0e22a6ca5465}"];
+    var regularParts = ["{3d16c826-078b-4309-bec7-28b2399e4fd1}","{c773071e-fb8f-4661-b9c5-05a5a9660d90}","{4468fa63-a5a9-47c9-9b2a-dc52988ff1fc}", "{bf0a67a3-688b-4863-8fb2-554cbe163b80}","{b8d84947-0bed-4a2b-89d8-8488aba213be}","{01278071-280e-41c7-91f4-e4813114d418}","{827fd52b-5080-4b15-a423-b92a130efec0}"];
+
+
+    var resetDemo4 = function() {
+
+    };
+
     // DEMO 3
     var MINILAMPS_DEFAULT_POS = [
         {"x":-25.66,"y":-200.26,"z":-14.91},
@@ -18,15 +27,15 @@
     var minilamps = ["{ee31498c-b311-40e8-8e0b-34eb19ad8b66}","{6c38f80e-e219-4571-bdd4-de44a33e7f84}"];
     var largelamps = ["{73797992-a8fe-4e78-b371-de2de9518cfe}","{2cb4e0d9-3cb9-4c13-b669-1ecfade669f2}"];
 
-    var scaleTransformation = function(minilamp, largelamp) {
-        var miniProps = Entities.getEntityProperties(minilamp);
-        var newPos = Vec3.multiply(miniProps.localPosition, 4);
+    var scaleTransformation = function(miniobj, largeobj, k) {
+        var miniProps = Entities.getEntityProperties(miniobj);
+        var newPos = Vec3.multiply(miniProps.localPosition, k);
         var largeProps = {
             localPosition: newPos, 
             rotation: miniProps.rotation,
             visible: true
         };
-        Entities.editEntity(largelamp, largeProps);
+        Entities.editEntity(largeobj, largeProps);
     };
 
     var resetDemo3 = function() {
@@ -260,8 +269,13 @@
                 }
                 toggleHeadLights();
             } else if (message.demoID === 3) {
-                scaleTransformation(minilamps[0],largelamps[0]);
-                scaleTransformation(minilamps[1],largelamps[1]);
+                scaleTransformation(minilamps[0],largelamps[0],4);
+                scaleTransformation(minilamps[1],largelamps[1],4);
+            } else if (message.demoID === 4) {
+                var i;
+                for (i=0; i<miniParts.length; i++) {
+                    scaleTransformation(miniParts[i], regularParts[i],16);
+                }
             }
         }
     };
