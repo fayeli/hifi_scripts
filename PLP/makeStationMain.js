@@ -6,12 +6,65 @@
 
 (function(){ // BEGIN LOCAL SCOPE
     // DEMO 4
-    var miniParts = ["{33b2601c-8813-4ece-9f41-27fc3b663a73}","{57d33a7c-482a-4254-9b7c-29e42b163dd4}","{fe42fe01-304f-40b3-89d5-6c5283e633ff}","{409c0825-0030-4193-b9f8-570ce1912361}","{c93fc2a8-3365-459e-b7f2-a101409a84d8}","{dd0a0ab0-db0e-42fe-b774-4bf65c29f823}","{a7649a66-35d9-41c9-9c80-0e22a6ca5465}"];
-    var regularParts = ["{3d16c826-078b-4309-bec7-28b2399e4fd1}","{c773071e-fb8f-4661-b9c5-05a5a9660d90}","{4468fa63-a5a9-47c9-9b2a-dc52988ff1fc}", "{bf0a67a3-688b-4863-8fb2-554cbe163b80}","{b8d84947-0bed-4a2b-89d8-8488aba213be}","{01278071-280e-41c7-91f4-e4813114d418}","{827fd52b-5080-4b15-a423-b92a130efec0}"];
+    // var UPDATE_INTERVAL = 0.5; // update every half a second
+    var MINIPARTS_DEFAULT_POS = [
+        {"x":-34.66611099243164,"y":-200.3344268798828,"z":-15.631057739257812},
+        {"x":-34.67374038696289,"y":-200.33340454101562,"z":-15.452078819274902},
+        {"x":-35.25620651245117,"y":-200.3119354248047,"z":-15.401052474975586},
+        {"x":-35.34328842163086,"y":-200.3228302001953,"z":-15.405195236206055},
+        {"x":-35.48822021484375,"y":-200.3271942138672,"z":-15.451912879943848},
+        {"x":-35.58782958984375,"y":-200.32273864746094,"z":-15.44477653503418},
+        {"x":-35.511592864990234,"y":-200.29736328125,"z":-15.7243013381958},
+        {"x":-35.26823806762695,"y":-200.3181610107422,"z":-15.627158164978027}
+    ];
+    var MINIPARTS_DEFAULT_ROT = [
+        {"x":0.9999911785125732,"y":0.002878531813621521,"z":0.0012254416942596436,"w":0.005043924320489168},
+        {"x":-0.9998056888580322,"y":-0.016886798664927483,"z":-0.008700087666511536,"w":-0.0040246848948299885},
+        {"x":-0.005943477153778076,"y":-0.6939065456390381,"z":-0.01728069595992565,"w":-0.7198418974876404},
+        {"x":0.00161486875731498,"y":0.7033467292785645,"z":0.005054085981100798,"w":-0.7108191847801208},
+        {"x":-0.0075931549072265625,"y":-0.701008141040802,"z":0.028742745518684387,"w":-0.7125714421272278},
+        {"x":-0.009087696671485901,"y":-0.7122609615325928,"z":-0.008520364761352539,"w":0.7017989754676819},
+        {"x":0.005322873126715422,"y":-0.9987632036209106,"z":-0.04949754476547241,"w":-0.0013608038425445557},
+        {"x":-0.0016646981239318848,"y":0.9999186992645264,"z":0.004905134905129671,"w":0.0106123685836792}
+    ];
+    var miniParts = [
+        "{33b2601c-8813-4ece-9f41-27fc3b663a73}",
+        "{57d33a7c-482a-4254-9b7c-29e42b163dd4}",
+        "{fe42fe01-304f-40b3-89d5-6c5283e633ff}",
+        "{409c0825-0030-4193-b9f8-570ce1912361}",
+        "{c93fc2a8-3365-459e-b7f2-a101409a84d8}",
+        "{dd0a0ab0-db0e-42fe-b774-4bf65c29f823}",
+        "{a7649a66-35d9-41c9-9c80-0e22a6ca5465}",
+        "{e6cc5dee-7827-42f1-93a4-8513828f6fa5}"
+    ];
+    var regularParts = ["{3d16c826-078b-4309-bec7-28b2399e4fd1}","{c773071e-fb8f-4661-b9c5-05a5a9660d90}","{4468fa63-a5a9-47c9-9b2a-dc52988ff1fc}", "{bf0a67a3-688b-4863-8fb2-554cbe163b80}","{b8d84947-0bed-4a2b-89d8-8488aba213be}","{01278071-280e-41c7-91f4-e4813114d418}","{827fd52b-5080-4b15-a423-b92a130efec0}","{5d0722aa-c7f3-4a08-85c6-590ba3dcfde3}"];
 
+    // var lastUpdateTime  = 0;
+    // var timeCounter = 0;
+    // var updateConnected = false;
+    // var update = function(deltaTime) {
+    //     timeCounter += deltaTime;
+    //     if (timeCounter - lastUpdateTime > UPDATE_INTERVAL) {
+    //         for (var i=0; i<miniParts.length; i++) {
+    //             scaleTransformation(miniParts[i], regularParts[i],16);
+    //         }
+    //         lastUpdateTime = timeCounter;
+    //     }
+    // };
 
     var resetDemo4 = function() {
-
+        regularParts.forEach(function(id){
+            setVisiblity(id, false);
+        });
+        for (var i = 0; i<miniParts.length; i++) {
+            setPosRot(miniParts[i],MINIPARTS_DEFAULT_POS[i],MINIPARTS_DEFAULT_ROT[i]);
+        }
+        // if (updateConnected === true) {
+        //     lastUpdateTime = 0;
+        //     timeCounter = 0;
+        //     Script.update.disconnect(update);
+        //     updateConnected = false;
+        // }
     };
 
     // DEMO 3
@@ -66,7 +119,7 @@
     var headlights = null;
     var noMarkerEntityID = null;
 
-     var TOGGLE_STATE = 0; // 0: state where markers are shown, 1: state where headlights models are shown
+    var TOGGLE_STATE = 0; // 0: state where markers are shown, 1: state where headlights models are shown
     
     // toggle between showing headlights model vs marker elements
     // also toggle button text between play/pause
@@ -272,10 +325,13 @@
                 scaleTransformation(minilamps[0],largelamps[0],4);
                 scaleTransformation(minilamps[1],largelamps[1],4);
             } else if (message.demoID === 4) {
-                var i;
-                for (i=0; i<miniParts.length; i++) {
+                for (var i=0; i<miniParts.length; i++) {
                     scaleTransformation(miniParts[i], regularParts[i],16);
                 }
+                // if (updateConnected === false) {
+                //     Script.update.connect(update);
+                //     updateConnected = true;
+                // }
             }
         }
     };
@@ -295,6 +351,7 @@
         resetMarkers();
         deleteEntities();
         resetDemo3();
+        resetDemo4();
     });
 
     Controller.enableMapping(mappingName);
@@ -304,9 +361,11 @@
         print('clean up');
         Controller.disableMapping(mappingName);
         deleteEntities();
+        resetDemo4();
+        resetDemo3();
+        resetMarkers();
         Messages.unsubscribe(myChannel);
         Messages.messageReceived.disconnect(handleMessages);
-        //Script.update.disconnect(update);
     }
 
     //Script.update.connect(update);
