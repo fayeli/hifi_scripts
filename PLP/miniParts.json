@@ -1,0 +1,324 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-10T23:12:57Z",
+            "dimensions": {
+                "x": 0.27733460068702698,
+                "y": 0.11093749105930328,
+                "z": 0.0062500056810677052
+            },
+            "id": "{c93fc2a8-3365-459e-b7f2-a101409a84d8}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_roof_triangle.fbx",
+            "name": "Mini House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{7999f825-2734-4365-b311-d05c537876f1}",
+            "position": {
+                "x": -0.51216274499893188,
+                "y": 0.035579711198806763,
+                "z": 0.11192372441291809
+            },
+            "queryAACube": {
+                "scale": 0.29876524209976196,
+                "x": -35.637603759765625,
+                "y": -200.47657775878906,
+                "z": -15.601295471191406
+            },
+            "rotation": {
+                "w": -0.71256107091903687,
+                "x": -0.0075928927399218082,
+                "y": -0.7010195255279541,
+                "z": 0.028721291571855545
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-10T23:12:57Z",
+            "dimensions": {
+                "x": 0.27733460068702698,
+                "y": 0.11093749105930328,
+                "z": 0.0062500056810677052
+            },
+            "id": "{dd0a0ab0-db0e-42fe-b774-4bf65c29f823}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_roof_triangle.fbx",
+            "name": "Mini House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{7999f825-2734-4365-b311-d05c537876f1}",
+            "position": {
+                "x": -0.61177206039428711,
+                "y": 0.040032017976045609,
+                "z": 0.11906324326992035
+            },
+            "queryAACube": {
+                "scale": 0.29876524209976196,
+                "x": -35.737213134765625,
+                "y": -200.47212219238281,
+                "z": -15.594159126281738
+            },
+            "rotation": {
+                "w": 0.70181006193161011,
+                "x": -0.0090662501752376556,
+                "y": -0.7122502326965332,
+                "z": -0.0085203861817717552
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-11T23:25:40Z",
+            "dimensions": {
+                "x": 0.125,
+                "y": 0.125,
+                "z": 0.24374997615814209
+            },
+            "id": "{c452c5dc-4a63-41e5-a016-5842506a921e}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_Tsplit.fbx",
+            "name": "Mini House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{7999f825-2734-4365-b311-d05c537876f1}",
+            "position": {
+                "x": -0.29218623042106628,
+                "y": 0.044624973088502884,
+                "z": -0.063327997922897339
+            },
+            "queryAACube": {
+                "scale": 0.30110472440719604,
+                "x": -35.418788909912109,
+                "y": -200.46871948242188,
+                "z": -15.777710914611816
+            },
+            "rotation": {
+                "w": 0.010597061365842819,
+                "x": -0.0016797188436612487,
+                "y": 0.99991881847381592,
+                "z": 0.0049205799587070942
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-10T23:12:57Z",
+            "dimensions": {
+                "x": 0.31249988079071045,
+                "y": 0.12500014901161194,
+                "z": 0.31249997019767761
+            },
+            "id": "{a7649a66-35d9-41c9-9c80-0e22a6ca5465}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_roof.fbx",
+            "name": "Mini House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{7999f825-2734-4365-b311-d05c537876f1}",
+            "position": {
+                "x": -0.53554463386535645,
+                "y": 0.065418243408203125,
+                "z": -0.1604631096124649
+            },
+            "queryAACube": {
+                "scale": 0.45927926898002625,
+                "x": -35.741233825683594,
+                "y": -200.52700805664062,
+                "z": -15.953941345214844
+            },
+            "rotation": {
+                "w": -0.0013448898680508137,
+                "x": 0.0053373365662992001,
+                "y": -0.99876236915588379,
+                "z": -0.049512889236211777
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-11T23:21:18Z",
+            "dimensions": {
+                "x": 0.125,
+                "y": 0.12500002980232239,
+                "z": 0.125
+            },
+            "id": "{6bb0e77c-4460-41f1-adfe-41456ac8af02}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_corner.fbx",
+            "name": "Mini House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{7999f825-2734-4365-b311-d05c537876f1}",
+            "position": {
+                "x": 0.30994123220443726,
+                "y": 0.028377600014209747,
+                "z": -0.067246444523334503
+            },
+            "queryAACube": {
+                "scale": 0.21650636196136475,
+                "x": -34.774364471435547,
+                "y": -200.44267272949219,
+                "z": -15.739311218261719
+            },
+            "rotation": {
+                "w": 0.0050286031328141689,
+                "x": 0.99999117851257324,
+                "y": 0.0028938488103449345,
+                "z": 0.0012103038607165217
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-10T22:31:27Z",
+            "dimensions": {
+                "x": 0.125,
+                "y": 0.12500002980232239,
+                "z": 0.125
+            },
+            "id": "{3d16c826-078b-4309-bec7-28b2399e4fd1}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_corner.fbx",
+            "name": "Mini House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{7999f825-2734-4365-b311-d05c537876f1}",
+            "position": {
+                "x": 0.30231726169586182,
+                "y": 0.029394242912530899,
+                "z": 0.11173273622989655
+            },
+            "queryAACube": {
+                "scale": 0.21650636196136475,
+                "x": -34.781993865966797,
+                "y": -200.441650390625,
+                "z": -15.560332298278809
+            },
+            "rotation": {
+                "w": -0.0040090386755764484,
+                "x": -0.99980562925338745,
+                "y": -0.016901982948184013,
+                "z": -0.0086851511150598526
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-10T22:55:29Z",
+            "dimensions": {
+                "x": 0.0625,
+                "y": 0.12499998509883881,
+                "z": 0.0062500769272446632
+            },
+            "id": "{bf0a67a3-688b-4863-8fb2-554cbe163b80}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_portal.fbx",
+            "name": "Mini House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{7999f825-2734-4365-b311-d05c537876f1}",
+            "position": {
+                "x": -0.3672296404838562,
+                "y": 0.039946720004081726,
+                "z": 0.15863707661628723
+            },
+            "queryAACube": {
+                "scale": 2.2383027076721191,
+                "x": -36.364955902099609,
+                "y": -201.01173400878906,
+                "z": -16.981481552124023
+            },
+            "rotation": {
+                "w": -0.7108299732208252,
+                "x": 0.0015933674294501543,
+                "y": 0.70333582162857056,
+                "z": 0.0050539472140371799
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-11-11T23:27:51Z",
+            "dimensions": {
+                "x": 0.125,
+                "y": 0.12499998509883881,
+                "z": 0.006250081118196249
+            },
+            "id": "{d0b50733-87a3-4789-87e7-7266f729fa0a}",
+            "ignoreForCollisions": 1,
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_aperture.fbx",
+            "name": "Mini House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{7999f825-2734-4365-b311-d05c537876f1}",
+            "position": {
+                "x": -0.28014793992042542,
+                "y": 0.05084402859210968,
+                "z": 0.16277751326560974
+            },
+            "queryAACube": {
+                "scale": 2.8301942348480225,
+                "x": -36.195533752441406,
+                "y": -201.82157897949219,
+                "z": -16.744478225708008
+            },
+            "rotation": {
+                "w": -0.71983093023300171,
+                "x": -0.0059441365301609039,
+                "y": -0.69391739368438721,
+                "z": -0.017302175983786583
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "color": {
+                "blue": 107,
+                "green": 194,
+                "red": 155
+            },
+            "created": "2016-11-10T22:59:51Z",
+            "dimensions": {
+                "x": 0.40000000596046448,
+                "y": 0.039999999105930328,
+                "z": 0.40000000596046448
+            },
+            "id": "{7999f825-2734-4365-b311-d05c537876f1}",
+            "ignoreForCollisions": 1,
+            "name": "Mini Grassland",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 0.56709790229797363,
+                "x": -0.28354895114898682,
+                "y": -0.28354895114898682,
+                "z": -0.28354895114898682
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shape": "Cube",
+            "type": "Box"
+        }
+    ],
+    "Version": 64
+}

@@ -1,0 +1,308 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "created": "2016-11-10T22:24:54Z",
+            "dimensions": {
+                "x": 2,
+                "y": 1.9999997615814209,
+                "z": 0.10000129789113998
+            },
+            "id": "{4468fa63-a5a9-47c9-9b2a-dc52988ff1fc}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_aperture.fbx",
+            "name": "Regular House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{14b663d8-934d-430c-bcdb-f9a48ad552c4}",
+            "position": {
+                "x": -4.4823670387268066,
+                "y": 0.81350445747375488,
+                "z": 2.6044402122497559
+            },
+            "queryAACube": {
+                "scale": 2.8301942348480225,
+                "x": -40.955265045166016,
+                "y": -201.79281616210938,
+                "z": -24.037277221679688
+            },
+            "rotation": {
+                "w": -0.71983093023300171,
+                "x": -0.0059441365301609039,
+                "y": -0.69391739368438721,
+                "z": -0.017302174121141434
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":false}}"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-11T00:27:14Z",
+            "dimensions": {
+                "x": 2,
+                "y": 2,
+                "z": 3.8999996185302734
+            },
+            "id": "{5d0722aa-c7f3-4a08-85c6-590ba3dcfde3}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_Tsplit.fbx",
+            "name": "Regular House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{14b663d8-934d-430c-bcdb-f9a48ad552c4}",
+            "position": {
+                "x": -4.6749796867370605,
+                "y": 0.71399956941604614,
+                "z": -1.0132479667663574
+            },
+            "queryAACube": {
+                "scale": 4.8176755905151367,
+                "x": -42.141510009765625,
+                "y": -202.88616943359375,
+                "z": -28.648710250854492
+            },
+            "rotation": {
+                "w": 0.010597061365842819,
+                "x": -0.0016797188436612487,
+                "y": 0.99991881847381592,
+                "z": 0.0049205804243683815
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-10T22:29:16Z",
+            "dimensions": {
+                "x": 4.4373536109924316,
+                "y": 1.7749998569488525,
+                "z": 0.10000009089708328
+            },
+            "id": "{b8d84947-0bed-4a2b-89d8-8488aba213be}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_roof_triangle.fbx",
+            "name": "Regular House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{14b663d8-934d-430c-bcdb-f9a48ad552c4}",
+            "position": {
+                "x": -8.1946039199829102,
+                "y": 0.5692753791809082,
+                "z": 1.7907795906066895
+            },
+            "queryAACube": {
+                "scale": 4.7802438735961914,
+                "x": -45.642509460449219,
+                "y": -203.01197814941406,
+                "z": -25.826068878173828
+            },
+            "rotation": {
+                "w": -0.71256107091903687,
+                "x": -0.0075928927399218082,
+                "y": -0.7010195255279541,
+                "z": 0.028721291571855545
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":false}}"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-11T23:30:02Z",
+            "dimensions": {
+                "x": 1,
+                "y": 1.9999997615814209,
+                "z": 0.10000123083591461
+            },
+            "id": "{9124d909-5ed1-46fa-8239-163df1a41d6a}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_portal.fbx",
+            "name": "Regular House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{14b663d8-934d-430c-bcdb-f9a48ad552c4}",
+            "position": {
+                "x": -5.8756742477416992,
+                "y": 0.63914752006530762,
+                "z": 2.5381932258605957
+            },
+            "queryAACube": {
+                "scale": 2.2383027076721191,
+                "x": -42.052631378173828,
+                "y": -201.67118835449219,
+                "z": -23.8076171875
+            },
+            "rotation": {
+                "w": -0.7108299732208252,
+                "x": 0.0015933675458654761,
+                "y": 0.70333582162857056,
+                "z": 0.0050539467483758926
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":false}}"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-10T22:27:05Z",
+            "dimensions": {
+                "x": 4.4373536109924316,
+                "y": 1.7749998569488525,
+                "z": 0.10000009089708328
+            },
+            "id": "{01278071-280e-41c7-91f4-e4813114d418}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_roof_triangle.fbx",
+            "name": "Regular House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{14b663d8-934d-430c-bcdb-f9a48ad552c4}",
+            "position": {
+                "x": -9.7883529663085938,
+                "y": 0.64051228761672974,
+                "z": 1.9050118923187256
+            },
+            "queryAACube": {
+                "scale": 4.7802438735961914,
+                "x": -47.236259460449219,
+                "y": -202.94068908691406,
+                "z": -25.711887359619141
+            },
+            "rotation": {
+                "w": 0.70181006193161011,
+                "x": -0.0090662501752376556,
+                "y": -0.7122502326965332,
+                "z": -0.0085203861817717552
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":false}}"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-10T22:44:33Z",
+            "dimensions": {
+                "x": 4.9999980926513672,
+                "y": 2.000002384185791,
+                "z": 4.9999995231628418
+            },
+            "id": "{827fd52b-5080-4b15-a423-b92a130efec0}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_roof.fbx",
+            "name": "Regular House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{14b663d8-934d-430c-bcdb-f9a48ad552c4}",
+            "position": {
+                "x": -8.5687141418457031,
+                "y": 1.04669189453125,
+                "z": -2.5674097537994385
+            },
+            "queryAACube": {
+                "scale": 7.3484683036804199,
+                "x": -47.300582885742188,
+                "y": -203.81880187988281,
+                "z": -31.46839714050293
+            },
+            "rotation": {
+                "w": -0.0013448898680508137,
+                "x": 0.0053373361006379128,
+                "y": -0.99876236915588379,
+                "z": -0.049512889236211777
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":false}}"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-11T23:19:07Z",
+            "dimensions": {
+                "x": 2,
+                "y": 2.0000004768371582,
+                "z": 2
+            },
+            "id": "{9ed9e885-e857-4549-8fca-9be57a945a8a}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_corner.fbx",
+            "name": "Regular House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{14b663d8-934d-430c-bcdb-f9a48ad552c4}",
+            "position": {
+                "x": 4.9590597152709961,
+                "y": 0.45404160022735596,
+                "z": -1.0759431123733521
+            },
+            "queryAACube": {
+                "scale": 3.4641017913818359,
+                "x": -31.830692291259766,
+                "y": -202.46963500976562,
+                "z": -28.034317016601562
+            },
+            "rotation": {
+                "w": 0.0050286035984754562,
+                "x": 0.99999117851257324,
+                "y": 0.0028938488103449345,
+                "z": 0.0012103038607165217
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":false}}"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-10T22:42:22Z",
+            "dimensions": {
+                "x": 2,
+                "y": 2.0000004768371582,
+                "z": 2
+            },
+            "id": "{c773071e-fb8f-4661-b9c5-05a5a9660d90}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_corner.fbx",
+            "name": "Regular House Part",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{14b663d8-934d-430c-bcdb-f9a48ad552c4}",
+            "position": {
+                "x": 4.8370761871337891,
+                "y": 0.47030788660049438,
+                "z": 1.7877237796783447
+            },
+            "queryAACube": {
+                "scale": 3.4641017913818359,
+                "x": -31.952762603759766,
+                "y": -202.45327758789062,
+                "z": -25.170654296875
+            },
+            "rotation": {
+                "w": -0.0040090391412377357,
+                "x": -0.99980562925338745,
+                "y": -0.016901982948184013,
+                "z": -0.0086851511150598526
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":false}}"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 107,
+                "green": 194,
+                "red": 155
+            },
+            "created": "2016-11-10T22:55:29Z",
+            "dimensions": {
+                "x": 6.4000000953674316,
+                "y": 0.63999998569488525,
+                "z": 6.4000000953674316
+            },
+            "id": "{14b663d8-934d-430c-bcdb-f9a48ad552c4}",
+            "name": "Regular Grassland",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 9.0735664367675781,
+                "x": -4.5367832183837891,
+                "y": -4.5367832183837891,
+                "z": -4.5367832183837891
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shape": "Cube",
+            "type": "Box"
+        }
+    ],
+    "Version": 64
+}
