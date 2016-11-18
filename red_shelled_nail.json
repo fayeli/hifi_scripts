@@ -1,0 +1,70 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/Balloon/redBalloon_phys.obj",
+            "created": "2016-11-15T22:05:27Z",
+            "density": 100,
+            "description": "A happy red balloon",
+            "dimensions": {
+                "x": 0.31132945418357849,
+                "y": 0.24981997907161713,
+                "z": 0.27553665637969971
+            },
+            "gravity": {
+                "x": 0,
+                "y": -0.25,
+                "z": 0
+            },
+            "id": "{07cb8cdd-974c-4f6e-b3ad-5423c7eb6133}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "marketplaceID": "82fc43ae-c33e-4eb2-b05e-dfb3d34c159e",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/Balloon/redBalloon.fbx",
+            "name": "Red balloon",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{650cb3aa-320e-4d9a-b719-a21b1623e6a6}",
+            "position": {
+                "x": 0.000438690185546875,
+                "y": 0.011525720357894897,
+                "z": 0.0583953857421875
+            },
+            "queryAACube": {
+                "scale": 1.4550974369049072,
+                "x": 24.071979522705078,
+                "y": -0.38123416900634766,
+                "z": -40.677494049072266
+            },
+            "restitution": 0.99000000953674316,
+            "shapeType": "compound",
+            "type": "Model",
+            "userData": "{}"
+        },
+        {
+            "animation": {
+                "currentFrame": 7146.88671875,
+                "running": 1,
+                "url": "https://hifi-content.s3.amazonaws.com/jimi/snail/snail_Dance2.fbx"
+            },
+            "clientOnly": 0,
+            "created": "2016-11-15T23:06:37Z",
+            "dimensions": {
+                "x": 0.17798030376434326,
+                "y": 0.26962989568710327,
+                "z": 0.30998241901397705
+            },
+            "id": "{650cb3aa-320e-4d9a-b719-a21b1623e6a6}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/jimi/snail/snail_Dance2.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 0.44773471355438232,
+                "x": -0.22386735677719116,
+                "y": -0.22386735677719116,
+                "z": -0.22386735677719116
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        }
+    ],
+    "Version": 65
+}

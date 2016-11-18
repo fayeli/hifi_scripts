@@ -1,0 +1,10 @@
+SpeechRecognizer.addCommand(QString) function
+SpeechRecognizer.commandRecognized(QString) function
+SpeechRecognizer.deleteLater() function
+SpeechRecognizer.destroyed() function
+SpeechRecognizer.destroyed(QObject*) function
+SpeechRecognizer.enabledUpdated(bool) function
+SpeechRecognizer.objectName string
+SpeechRecognizer.objectNameChanged(QString) function
+SpeechRecognizer.removeCommand(QString) function
+SpeechRecognizer.setEnabled(bool) function

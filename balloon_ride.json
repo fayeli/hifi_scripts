@@ -1,0 +1,483 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:36:02Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{300efdba-4b08-4a0f-9ff2-917fb1720fd7}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": 0.010432660579681396,
+                "y": 5.3531913757324219,
+                "z": -1.0170499086380005
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 5.8265719413757324,
+                "y": -5.0135974884033203,
+                "z": -41.936325073242188
+            },
+            "rotation": {
+                "w": -4.1731263991096057e-06,
+                "x": -0.84102135896682739,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097622632980347
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:36:02Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{4a43e0ea-e0aa-48ed-919c-2ecf124c5483}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": -0.65268158912658691,
+                "y": 5.3531913757324219,
+                "z": -1.1267879009246826
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 5.6741938591003418,
+                "y": -5.0135974884033203,
+                "z": -41.281692504882812
+            },
+            "rotation": {
+                "w": -4.1731263991096057e-06,
+                "x": -0.84102135896682739,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097622632980347
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:33:51Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{5579680c-45b5-4b62-bc28-417541653c4b}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": 0.43004131317138672,
+                "y": 5.3531932830810547,
+                "z": 0.93252837657928467
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 4.1859736442565918,
+                "y": -5.0135993957519531,
+                "z": -43.070064544677734
+            },
+            "rotation": {
+                "w": -4.1731282180990092e-06,
+                "x": -0.84102141857147217,
+                "y": -2.1140900571481325e-05,
+                "z": -0.54097628593444824
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/Balloon/redBalloon_phys.obj",
+            "created": "2016-11-15T22:05:27Z",
+            "density": 100,
+            "description": "A happy red balloon",
+            "dimensions": {
+                "x": 4.9189152717590332,
+                "y": 6.5488810539245605,
+                "z": 4.9127283096313477
+            },
+            "gravity": {
+                "x": 0,
+                "y": -0.25,
+                "z": 0
+            },
+            "id": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "marketplaceID": "82fc43ae-c33e-4eb2-b05e-dfb3d34c159e",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/Balloon/redBalloon.fbx",
+            "name": "Red balloon",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 9.5508365631103516,
+                "x": -4.7754182815551758,
+                "y": -4.7754182815551758,
+                "z": -4.7754182815551758
+            },
+            "restitution": 0.99000000953674316,
+            "rotation": {
+                "w": 3.6344690812484259e-08,
+                "x": 0.83146959543228149,
+                "y": 2.4284744881697407e-08,
+                "z": -0.55557018518447876
+            },
+            "shapeType": "compound",
+            "type": "Model",
+            "userData": "{}"
+        },
+        {
+            "clientOnly": 0,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/Scansite/buddaCopper_phys.obj?3",
+            "created": "2016-11-15T22:07:39Z",
+            "description": "Courtesy of Scansite.com",
+            "dimensions": {
+                "x": 1.3420000076293945,
+                "y": 2.4161999225616455,
+                "z": 1.8759000301361084
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9,
+                "z": 0
+            },
+            "id": "{6f2b0b9f-c34c-4405-94ef-d06efe178ad0}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "marketplaceID": "0e725933-20b9-46bf-bc97-581f1ddef207",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/Scansite/buddhaReduced.fbx?1",
+            "name": "Copper Buddha",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": -0.063917219638824463,
+                "y": 5.9313511848449707,
+                "z": -0.059898063540458679
+            },
+            "queryAACube": {
+                "scale": 10.021072387695312,
+                "x": 10.280241012573242,
+                "y": -1.4681522846221924,
+                "z": -36.867507934570312
+            },
+            "rotation": {
+                "w": -2.7867034987092212e-14,
+                "x": -1.4901161193847656e-07,
+                "y": -4.3711242625477098e-08,
+                "z": 0.99999761581420898
+            },
+            "shapeType": "compound",
+            "type": "Model",
+            "userData": "{}"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:33:51Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{d051e41f-ed53-49b5-a6dd-cac85c3354f0}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": 0.65581405162811279,
+                "y": 5.3531913757324219,
+                "z": -0.72091829776763916
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 5.7999587059020996,
+                "y": -5.0135974884033203,
+                "z": -42.645904541015625
+            },
+            "rotation": {
+                "w": -4.1731263991096057e-06,
+                "x": -0.84102135896682739,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097622632980347
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:36:02Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{bb4146a1-a29b-403e-8918-49647fabf356}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": -0.74927091598510742,
+                "y": 5.3531913757324219,
+                "z": 1.0182507038116455
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 3.6554732322692871,
+                "y": -5.0135974884033203,
+                "z": -42.013324737548828
+            },
+            "rotation": {
+                "w": -4.1731263991096057e-06,
+                "x": -0.84102135896682739,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097622632980347
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:33:51Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{276807a5-653f-490a-af79-23c572c1d506}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": 1.0225695371627808,
+                "y": 5.3531913757324219,
+                "z": -0.22292602062225342
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 5.4802250862121582,
+                "y": -5.0135974884033203,
+                "z": -43.175315856933594
+            },
+            "rotation": {
+                "w": -4.1731263991096057e-06,
+                "x": -0.84102135896682739,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097622632980347
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:38:14Z",
+            "dimensions": {
+                "x": 5.1893682479858398,
+                "y": 5.8909854888916016,
+                "z": 5.1893682479858398
+            },
+            "id": "{2b39b4cf-cc56-4bda-bcbf-234b2fd1cf81}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/wearables/ahillakerHats/flowerHat.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": -0.14770558476448059,
+                "y": 7.2138352394104004,
+                "z": 0.15406779944896698
+            },
+            "queryAACube": {
+                "scale": 28.232341766357422,
+                "x": 0.94486141204833984,
+                "y": -10.613463401794434,
+                "z": -45.977615356445312
+            },
+            "rotation": {
+                "w": 3.6344690812484259e-08,
+                "x": -0.83146959543228149,
+                "y": -2.4284744881697407e-08,
+                "z": 0.55557018518447876
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:31:40Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{5e377470-5d8e-4a7c-8be0-b8c16fac80ef}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": 0.9236598014831543,
+                "y": 5.3531913757324219,
+                "z": 0.43140077590942383
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 4.8378548622131348,
+                "y": -5.0135974884033203,
+                "z": -43.334335327148438
+            },
+            "rotation": {
+                "w": -4.1731263991096057e-06,
+                "x": -0.84102135896682739,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097622632980347
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:36:02Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{22c88a6c-173c-4b66-b435-02223a9eaeb0}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": -1.1819188594818115,
+                "y": 5.3531913757324219,
+                "z": -0.088978171348571777
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 4.5128521919250488,
+                "y": -5.0135974884033203,
+                "z": -41.189891815185547
+            },
+            "rotation": {
+                "w": -4.1731263991096057e-06,
+                "x": -0.84102135896682739,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097622632980347
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:33:51Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{d88844ec-4277-46cb-a25f-4d61db080c77}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": -1.1002092361450195,
+                "y": 5.3531913757324219,
+                "z": 0.41752800345420837
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 4.0761704444885254,
+                "y": -5.0135974884033203,
+                "z": -41.459213256835938
+            },
+            "rotation": {
+                "w": -4.1731263991096057e-06,
+                "x": -0.84102135896682739,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097622632980347
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:36:02Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{be87bf0b-cbcc-451a-b0e9-6eea5f381439}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": -1.1335961818695068,
+                "y": 5.3531894683837891,
+                "z": -0.59699392318725586
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 5.0006899833679199,
+                "y": -5.0135955810546875,
+                "z": -41.040126800537109
+            },
+            "rotation": {
+                "w": -4.1731245801202022e-06,
+                "x": -0.84102129936218262,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097616672515869
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-15T22:36:02Z",
+            "dimensions": {
+                "x": 0.25285086035728455,
+                "y": 6.9099278450012207,
+                "z": 0.21729566156864166
+            },
+            "id": "{3cb628a7-064f-4580-8fa6-080225651c0c}",
+            "lastEditedBy": "{6cea0546-f3dc-4780-b48f-869c55ec5477}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{9f77e178-3700-49d7-8c26-baae1db4670c}",
+            "position": {
+                "x": -0.20069873332977295,
+                "y": 5.3531913757324219,
+                "z": 1.1598310470581055
+            },
+            "queryAACube": {
+                "scale": 20.753898620605469,
+                "x": 3.7345995903015137,
+                "y": -5.0135974884033203,
+                "z": -42.574321746826172
+            },
+            "rotation": {
+                "w": -4.1731263991096057e-06,
+                "x": -0.84102135896682739,
+                "y": -2.1140898752491921e-05,
+                "z": -0.54097622632980347
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        }
+    ],
+    "Version": 65
+}
