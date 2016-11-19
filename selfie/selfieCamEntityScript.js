@@ -4,7 +4,7 @@
 //
 
 (function(){ // BEGIN LOCAL SCOPE
-    print("selfieCam v0.6");
+    print("selfieCam v0.8");
     var _this;
     var myChannel = "Camera-to-Selfie-Channel";
     
@@ -18,6 +18,7 @@
             _this.entityID = entityID;
         },
         startEquip: function(id, params) {
+            print("start equip");
             var message = {
                 selfieCamEntityID: _this.entityID,
                 equipped: true
@@ -26,6 +27,7 @@
             Messages.sendMessage(myChannel, message);
         },
         releaseEquip: function(id, params) {
+            print("release equip");
             Camera.setModeString("first person");
             var message = {
                 equipped: false

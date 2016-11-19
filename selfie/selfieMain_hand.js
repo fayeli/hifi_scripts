@@ -5,7 +5,6 @@
 //
 
 (function(){ // BEGIN LOCAL SCOPE
-    var LENS_ID = "{d6a07884-e4d5-4a08-a4b5-50966b8257cc}";
     var SELFIECAMERA_ID = null;
     var equippedCamera = false;
     var cameraChannel = "Camera-to-Selfie-Channel";
@@ -21,12 +20,12 @@
         if (SELFIECAMERA_ID === null){
             return;
         }
-        print("selfie snap independent mode");
-        Camera.setModeString("independent");
-        var props = Entities.getEntityProperties(LENS_ID);
-        print("position: " + JSON.stringify(props.position) + ", rotation: " + JSON.stringify(props.rotation));
-        Camera.setPosition(props.position);
-        Camera.setOrientation(props.rotation);
+        print("selfie snap");
+        Camera.setModeString("entity");
+
+        Camera.setPosition(camPosition);
+        Camera.setOrientation(camOrientation);
+
         var message = {
            testing: 1
         };
@@ -40,7 +39,7 @@
     Controller.enableMapping(MAPPING_NAME);
 
     var handleMessages = function(channel, message, sender) {
-        if (channel === cameraChannel && sender === MyAvatar.sessionUUID) {
+        if (channel === cameraChannel) {
             print("recieved camera message: " + JSON.stringify(message));
             message = JSON.parse(message);
             if (message.hasOwnProperty("selfieCamEntityID")) {
