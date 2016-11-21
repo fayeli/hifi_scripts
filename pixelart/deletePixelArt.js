@@ -10,6 +10,8 @@
     results.forEach(function(id){
         var props = Entities.getEntityProperties(id);
         if (props.name === "pixel"){
+            props.locked = false;
+            Entities.editEntity(id, props);
             Entities.deleteEntity(id);
         }
     });
