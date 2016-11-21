@@ -1,0 +1,247 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Magic Spells</title>
+    <script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+    <script>
+      var EventBridge;
+      var listeners = {};
+      var systemPath = window.location.toString();
+      systemPath = systemPath.substr(systemPath.indexOf('#') + 1);
+
+      var appendStyleSheet = function(url) {
+        var link = document.createElement('link');
+        link.href = url;
+        link.type = 'text/css';
+        link.rel = 'stylesheet';
+        link.media = 'screen,print';
+
+        document.getElementsByTagName('head')[0].appendChild(link);
+      };
+
+      appendStyleSheet(systemPath + 'html/css/edit-style.css');
+
+      var openEventBridge = function(callback) {
+        var WebChannel = new QWebChannel(qt.webChannelTransport, function (channel) {
+            EventBridge = WebChannel.objects.eventBridgeWrapper.eventBridge;
+            callback();
+        });
+      };
+
+      var emit = function (eventType, data) {
+        data = data || {};
+        data.type = eventType;
+        EventBridge.emitWebEvent(JSON.stringify(data));
+      };
+
+      function loaded () {
+        openEventBridge(function () {
+          EventBridge.scriptEventReceived.connect(function (data) {
+            data = JSON.parse(data);
+            if (listeners[data.type]) {
+              listeners[data.type](data);
+            }
+          });
+
+          emit('loaded');
+        });
+
+        // Disable right-click context menu which is not visible in the HMD and makes it seem like the app has locked
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+        }, false);
+      }
+
+      var playResultAnimation = function (element, animation) {
+        element.classList.remove('success-animation');
+        element.classList.remove('failure-animation');
+        void element.offsetWidth;
+        element.classList.add(animation);
+      };
+
+      listeners.init = function (event) {
+        var checkbox = document.getElementById('property-enabled');
+        checkbox.checked = event.enabled;
+        setEnabledState(event.enabled);
+
+        var spellUrls = event.spellUrls;
+        for (spellName in spellUrls) {
+          var element = document.getElementById(spellName);
+          if (element) {
+            element.value = spellUrls[spellName];
+          }
+        }
+
+        onUpdate();
+      };
+
+      listeners.updateComplete = function (event) {
+        var results = event.results;
+
+        // HACK: works around a weird css animation bug
+        // where the last element doesn't start the animation
+        // until the window is shown.
+        results['hack'] = true;
+
+        for (key in results) {
+          var label = document.getElementById(key + '-label');
+          if (results[key] === 'success') {
+            playResultAnimation(label, 'success-animation');
+          } else {
+            playResultAnimation(label, 'failure-animation');
+          }
+        }
+
+        isUpdating = false;
+      };
+
+      var requestFile = function (key, url) {
+        return new Promise(function (resolve, reject) {
+          if (!url) {
+            resolve({key: key});
+            return;
+          }
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', url, true);
+          xhr.onload = function () {
+            resolve({
+              key: key,
+              url: url,
+              data: xhr.responseText
+            });
+          };
+          xhr.onerror = function () {
+            resolve({key: key});
+          };
+          xhr.send();
+        });
+      };
+
+      var isUpdating = false;
+
+      var onUpdate = function () {
+        if (isUpdating) { return; }
+        isUpdating = true;
+
+        var promises = [];
+        var inputs = document.getElementsByClassName('spell-url');
+
+        for (var i = 0; i < inputs.length; i++) {
+          var inputElement = inputs.item(i);
+          promises.push(requestFile(inputElement.id, inputElement.value));
+        }
+
+        Promise.all(promises)
+          .then(function (results) {
+            emit('update', {
+              spells: results
+            });
+          })
+          .catch(function (error) {
+            console.log(error);
+            isUpdating = false;
+          });
+      };
+
+      var setEnabledState = function (isEnabled) {
+         var inputs = document.getElementsByTagName('input');
+
+        for (var i = 0; i < inputs.length; i++) {
+          var inputElement = inputs.item(i);
+          if (inputElement.id !== 'property-enabled') {
+            inputElement.disabled = !isEnabled;
+          }
+        }
+      };
+
+      var onEnable = function (event) {
+        var isEnabled = event.target.checked;
+        
+        setEnabledState(isEnabled);
+
+        emit('enable', {
+          value: isEnabled
+        });
+      };
+    
+    </script>
+
+    <style>
+      .shape {
+        font-size: 18pt;
+      }
+
+      #update-container {
+        width: 100%;
+        text-align: center;
+        padding: 10pt 0 0 0;
+      }
+
+      .success-animation {
+        -webkit-animation: success 5s;
+      }
+
+      .failure-animation {
+        -webkit-animation: failure 5s;
+      }
+
+      @-webkit-keyframes success {
+        0% {
+          color: #00f000;
+        }
+        100% {
+          color: #afafaf;
+        }
+      }
+
+      @-webkit-keyframes failure {
+        0% {
+          color: #f00000;
+        }
+        100% {
+          color: #afafaf;
+        }
+      }
+    </style>
+  </head>
+  <body onload='loaded();'>
+    <div>
+      <div id="properties-header">
+        <div id="type" class="property value">
+          <span id="type-icon"></span><label id="property-type"><span>The Spell Book</span></label>
+        </div>
+        <div class="property checkbox">
+          <input type="checkbox" id="property-enabled" checked="true" onclick="onEnable(event);">
+          <label for="property-enabled">&nbsp;Enabled</label>
+        </div>
+      </div>
+      <br />
+      <p>
+        Hold down the right trigger and trace a shape to cast that spell.
+      </p>
+      <hr />
+
+      <div class="property url">
+          <label id="circle-label"><span class="shape">○</span> Circle Script URL</label>
+          <input class="spell-url" type="text" id="circle">
+      </div>
+     
+      <div class="property url">
+          <label id="square-label"><span class="shape">□</span> Square Script URL</label>
+          <input class="spell-url" type="text" id="square">
+      </div>
+
+      <div class="property url">
+          <label id="triangle-label"><span class="shape">△</span> Triangle Script URL</label>
+          <input class="spell-url" type="text" id="triangle">
+      </div>
+
+      <div id="update-container">
+        <input type="button" id="button-update" value="Update" onclick="onUpdate();" />
+      </div>
+
+      <!-- This hack label gets the result animations applied -->
+      <label id="hack-label"></label>
+    </div>
+  </body>
+</html>
