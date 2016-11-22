@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Photo Booth</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/edit-style.css">
+    <script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+    
+    <script>
+      var EventBridge;
+      var openEventBridge = function (callback) {
+        var WebChannel = new QWebChannel(qt.webChannelTransport, function (channel) {
+            EventBridge = WebChannel.objects.eventBridgeWrapper.eventBridge;
+            callback();
+        });
+      };
+
+      var emit = function (eventType, data) {
+        data = data || {};
+        data.type = eventType;
+        EventBridge.emitWebEvent(JSON.stringify(data));
+      };
+
+      function loaded () {
+        openEventBridge(function () {
+          emit("onLoad", {name: "faye"});
+        });
+      }
+    </script>
+
+    <style>
+    </style>
+  </head>
+  <body onload="loaded()">
+    <div>
+      <div class="property url">
+        <label>Model URL</label>
+        <input type="text"></input>
+      </div>
+      <div class="property dropdown">
+        <label>Camera</label>
+        <select>
+          <option>Main Camera</option>
+          <option>Side Camera - Right</option>
+          <option>Side Camera - Left</option>
+        </select>
+      </div>
+      <div class="property dropdown">
+        <label>Lighting Preset</label>
+        <select>
+          <option>Default Lighting</option>
+          <option>Sam's Favourite Light</option>
+          <option>Alan's Light Magic</option>
+        </select>
+      </div>
+      <div class="property">
+        <input type="button" class="blue" value="Take Picture">
+      </div>
+    </div>
+  </body>
+</html>
