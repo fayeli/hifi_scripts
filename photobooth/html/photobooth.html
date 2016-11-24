@@ -26,11 +26,15 @@
           
           var elCamera = document.getElementById("property-camera");
           var elLightingPreset = document.getElementById("property-lighting-preset");
+          var elPictureButton = document.getElementById("picture-button");
           elCamera.addEventListener('change', function() {
               emit("onSelectCamera", {value: this.value});
           });
           elLightingPreset.addEventListener('change', function() {
               emit("onSelectLightingPreset", {value: "faye"});
+          });
+          elPictureButton.addEventListener('click', function() {
+              emit("onClickPictureButton", {value: "faye"});
           });
 
         });
@@ -146,7 +150,7 @@
         </select>
       </div>
       <div class="property">
-        <input type="button" class="blue" value="Take Picture">
+        <input type="button" class="blue" id="picture-button" value="Take Picture">
       </div>
     </div>
   </body>

@@ -1,11 +1,18 @@
 (function () {
+    var SNAPSHOT_DELAY = 500; // 500ms
     var PHOTOBOOTH_WINDOW_HTML_URL = Script.resolvePath("./html/photobooth.html");
     var PHOTOBOOTH_SETUP_JSON_URL = Script.resolvePath("./photoboothSetup.json");
+    var toolbar = Toolbars.getToolbar("com.highfidelity.interface.toolbar.system");
 
     var PhotoBooth = {};
     PhotoBooth.init = function () {
         var success = Clipboard.importEntities(PHOTOBOOTH_SETUP_JSON_URL);
-        var spawnLocation = MyAvatar.position;
+        var frontFactor = 10;
+        var frontUnitVec = Vec3.normalize(Quat.getFront(MyAvatar.orientation));
+        var frontOffset = Vec3.multiply(frontUnitVec,frontFactor);
+        var rightFactor = 3;
+        var rightUnitVec = Vec3.normalize(Quat.getRight(MyAvatar.orientation));
+        var spawnLocation = Vec3.sum(Vec3.sum(MyAvatar.position,frontOffset),rightFactor);
         if (success) {
             this.pastedEntityIDs = Clipboard.pasteEntities(spawnLocation);
             this.findCameraEntities();
@@ -61,6 +68,19 @@
             if (!event.hasOwnProperty("value")){
                 return;
             }
+        };
+
+        photoboothWindowListener.onClickPictureButton = function (event) {
+            print("clicked picture button");
+            // hide HUD tool bar
+            toolbar.writeProperty("visible", false);
+            // hide Overlays (such as Running Scripts or other Dialog UI)
+            Menu.setIsOptionChecked("Overlays", false);
+            // giving a delay here before snapshotting so that there is time to hide toolbar and other UIs
+            // void WindowScriptingInterface::takeSnapshot(bool notify, bool includeAnimated, float aspectRatio)
+            Script.setTimeout(function () {
+                Window.takeSnapshot(false, false, 1.91);
+            }, SNAPSHOT_DELAY);
         };
 
         var photoboothWindow = new OverlayWebWindow({
