@@ -8,18 +8,18 @@
                 "green": 245,
                 "red": 245
             },
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
                 "x": 0.05000000074505806,
                 "y": 0.05000000074505806,
                 "z": 0.0099999997764825821
             },
-            "id": "{a18fd5a8-aeb1-4fa3-b46f-51982fe01e53}",
+            "id": "{4a7b6258-ccc5-472e-ba41-dfd224115bee}",
             "ignoreForCollisions": 1,
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
             "name": "Photo Booth Camera:Right Camera",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
-            "parentID": "{3c58b7d5-aa3f-4de0-ac08-a7e4a2515a6d}",
+            "parentID": "{838ac5ff-5e06-4768-9389-9796577c5bc5}",
             "position": {
                 "x": -0.022934332489967346,
                 "y": -0.25898283720016479,
@@ -27,9 +27,9 @@
             },
             "queryAACube": {
                 "scale": 0.071414284408092499,
-                "x": 42.690505981445312,
-                "y": -198.6522216796875,
-                "z": -25.678178787231445
+                "x": 15.183169364929199,
+                "y": -192.90565490722656,
+                "z": 25.429607391357422
             },
             "rotation": {
                 "w": -7.62939453125e-05,
@@ -49,18 +49,18 @@
                 "green": 245,
                 "red": 245
             },
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
                 "x": 0.05000000074505806,
                 "y": 0.05000000074505806,
                 "z": 0.0099999997764825821
             },
-            "id": "{a2bb018d-3167-4927-b2a2-1d55dbb60953}",
+            "id": "{81ae005c-4738-4359-8860-98d00c8dd3a4}",
             "ignoreForCollisions": 1,
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
             "name": "Photo Booth Camera:Main Camera",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
-            "parentID": "{f8d6117b-9fc7-4378-b8b1-c6a155ca43c0}",
+            "parentID": "{d5d16926-6f05-4411-931a-3ff8c897d728}",
             "position": {
                 "x": -0.021826114505529404,
                 "y": -0.25215747952461243,
@@ -68,9 +68,9 @@
             },
             "queryAACube": {
                 "scale": 0.071414284408092499,
-                "x": 44.266029357910156,
-                "y": -199.72370910644531,
-                "z": -26.291460037231445
+                "x": 16.758693695068359,
+                "y": -193.97714233398438,
+                "z": 24.816326141357422
             },
             "rotation": {
                 "w": -1.52587890625e-05,
@@ -90,18 +90,18 @@
                 "green": 245,
                 "red": 245
             },
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
                 "x": 0.05000000074505806,
                 "y": 0.05000000074505806,
                 "z": 0.0099999997764825821
             },
-            "id": "{219df21c-175a-4602-861a-c4a0b07de3e3}",
+            "id": "{77817ac3-0862-46b6-8648-fdb8b855e4cb}",
             "ignoreForCollisions": 1,
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
             "name": "Photo Booth Camera:Left Camera",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
-            "parentID": "{46bb41e2-ee0f-4e2b-b115-99173408e3b9}",
+            "parentID": "{2fc83747-6652-4fd1-bf21-c3d44ad610ea}",
             "position": {
                 "x": -0.021829158067703247,
                 "y": -0.25214886665344238,
@@ -109,9 +109,9 @@
             },
             "queryAACube": {
                 "scale": 0.071414284408092499,
-                "x": 45.694850921630859,
-                "y": -199.14466857910156,
-                "z": -25.699750900268555
+                "x": 18.187423706054688,
+                "y": -193.3980712890625,
+                "z": 25.408010482788086
             },
             "rotation": {
                 "w": -1.52587890625e-05,
@@ -126,7 +126,7 @@
         {
             "clientOnly": 0,
             "collisionless": 1,
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
                 "x": 0.43360000848770142,
                 "y": 0.65679997205734253,
@@ -137,9 +137,9 @@
                 "y": -9,
                 "z": 0
             },
-            "id": "{f8d6117b-9fc7-4378-b8b1-c6a155ca43c0}",
+            "id": "{d5d16926-6f05-4411-931a-3ff8c897d728}",
             "ignoreForCollisions": 1,
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
             "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/cameras/35mm%20camera.fbx?232222",
             "name": "35 MM SLR by Lazybones",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
@@ -168,7 +168,7 @@
         {
             "clientOnly": 0,
             "collisionless": 1,
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
                 "x": 0.43360000848770142,
                 "y": 0.65679997205734253,
@@ -179,9 +179,9 @@
                 "y": -9,
                 "z": 0
             },
-            "id": "{3c58b7d5-aa3f-4de0-ac08-a7e4a2515a6d}",
+            "id": "{838ac5ff-5e06-4768-9389-9796577c5bc5}",
             "ignoreForCollisions": 1,
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
             "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/cameras/35mm%20camera.fbx?232222",
             "name": "35 MM SLR by Lazybones",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
@@ -209,40 +209,8 @@
         },
         {
             "clientOnly": 0,
-            "created": "2016-11-23T00:37:49Z",
-            "dimensions": {
-                "x": 0.32433551549911499,
-                "y": 0.3681865930557251,
-                "z": 0.32433551549911499
-            },
-            "id": "{6cfe5d92-9c67-40b4-9dc7-e29abdc93ae8}",
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
-            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/wearables/ahillakerHats/flowerHat.fbx",
-            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
-            "position": {
-                "x": 2.6150627136230469,
-                "y": 1.79742431640625,
-                "z": 3.6161441802978516
-            },
-            "queryAACube": {
-                "scale": 0.58817380666732788,
-                "x": 2.3209757804870605,
-                "y": 1.5033373832702637,
-                "z": 3.3220572471618652
-            },
-            "rotation": {
-                "w": 0.54460978507995605,
-                "x": -1.52587890625e-05,
-                "y": 0.83865106105804443,
-                "z": -1.52587890625e-05
-            },
-            "shapeType": "static-mesh",
-            "type": "Model"
-        },
-        {
-            "clientOnly": 0,
             "collisionless": 1,
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
                 "x": 0.43360000848770142,
                 "y": 0.65679997205734253,
@@ -253,28 +221,28 @@
                 "y": -9,
                 "z": 0
             },
-            "id": "{46bb41e2-ee0f-4e2b-b115-99173408e3b9}",
+            "id": "{2fc83747-6652-4fd1-bf21-c3d44ad610ea}",
             "ignoreForCollisions": 1,
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
             "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/cameras/35mm%20camera.fbx?232222",
             "name": "35 MM SLR by Lazybones",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
             "position": {
-                "x": 4.0442352294921875,
+                "x": 4.0442371368408203,
                 "y": 2.7116241455078125,
                 "z": 1.869842529296875
             },
             "queryAACube": {
                 "scale": 0.89280432462692261,
-                "x": 3.5978331565856934,
+                "x": 3.5978350639343262,
                 "y": 2.2652220726013184,
                 "z": 1.4234403371810913
             },
             "rotation": {
-                "w": 0.92205691337585449,
-                "x": 0.056290507316589355,
-                "y": -0.38222324848175049,
-                "z": 0.023270010948181152
+                "w": 0.92196536064147949,
+                "x": 0.056198954582214355,
+                "y": -0.38243687152862549,
+                "z": 0.023208975791931152
             },
             "scriptTimestamp": 1479859451129,
             "shapeType": "simple-hull",
@@ -283,26 +251,27 @@
         },
         {
             "clientOnly": 0,
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
-                "x": 0.94996356964111328,
-                "y": 1.0082904100418091,
-                "z": 0.94996339082717896
+                "x": 1.0173832178115845,
+                "y": 1.1924686431884766,
+                "z": 1.0164898633956909
             },
-            "id": "{50627480-9ebf-4904-8116-abfdc23f59a1}",
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
-            "modelURL": "atp:/jimi/tutorialroom/table3.fbx",
+            "id": "{541efd7c-7e5f-40d5-b6ed-8e195afe9197}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/alan/dev/Test-Object-7-metal.fbx",
+            "name": "Photo Booth Model:Default",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
             "position": {
-                "x": 2.6014022827148438,
-                "y": 1.1064605712890625,
-                "z": 3.6265125274658203
+                "x": 2.5627613067626953,
+                "y": 1.8016510009765625,
+                "z": 3.6444053649902344
             },
             "queryAACube": {
-                "scale": 1.6797353029251099,
-                "x": 1.7615346908569336,
-                "y": 0.26659291982650757,
-                "z": 2.7866449356079102
+                "scale": 1.8682348728179932,
+                "x": 1.6286438703536987,
+                "y": 0.86753356456756592,
+                "z": 2.7102880477905273
             },
             "rotation": {
                 "w": 1,
@@ -315,77 +284,41 @@
         },
         {
             "clientOnly": 0,
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:44:49Z",
             "dimensions": {
-                "x": 1.3296165466308594,
-                "y": 2.3939504623413086,
-                "z": 2.4247901439666748
+                "x": 1.1263399124145508,
+                "y": 0.55930328369140625,
+                "z": 1.0736434459686279
             },
-            "id": "{14eaba8a-b661-4f39-ab49-0b40f645e1ed}",
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
-            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/basketball/hoop.fbx",
-            "name": "Photo Booth Stand - Left",
+            "id": "{5a286dd0-d6d8-4ed9-a579-1c0587b63fbc}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
+            "modelURL": "atp:/jimi/tutorialroom/table3.fbx",
+            "name": "Photo Booth Stool",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
             "position": {
-                "x": 4.8861465454101562,
-                "y": 1.8541412353515625,
-                "z": 0.99666976928710938
+                "x": 2.5654888153076172,
+                "y": 0.9199371337890625,
+                "z": 3.7379035949707031
             },
             "queryAACube": {
-                "scale": 3.6576614379882812,
-                "x": 3.0573158264160156,
-                "y": 0.025310516357421875,
-                "z": -0.83216094970703125
-            },
-            "rotation": {
-                "w": 0.38268101215362549,
-                "x": -4.57763671875e-05,
-                "y": 0.92385745048522949,
-                "z": -1.52587890625e-05
+                "scale": 1.6535331010818481,
+                "x": 1.7387223243713379,
+                "y": 0.093170583248138428,
+                "z": 2.9111371040344238
             },
             "shapeType": "static-mesh",
             "type": "Model"
         },
         {
             "clientOnly": 0,
-            "color": {
-                "blue": 201,
-                "green": 252,
-                "red": 255
-            },
-            "created": "2016-11-23T00:37:49Z",
-            "dimensions": {
-                "x": 8.0457677841186523,
-                "y": 1.3176910877227783,
-                "z": 8.3670587539672852
-            },
-            "id": "{62e2e3c9-873f-4ea1-a14f-62e7f668b046}",
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
-            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
-            "position": {
-                "x": 2.4956779479980469,
-                "y": 0,
-                "z": 2.2540569305419922
-            },
-            "queryAACube": {
-                "scale": 11.682394981384277,
-                "x": -3.3455195426940918,
-                "y": -5.8411974906921387,
-                "z": -3.5871405601501465
-            },
-            "shape": "Cube",
-            "type": "Box"
-        },
-        {
-            "clientOnly": 0,
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
                 "x": 1.3296165466308594,
                 "y": 3.0967316627502441,
                 "z": 2.4247901439666748
             },
-            "id": "{80becb5a-1f42-46a3-97af-9c9013a191dd}",
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
+            "id": "{a0cd3304-e7e3-4522-8fbb-c4cf8d234eca}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
             "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/basketball/hoop.fbx",
             "name": "Photo Booth Stand Right",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
@@ -401,9 +334,9 @@
                 "z": -1.1014649868011475
             },
             "rotation": {
-                "w": -0.37483787536621094,
+                "w": -0.37505149841308594,
                 "x": -1.52587890625e-05,
-                "y": 0.92709243297576904,
+                "y": 0.92700088024139404,
                 "z": 1.52587890625e-05
             },
             "shapeType": "static-mesh",
@@ -411,14 +344,83 @@
         },
         {
             "clientOnly": 0,
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
+            "dimensions": {
+                "x": 0.6701958179473877,
+                "y": 3.0894412994384766,
+                "z": 6.0362682342529297
+            },
+            "id": "{f3c937d3-4493-41a1-8928-0cae4c4ce19f}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
+            "modelURL": "http://mpassets.highfidelity.com/af67a13f-7610-49b4-9723-b284fb8ff37a-v1/Dungeon-Wall-6X3.fbx",
+            "name": "Photo Booth Backdrop",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.4534530639648438,
+                "y": 2.0988006591796875,
+                "z": 5.0006065368652344
+            },
+            "queryAACube": {
+                "scale": 6.8139815330505371,
+                "x": -0.9535377025604248,
+                "y": -1.3081901073455811,
+                "z": 1.5936157703399658
+            },
+            "rotation": {
+                "w": -0.70128941535949707,
+                "x": 1.52587890625e-05,
+                "y": 0.71288621425628662,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "box",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "color": {
+                "blue": 201,
+                "green": 252,
+                "red": 255
+            },
+            "created": "2016-11-29T23:20:47Z",
+            "dimensions": {
+                "x": 8.0457677841186523,
+                "y": 1.3176910877227783,
+                "z": 8.4534158706665039
+            },
+            "id": "{7e4f4bed-a47b-449f-acb2-cb0410847e84}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.4956779479980469,
+                "y": 0,
+                "z": 2.2972354888916016
+            },
+            "queryAACube": {
+                "scale": 11.744400024414062,
+                "x": -3.3765220642089844,
+                "y": -5.8722000122070312,
+                "z": -3.5749645233154297
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shape": "Cube",
+            "type": "Box"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
                 "x": 1.3296165466308594,
                 "y": 1.5271610021591187,
                 "z": 2.4247901439666748
             },
-            "id": "{a6755a9b-1621-4f33-8ec4-d0eb950d2df3}",
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
+            "id": "{891fb90c-ca13-46fb-b21e-0da6063ad07b}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
             "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/basketball/hoop.fbx",
             "name": "Photo Booth Stand Middle",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
@@ -444,35 +446,35 @@
         },
         {
             "clientOnly": 0,
-            "created": "2016-11-23T00:37:49Z",
+            "created": "2016-11-29T23:20:47Z",
             "dimensions": {
-                "x": 0.6701958179473877,
-                "y": 3.0894412994384766,
-                "z": 6.0362682342529297
+                "x": 1.3296165466308594,
+                "y": 2.3939504623413086,
+                "z": 2.4247901439666748
             },
-            "id": "{feda1bfa-28c4-4055-a277-2cf85b9543e3}",
-            "lastEditedBy": "{cddb3b63-b0ca-4e45-b1b0-9a0bc0ee3113}",
-            "modelURL": "http://mpassets.highfidelity.com/af67a13f-7610-49b4-9723-b284fb8ff37a-v1/Dungeon-Wall-6X3.fbx",
-            "name": "Photo Booth Backdrop",
+            "id": "{3773db2f-5bd8-4d23-a3cc-53ffcc7c30e9}",
+            "lastEditedBy": "{d74cd0af-624e-4d3d-a930-f6cb7e47667d}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/basketball/hoop.fbx",
+            "name": "Photo Booth Stand - Left",
             "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
             "position": {
-                "x": 2.4534530639648438,
-                "y": 2.0988006591796875,
-                "z": 5.0006065368652344
+                "x": 4.8861484527587891,
+                "y": 1.8541412353515625,
+                "z": 0.99666976928710938
             },
             "queryAACube": {
-                "scale": 6.8139815330505371,
-                "x": -0.9535377025604248,
-                "y": -1.3081901073455811,
-                "z": 1.5936157703399658
+                "scale": 3.6576614379882812,
+                "x": 3.0573177337646484,
+                "y": 0.025310516357421875,
+                "z": -0.83216094970703125
             },
             "rotation": {
-                "w": -0.70113682746887207,
-                "x": 1.52587890625e-05,
-                "y": 0.71303880214691162,
+                "w": 0.38268101215362549,
+                "x": -4.57763671875e-05,
+                "y": 0.92385745048522949,
                 "z": -1.52587890625e-05
             },
-            "shapeType": "box",
+            "shapeType": "static-mesh",
             "type": "Model"
         }
     ],

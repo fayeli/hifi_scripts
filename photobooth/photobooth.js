@@ -15,21 +15,37 @@
         var spawnLocation = Vec3.sum(Vec3.sum(MyAvatar.position,frontOffset),rightFactor);
         if (success) {
             this.pastedEntityIDs = Clipboard.pasteEntities(spawnLocation);
-            this.findCameraEntities();
+            this.processPastedEntities();
+
         }
     };
 
-    PhotoBooth.findCameraEntities = function () {
-        var results = {};
+    PhotoBooth.processPastedEntities = function () {
+        var cameraResults = {};
+        var modelResult;
         this.pastedEntityIDs.forEach(function(id) {
             var props = Entities.getEntityProperties(id);
             var parts = props["name"].split(":");
             if (parts[0] === "Photo Booth Camera") {
-                results[parts[1]] = id;
+                cameraResults[parts[1]] = id;
+            }
+            if (parts[0] === "Photo Booth Model") {
+                modelResult = id;
             }
         });
-        print(JSON.stringify(results));
-        this.cameraEntities = results;
+        print(JSON.stringify(cameraResults));
+        print(JSON.stringify(modelResult));
+        this.cameraEntities = cameraResults;
+        this.modelEntityID = modelResult;
+    };
+
+    // replace the model in scene with new model
+    PhotoBooth.changeModel = function (newModelURL) {
+        // TODO: scale dimension correctly
+        var newProps = {
+            modelURL: newModelURL
+        };
+        Entities.editEntity(this.modelEntityID, newProps);
     };
 
     PhotoBooth.destroy = function () {
@@ -76,13 +92,25 @@
             toolbar.writeProperty("visible", false);
             // hide Overlays (such as Running Scripts or other Dialog UI)
             Menu.setIsOptionChecked("Overlays", false);
+            // hide mouse cursor
+            Reticle.visible = false;
             // giving a delay here before snapshotting so that there is time to hide toolbar and other UIs
             // void WindowScriptingInterface::takeSnapshot(bool notify, bool includeAnimated, float aspectRatio)
             Script.setTimeout(function () {
                 Window.takeSnapshot(false, false, 1.91);
+                // show hidden items after snapshot is taken
+                toolbar.writeProperty("visible", true);
+                Menu.setIsOptionChecked("Overlays", true);
+                // unknown issue: somehow we don't need to reset cursor to visible in script and the mouse still returns after snapshot
+                // Reticle.visible = true;
             }, SNAPSHOT_DELAY);
         };
 
+        photoboothWindowListener.onClickReloadModelButton = function (event) {
+            print("clicked reload model button " + event.value);
+            PhotoBooth.changeModel(event.value);
+        };
+        
         var photoboothWindow = new OverlayWebWindow({
           title: 'Photo Booth',
           source: PHOTOBOOTH_WINDOW_HTML_URL,
@@ -101,6 +129,7 @@
     main();
     
     function cleanup() {
+        Camera.mode = "first person";
         PhotoBooth.destroy();
     }
     Script.scriptEnding.connect(cleanup);
