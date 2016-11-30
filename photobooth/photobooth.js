@@ -3,6 +3,7 @@
     var PHOTOBOOTH_WINDOW_HTML_URL = Script.resolvePath("./html/photobooth.html");
     var PHOTOBOOTH_SETUP_JSON_URL = Script.resolvePath("./photoboothSetup.json");
     var toolbar = Toolbars.getToolbar("com.highfidelity.interface.toolbar.system");
+    var MODEL_BOUNDING_BOX_DIMENSIONS = {x: 1.0174,y: 1.1925,z: 1.0165};
 
     var PhotoBooth = {};
     PhotoBooth.init = function () {
@@ -23,6 +24,7 @@
     PhotoBooth.processPastedEntities = function () {
         var cameraResults = {};
         var modelResult;
+        var modelPos;
         this.pastedEntityIDs.forEach(function(id) {
             var props = Entities.getEntityProperties(id);
             var parts = props["name"].split(":");
@@ -31,27 +33,65 @@
             }
             if (parts[0] === "Photo Booth Model") {
                 modelResult = id;
+                modelPos = props.position;
             }
         });
         print(JSON.stringify(cameraResults));
         print(JSON.stringify(modelResult));
         this.cameraEntities = cameraResults;
         this.modelEntityID = modelResult;
+        this.centrePos = modelPos;
     };
 
     // replace the model in scene with new model
     PhotoBooth.changeModel = function (newModelURL) {
-        // TODO: scale dimension correctly
+        // deletes old model
+        Entities.deleteEntity(this.modelEntityID);
+        // create new model at centre of the photobooth
         var newProps = {
-            modelURL: newModelURL
+            type: "Model",
+            modelURL: newModelURL,
+            position: this.centrePos
         };
-        Entities.editEntity(this.modelEntityID, newProps);
+        var newModelEntityID = Entities.addEntity(newProps);
+
+        // scale model dimensions to fit in bounding box
+        var scaleModel = function () {
+            newProps = Entities.getEntityProperties(newModelEntityID);
+            var myDimensions = newProps.dimensions;
+            print("myDimensions: " + JSON.stringify(myDimensions));
+            var k;
+            if (myDimensions.x > MODEL_BOUNDING_BOX_DIMENSIONS.x) {
+                k = MODEL_BOUNDING_BOX_DIMENSIONS.x / myDimensions.x;
+                myDimensions = Vec3.multiply(k, myDimensions);
+            }
+            if (myDimensions.y > MODEL_BOUNDING_BOX_DIMENSIONS.y) {
+                k = MODEL_BOUNDING_BOX_DIMENSIONS.y / myDimensions.y;
+                myDimensions = Vec3.multiply(k, myDimensions);
+            }
+            if (myDimensions.z > MODEL_BOUNDING_BOX_DIMENSIONS.z) {
+                k = MODEL_BOUNDING_BOX_DIMENSIONS.z / myDimensions.z;
+                myDimensions = Vec3.multiply(k, myDimensions);
+            }
+            // position the new model on the table
+            var y_offset = (MODEL_BOUNDING_BOX_DIMENSIONS.y - myDimensions.y) / 2;
+            var myPosition = Vec3.sum(newProps.position, {x:0, y:-y_offset, z:0});
+            Entities.editEntity(newModelEntityID,{position: myPosition, dimensions: myDimensions});
+        };
+
+        // add a delay before scaling to make sure the entity server have gotten the right model dimensions
+        Script.setTimeout(function () {
+            scaleModel();
+        }, 400);
+
+        this.modelEntityID = newModelEntityID;
     };
 
     PhotoBooth.destroy = function () {
         this.pastedEntityIDs.forEach(function(id) {
             Entities.deleteEntity(id);
         });
+        Entities.deleteEntity(this.modelEntityID);
     };
 
     var main = function () {
