@@ -2,7 +2,7 @@
   <head>
     <title>Photo Booth</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="css/edit-style.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../system/html/css/edit-style.css">
     <script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
     
     <script>
@@ -27,7 +27,7 @@
           var elModelURL = document.getElementById("model-url");
           var elReloadModelButton = document.getElementById("reload-model-button");
           var elCamera = document.getElementById("property-camera");
-          var elLightingPreset = document.getElementById("property-lighting-preset");
+          //var elLightingPreset = document.getElementById("property-lighting-preset");
           var elPictureButton = document.getElementById("picture-button");
 
           elReloadModelButton.addEventListener('click', function() {
@@ -36,9 +36,9 @@
           elCamera.addEventListener('change', function() {
               emit("onSelectCamera", {value: this.value});
           });
-          elLightingPreset.addEventListener('change', function() {
-              emit("onSelectLightingPreset", {value: "faye"});
-          });
+          // elLightingPreset.addEventListener('change', function() {
+          //     emit("onSelectLightingPreset", {value: "faye"});
+          // });
           elPictureButton.addEventListener('click', function() {
               emit("onClickPictureButton", {value: "faye"});
           });
@@ -140,6 +140,7 @@
         <input type="text" id="model-url"></input>
         <input type="button" id="reload-model-button" class="glyph" value="F">
       </div>
+       <!--
       <div class="property dropdown">
         <label>Lighting Preset</label>
         <select id="property-lighting-preset">
@@ -148,6 +149,7 @@
           <option>Alan's Light Magic</option>
         </select>
       </div>
+      -->
       <div class="property dropdown">
         <label>Camera</label>
         <select id="property-camera">
