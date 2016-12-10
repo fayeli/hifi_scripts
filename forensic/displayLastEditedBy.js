@@ -1,12 +1,16 @@
 //
-// lastEditedByUI.js
+// displayLastEditedBy.js
 //
 // Created by Si Fi Faye Li on 2 December, 2016
 //
 
 (function () {
-    var LINE_COLOR = { red: 0, green: 255, blue: 255};
+    var SHOW_LAST_EDITED_BY_ME = false;
     var SEARCH_RADIUS = 40;
+    // in meter, if the entities is too far away(out of search radius), we won't display its last edited by
+
+    var LINE_COLOR = { red: 0, green: 255, blue: 255};
+    var LINE_EXPRIRATION_TIME = 3000; // in ms
     var UPDATE_INTERVAL = 1 / 60; // 60fps 
     var myHashMap = {};  // stores {entityID of target entity : overlayID of the line}
 
@@ -19,9 +23,27 @@
 
             targetEntityIDs.forEach(function(targetEntityID){
                 var targetEntityProps = Entities.getEntityProperties(targetEntityID);
+
+
+                // don't draw lines for entities that were last edited long time ago
+                if (targetEntityProps.hasOwnProperty("lastEdited")) {
+                    var currentTime = new Date().getTime();
+                    // lastEdited is in usec while JS date object returns msec
+                    var timeDiff = currentTime - targetEntityProps.lastEdited/1000;
+                    if (timeDiff > LINE_EXPRIRATION_TIME) {
+                        if (myHashMap.hasOwnProperty(targetEntityID)) {
+                            var overlayID = myHashMap[targetEntityID];
+                            Overlays.deleteOverlay(overlayID);
+                        }
+                        return;
+                    }
+                }
+
                 var targetAvatarUUID = targetEntityProps.lastEditedBy;
+
                 // don't draw lines for entities last edited by myself
-                if (targetAvatarUUID === MyAvatar.sessionUUID) {
+                // you may set SHOW_LAST_EDITED_BY_ME to true if you want to see these lines
+                if (targetAvatarUUID === MyAvatar.sessionUUID && !SHOW_LAST_EDITED_BY_ME) {
                     if (myHashMap.hasOwnProperty(targetEntityID)) {
                         var overlayID = myHashMap[targetEntityID];
                         Overlays.deleteOverlay(overlayID);
@@ -48,12 +70,6 @@
                     }
                     return;
                 }
-                if (targetAvatar.position === {x: 0, y: 0, z: 0}) {
-                    print("avatar pos 0,0,0");
-                }
-                if (targetEntityProps.position === {x: 0, y: 0, z: 0}) {
-                    print("entity pos 0,0,0");
-                }
 
                 var props = {
                     start: targetEntityProps.position,
@@ -63,8 +79,7 @@
                     ignoreRayIntersection: true,
                     visible: true,
                     solid: true,
-                    drawInFront: true,
-                    glow: 1.0
+                    drawInFront: true
                 };
 
                 if (myHashMap.hasOwnProperty(targetEntityID)) {
@@ -76,6 +91,18 @@
                 }
                 
             });
+
+            // remove lines for entities no longer within search radius
+            for (var key in myHashMap) {
+                if (myHashMap.hasOwnProperty(key)) {
+                    if (targetEntityIDs.indexOf(key) === -1) {
+                        var overlayID = myHashMap[key];
+                        Overlays.deleteOverlay(overlayID);
+                        delete myHashMap[key];
+                    }
+                } 
+            }
+
             lastUpdateTime = timer;
         }     
     }
