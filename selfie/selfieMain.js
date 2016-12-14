@@ -5,7 +5,7 @@
 //
 
 (function(){ // BEGIN LOCAL SCOPE
-    var LENS_ID = "{d6a07884-e4d5-4a08-a4b5-50966b8257cc}";
+    var LENS_ID = "{7055b714-bf83-418e-bfd1-9c6c67b3aecc}";
     var SELFIECAMERA_ID = null;
     var equippedCamera = false;
     var cameraChannel = "Camera-to-Selfie-Channel";
