@@ -81,7 +81,9 @@
         var babyOrnamentProps = Entities.getEntityProperties(babyOrnament);
         var largeOrnamentProps = Entities.getEntityProperties(largeOrnament);
         var scaledPos = Vec3.multiply(babyOrnamentProps.localPosition, k);
+        var scaledDims = Vec3.multiply(babyOrnamentProps.dimensions, k);
         largeOrnamentProps.localPosition = scaledPos;
+        largeOrnamentProps.dimensions = scaledDims;
         largeOrnamentProps.rotation = babyOrnamentProps.rotation;
         largeOrnamentProps.visible = true;
         Entities.editEntity(largeOrnament, largeOrnamentProps);
