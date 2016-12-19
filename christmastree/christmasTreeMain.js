@@ -17,11 +17,6 @@
         print("running Christmas Tree Main");
         Messages.subscribe(myChannel);
         Messages.messageReceived.connect(handleMessage);
-
-        // searchForBabyOrnaments();
-        // print(babyOrnaments);
-        // createLargeOrnaments();
-        // print(largeOrnaments);
     }
     main();
 
@@ -57,7 +52,7 @@
     }
 
     function searchForBabyOrnaments() {
-        var radius = 2;
+        var radius = 0.5;
         var babyChristmasTreeProps = Entities.getEntityProperties(babyChristmasTree);
         var results = Entities.findEntities(babyChristmasTreeProps.position, radius);
         var babyOrnaments = [];
