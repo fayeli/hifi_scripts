@@ -52,7 +52,7 @@
     }
 
     function searchForBabyOrnaments() {
-        var radius = 0.5;
+        var radius = 3;
         var babyChristmasTreeProps = Entities.getEntityProperties(babyChristmasTree);
         var results = Entities.findEntities(babyChristmasTreeProps.position, radius);
         var babyOrnaments = [];
@@ -101,6 +101,8 @@
             localPosition: scaledPos,
             rotation: babyOrnamentProps.rotation,
             dimensions: scaledDims,
+            // dynamic: true,
+            // gravity: {x:0, y:-9, z:0},
             visible: false
         };
         var largeOrnamentID = Entities.addEntity(largeOrnamentProps);
