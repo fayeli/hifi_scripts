@@ -10,15 +10,14 @@
     var importedEntityIDs = [];
     var twitchCamEntityID = null;
     var twitchCamLensEntityID = null;
+    var freeMovementMode = false;
 
     importCameraModel();
     processImportedEntities();
-    print("Twitch Cam: " + twitchCamEntityID + " Lens :" + twitchCamLensEntityID);
-
-    placeAvatarOnCamera();
+    shrinkAvatar();
+    setupSpaceBarControl();
     setCameraView();
     Script.update.connect(update);
-
 
     function importCameraModel() {
         var success = Clipboard.importEntities(TWITCH_CAM_JSON_URL);
@@ -44,12 +43,28 @@
         });
     }
 
-    function placeAvatarOnCamera() {
-        var props = Entities.getEntityProperties(twitchCamEntityID);
-        MyAvatar.position = props.position;
+    function shrinkAvatar() {
         for (var i = 0; i < 20; i++){
             MyAvatar.decreaseSize();
         }
+    }
+
+    function setupSpaceBarControl() {
+        var mappingName = "Twitch-Cam-Space-Bar";
+        var myMapping = Controller.newMapping(mappingName);
+        myMapping.from(Controller.Hardware.Keyboard.Space).to(function(value){
+            if ( value === 0 ) {
+                return;
+            }
+            if (freeMovementMode) {
+                freeMovementMode = false;
+                Camera.mode = "entity";
+            } else {
+                freeMovementMode = true;
+                Camera.mode = "first person";
+            }
+        });
+        Controller.enableMapping(mappingName);
     }
 
     function setCameraView() {
@@ -58,8 +73,22 @@
     }
 
     function update(deltaTime) {
-        var props = Entities.getEntityProperties(twitchCamEntityID);
-        MyAvatar.position = props.position;
+        if (freeMovementMode) {
+            var upUnitVec = Vec3.normalize(Quat.getUp(MyAvatar.orientation));
+            var newPos = Vec3.sum(MyAvatar.position, Vec3.multiply(upUnitVec, 0.6));
+            var yAxis = {x:0, y:1, z:0};
+            var Qflipy = Quat.angleAxis(180, yAxis);
+            var newRot = Quat.multiply(MyAvatar.orientation,Qflipy);
+            Entities.editEntity(twitchCamEntityID, {position: newPos, rotation: newRot});
+        } else {
+            var props = Entities.getEntityProperties(twitchCamLensEntityID);
+            var upUnitVec = Vec3.normalize(Quat.getUp(props.rotation));
+            var frontUnitVec = Vec3.normalize(Quat.getFront(props.rotation));
+            var newPos = Vec3.sum(props.position, Vec3.multiply(upUnitVec, -0.3));
+            newPos = Vec3.sum(newPos, Vec3.multiply(frontUnitVec, -0.15));
+            MyAvatar.position = newPos;
+            MyAvatar.orientation = props.rotation;
+        }
     }
 
     // Removes all entities we imported and reset settings we've changed
@@ -69,6 +98,7 @@
         });
         MyAvatar.resetSize();
         Camera.mode = "first person";
+        Controller.disableMapping("Twitch-Cam-Space-Bar");
     }
     Script.scriptEnding.connect(cleanup);
 }()); // END LOCAL_SCOPE
