@@ -1,0 +1,936 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-15T00:55:23Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.05000000074505806,
+                "y": 0.05000000074505806,
+                "z": 0.05000000074505806
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9,
+                "z": 0
+            },
+            "id": "{f574d917-3cfa-4efc-9eb0-63f10e0f3ba8}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394465182,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "marketplaceID": "6632b2ee-8a52-4545-a4fa-a59477b039f5",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/marblecollection/PurpleSwirl.fbx",
+            "name": "Balls & Marbles - Purp Swirl",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.16974163055419922,
+                "y": 0.21002197265625,
+                "z": 0.27411413192749023
+            },
+            "queryAACube": {
+                "scale": 0.086602538824081421,
+                "x": 0.12644036114215851,
+                "y": 0.16672070324420929,
+                "z": 0.23081286251544952
+            },
+            "restitution": 0.99000000953674316,
+            "rotation": {
+                "w": -0.22068974375724792,
+                "x": 0.64698553085327148,
+                "y": 0.22425393760204315,
+                "z": 0.69449949264526367
+            },
+            "shapeType": "sphere",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-15T00:44:28Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.05000000074505806,
+                "y": 0.05000000074505806,
+                "z": 0.05000000074505806
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9,
+                "z": 0
+            },
+            "id": "{d2e9b0d0-79a0-449a-a23b-b55ccc8b221b}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394464605,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "marketplaceID": "6632b2ee-8a52-4545-a4fa-a59477b039f5",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/marblecollection/Snow.fbx",
+            "name": "Balls & Marbles - Snow",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.11998176574707031,
+                "y": 0.220123291015625,
+                "z": 0.24408102035522461
+            },
+            "queryAACube": {
+                "scale": 0.086602538824081421,
+                "x": 0.076680496335029602,
+                "y": 0.17682202160358429,
+                "z": 0.2007797509431839
+            },
+            "restitution": 0.99000000953674316,
+            "rotation": {
+                "w": -0.33930647373199463,
+                "x": -0.034878775477409363,
+                "y": 0.83368027210235596,
+                "z": -0.43420839309692383
+            },
+            "shapeType": "sphere",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-15T00:55:23Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.05000000074505806,
+                "y": 0.05000000074505806,
+                "z": 0.05000000074505806
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9,
+                "z": 0
+            },
+            "id": "{6f683e5d-d81d-4ff5-8d15-fef1efc67d7c}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394471555,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "marketplaceID": "6632b2ee-8a52-4545-a4fa-a59477b039f5",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/marblecollection/Snow.fbx",
+            "name": "Balls & Marbles - Snow",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.14344215393066406,
+                "y": 0.3820037841796875,
+                "z": 0.25130891799926758
+            },
+            "queryAACube": {
+                "scale": 0.086602538824081421,
+                "x": 0.10014088451862335,
+                "y": 0.3387024998664856,
+                "z": 0.20800764858722687
+            },
+            "restitution": 0.99000000953674316,
+            "rotation": {
+                "w": 0.32264158129692078,
+                "x": -0.24655923247337341,
+                "y": 0.85566729307174683,
+                "z": 0.32073664665222168
+            },
+            "shapeType": "sphere",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-15T00:55:23Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.05000000074505806,
+                "y": 0.05000000074505806,
+                "z": 0.05000000074505806
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9,
+                "z": 0
+            },
+            "id": "{3b78a0f2-b85b-4611-8967-1db0167eaff2}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394468865,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "marketplaceID": "6632b2ee-8a52-4545-a4fa-a59477b039f5",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/marblecollection/PurpleSwirl.fbx",
+            "name": "Balls & Marbles - Purp Swirl",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.073761940002441406,
+                "y": 0.2855377197265625,
+                "z": 0.19761180877685547
+            },
+            "queryAACube": {
+                "scale": 0.086602538824081421,
+                "x": 0.030460670590400696,
+                "y": 0.24223645031452179,
+                "z": 0.15431053936481476
+            },
+            "restitution": 0.99000000953674316,
+            "rotation": {
+                "w": 0.36269283294677734,
+                "x": 0.61229383945465088,
+                "y": -0.2861475944519043,
+                "z": -0.64153218269348145
+            },
+            "shapeType": "sphere",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:05:15Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.079999998211860657,
+                "y": 0.07999999076128006,
+                "z": 0.004000004380941391
+            },
+            "id": "{4fffd57f-fa17-4815-9f08-26b31034fdf7}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394479127,
+            "lastEditedBy": "{64fb3c40-370b-48ad-bc6d-3b1ecb09a615}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_straight.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.62138938903808594,
+                "y": 0.099945068359375,
+                "z": 0.36036157608032227
+            },
+            "queryAACube": {
+                "scale": 0.11320776492357254,
+                "x": 0.56478548049926758,
+                "y": 0.04334118589758873,
+                "z": 0.30375769734382629
+            },
+            "rotation": {
+                "w": 0.60611903667449951,
+                "x": 0.39948382973670959,
+                "y": -0.39776158332824707,
+                "z": -0.56105720996856689
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:05:15Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.079999998211860657,
+                "y": 0.07999999076128006,
+                "z": 0.004000004380941391
+            },
+            "id": "{04082a56-9dc6-4920-ba77-b581c7d4360a}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394479634,
+            "lastEditedBy": "{64fb3c40-370b-48ad-bc6d-3b1ecb09a615}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_straight.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.49438571929931641,
+                "y": 0.1157379150390625,
+                "z": 0.42918109893798828
+            },
+            "queryAACube": {
+                "scale": 0.11320776492357254,
+                "x": 0.43778184056282043,
+                "y": 0.05913403257727623,
+                "z": 0.37257722020149231
+            },
+            "rotation": {
+                "w": -0.5460432767868042,
+                "x": -0.090165406465530396,
+                "y": -0.83243626356124878,
+                "z": 0.027075080201029778
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-05T23:56:31Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.19999991357326508,
+                "y": 0.080000095069408417,
+                "z": 0.19999997317790985
+            },
+            "id": "{8ebae6b4-47d4-4e19-a1aa-a24a62842767}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394831062,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_roof.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.54527664184570312,
+                "y": 0.176361083984375,
+                "z": 0.38629055023193359
+            },
+            "queryAACube": {
+                "scale": 0.29393872618675232,
+                "x": 0.39830726385116577,
+                "y": 0.02939172089099884,
+                "z": 0.23932118713855743
+            },
+            "rotation": {
+                "w": 0.98487800359725952,
+                "x": 0.0019694992806762457,
+                "y": 0.17133784294128418,
+                "z": -0.023769989609718323
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:05:15Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.079999998211860657,
+                "y": 0.07999999076128006,
+                "z": 0.004000004380941391
+            },
+            "id": "{1729aa3e-739d-42ea-8edc-f5e932129710}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394480194,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_straight.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.47063541412353516,
+                "y": 0.1132965087890625,
+                "z": 0.35207319259643555
+            },
+            "queryAACube": {
+                "scale": 0.11320776492357254,
+                "x": 0.41403153538703918,
+                "y": 0.05669262632727623,
+                "z": 0.29546931385993958
+            },
+            "rotation": {
+                "w": 0.347220778465271,
+                "x": 0.69488370418548584,
+                "y": -0.19968430697917938,
+                "z": 0.5971643328666687
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:00:53Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.079999998211860657,
+                "y": 0.079999998211860657,
+                "z": 0.15599998831748962
+            },
+            "id": "{fdadb2d3-ddb7-4150-b7bb-16b5baae4d2e}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394497826,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_Tsplit.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.49738407135009766,
+                "y": 0.177032470703125,
+                "z": 0.39903640747070312
+            },
+            "queryAACube": {
+                "scale": 0.19270701706409454,
+                "x": 0.40103057026863098,
+                "y": 0.080678962171077728,
+                "z": 0.30268290638923645
+            },
+            "rotation": {
+                "w": -0.19431464374065399,
+                "x": -0.017130780965089798,
+                "y": 0.68214625120162964,
+                "z": -0.70465415716171265
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:00:53Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.079999998211860657,
+                "y": 0.07999999076128006,
+                "z": 0.0040000518783926964
+            },
+            "id": "{2182703f-514b-41b0-bc23-64e28944844c}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394477200,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_aperture.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.55054473876953125,
+                "y": 0.260711669921875,
+                "z": 0.36155366897583008
+            },
+            "queryAACube": {
+                "scale": 0.11320776492357254,
+                "x": 0.49394086003303528,
+                "y": 0.20410779118537903,
+                "z": 0.30494979023933411
+            },
+            "rotation": {
+                "w": 0.98969519138336182,
+                "x": 0.0061206705868244171,
+                "y": 0.13370941579341888,
+                "z": -0.04980059340596199
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-15T00:44:28Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.05000000074505806,
+                "y": 0.05000000074505806,
+                "z": 0.05000000074505806
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9,
+                "z": 0
+            },
+            "id": "{0bcbbf4a-70ef-41d0-91c1-96a770017beb}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394472308,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "marketplaceID": "6632b2ee-8a52-4545-a4fa-a59477b039f5",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/marblecollection/PurpleSwirl.fbx",
+            "name": "Balls & Marbles - Purp Swirl",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.063594818115234375,
+                "y": 0.4907073974609375,
+                "z": 0.24147272109985352
+            },
+            "queryAACube": {
+                "scale": 0.086602538824081421,
+                "x": 0.020293548703193665,
+                "y": 0.4474061131477356,
+                "z": 0.19817145168781281
+            },
+            "restitution": 0.99000000953674316,
+            "rotation": {
+                "w": 0.024389728903770447,
+                "x": -0.77406483888626099,
+                "y": -0.61844533681869507,
+                "z": -0.13307663798332214
+            },
+            "shapeType": "sphere",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-19T22:13:57Z",
+            "density": 111,
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.060000002384185791,
+                "y": 0.060000002384185791,
+                "z": 0.060000002384185791
+            },
+            "gravity": {
+                "x": 0,
+                "y": -8,
+                "z": 0
+            },
+            "id": "{63a99222-bc50-4d21-bc0b-b5c274c90b1e}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394466223,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/alan/dev/EZ-Cube.fbx?55",
+            "name": "EZ-Cube",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.28661918640136719,
+                "y": 0,
+                "z": 0.0044598579406738281
+            },
+            "queryAACube": {
+                "scale": 0.10392305254936218,
+                "x": 0.2346576601266861,
+                "y": -0.051961526274681091,
+                "z": -0.047501668334007263
+            },
+            "restitution": 0,
+            "rotation": {
+                "w": 0.030234811827540398,
+                "x": 0.99817353487014771,
+                "y": 0.014068695716559887,
+                "z": -0.049605604261159897
+            },
+            "shapeType": "box",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:27:06Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.13430570065975189,
+                "y": 0.013628951273858547,
+                "z": 0.13430570065975189
+            },
+            "id": "{4f066167-8d8a-4db9-ba52-c75c38390e88}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394472879,
+            "lastEditedBy": "{64fb3c40-370b-48ad-bc6d-3b1ecb09a615}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/jazmin/dev/files/cookie/cookie.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.043719291687011719,
+                "y": 0.0836029052734375,
+                "z": 0.64510869979858398
+            },
+            "queryAACube": {
+                "scale": 0.19042529165744781,
+                "x": -0.051493354141712189,
+                "y": -0.011609740555286407,
+                "z": 0.54989606142044067
+            },
+            "rotation": {
+                "w": -0.96109485626220703,
+                "x": 0.010624204762279987,
+                "y": 0.27591779828071594,
+                "z": 0.0022823228500783443
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-15T00:55:23Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.05000000074505806,
+                "y": 0.05000000074505806,
+                "z": 0.05000000074505806
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9,
+                "z": 0
+            },
+            "id": "{03e53d8b-5297-488c-8556-c1a07a322997}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394471945,
+            "lastEditedBy": "{64fb3c40-370b-48ad-bc6d-3b1ecb09a615}",
+            "marketplaceID": "6632b2ee-8a52-4545-a4fa-a59477b039f5",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/marblecollection/Snow.fbx",
+            "name": "Balls & Marbles - Snow",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0,
+                "y": 0.39288330078125,
+                "z": 0.44549798965454102
+            },
+            "queryAACube": {
+                "scale": 0.086602538824081421,
+                "x": -0.04330126941204071,
+                "y": 0.3495820164680481,
+                "z": 0.40219670534133911
+            },
+            "restitution": 0.99000000953674316,
+            "rotation": {
+                "w": 0.5805203914642334,
+                "x": 0.69021749496459961,
+                "y": 0.18370932340621948,
+                "z": 0.3908248245716095
+            },
+            "shapeType": "sphere",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-19T22:13:57Z",
+            "density": 111,
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.060000002384185791,
+                "y": 0.060000002384185791,
+                "z": 0.060000002384185791
+            },
+            "gravity": {
+                "x": 0,
+                "y": -8,
+                "z": 0
+            },
+            "id": "{a326380d-2e21-40fb-9954-93a5c4292698}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394466633,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/alan/dev/EZ-Cube.fbx?55",
+            "name": "EZ-Cube",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.142608642578125,
+                "y": 0.020965576171875,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 0.10392305254936218,
+                "x": 0.090647116303443909,
+                "y": -0.030995950102806091,
+                "z": -0.051961526274681091
+            },
+            "restitution": 0,
+            "rotation": {
+                "w": 0.16008150577545166,
+                "x": 0.7790602445602417,
+                "y": 0.026339206844568253,
+                "z": 0.60554003715515137
+            },
+            "shapeType": "box",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:03:04Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.039999999105930328,
+                "y": 0.07999999076128006,
+                "z": 0.0040000490844249725
+            },
+            "id": "{1e14143c-bc75-4e49-8f10-14bccd78a395}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394477569,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_portal.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.49010848999023438,
+                "y": 0.030059814453125,
+                "z": 0.21765565872192383
+            },
+            "queryAACube": {
+                "scale": 0.08953210711479187,
+                "x": 0.44534242153167725,
+                "y": -0.014706239104270935,
+                "z": 0.17288960516452789
+            },
+            "rotation": {
+                "w": 0.97435373067855835,
+                "x": 0.027424333617091179,
+                "y": 0.21979875862598419,
+                "z": -0.038232702761888504
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:05:15Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.079999998211860657,
+                "y": 0.080000020563602448,
+                "z": 0.079999998211860657
+            },
+            "id": "{67fdacdd-cf56-4135-80b5-9c3f5836cf5c}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394478607,
+            "lastEditedBy": "{64fb3c40-370b-48ad-bc6d-3b1ecb09a615}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_corner.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.56848335266113281,
+                "y": 0.02911376953125,
+                "z": 0.30969953536987305
+            },
+            "queryAACube": {
+                "scale": 0.13856407999992371,
+                "x": 0.49920129776000977,
+                "y": -0.040168270468711853,
+                "z": 0.24041749536991119
+            },
+            "rotation": {
+                "w": 0.98716491460800171,
+                "x": 0.0053266840986907482,
+                "y": 0.15568214654922485,
+                "z": -0.033626694232225418
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-19T22:13:57Z",
+            "density": 111,
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.060000002384185791,
+                "y": 0.060000002384185791,
+                "z": 0.060000002384185791
+            },
+            "gravity": {
+                "x": 0,
+                "y": -8,
+                "z": 0
+            },
+            "id": "{1dda396f-64f1-4f14-b4ac-07f41604ec1c}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394459641,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/alan/dev/EZ-Cube.fbx?55",
+            "name": "EZ-Cube",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.54299736022949219,
+                "y": 0.0032501220703125,
+                "z": 0.11504697799682617
+            },
+            "queryAACube": {
+                "scale": 0.10392305254936218,
+                "x": 0.4910358190536499,
+                "y": -0.048711404204368591,
+                "z": 0.063085451722145081
+            },
+            "restitution": 0,
+            "rotation": {
+                "w": -0.070689082145690918,
+                "x": -0.31661075353622437,
+                "y": -0.16284236311912537,
+                "z": -0.93178838491439819
+            },
+            "shapeType": "box",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:00:53Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.079999998211860657,
+                "y": 0.080000020563602448,
+                "z": 0.079999998211860657
+            },
+            "id": "{ce41bd06-330e-44c0-8e96-56e30814a412}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394476393,
+            "lastEditedBy": "{64fb3c40-370b-48ad-bc6d-3b1ecb09a615}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_corner.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.51255512237548828,
+                "y": 0.0335235595703125,
+                "z": 0.41086006164550781
+            },
+            "queryAACube": {
+                "scale": 0.13856407999992371,
+                "x": 0.44327306747436523,
+                "y": -0.035758480429649353,
+                "z": 0.34157800674438477
+            },
+            "rotation": {
+                "w": -0.17078724503517151,
+                "x": 0.045983679592609406,
+                "y": 0.98368704319000244,
+                "z": 0.031237481161952019
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:00:53Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.079999998211860657,
+                "y": 0.080000020563602448,
+                "z": 0.079999998211860657
+            },
+            "id": "{15b80745-4cc5-47ec-8645-9697cd921167}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394476858,
+            "lastEditedBy": "{64fb3c40-370b-48ad-bc6d-3b1ecb09a615}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_corner.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.49178886413574219,
+                "y": 0.035552978515625,
+                "z": 0.34183120727539062
+            },
+            "queryAACube": {
+                "scale": 0.13856407999992371,
+                "x": 0.42250680923461914,
+                "y": -0.033729061484336853,
+                "z": 0.27254915237426758
+            },
+            "rotation": {
+                "w": 0.60148847103118896,
+                "x": -0.0031570985447615385,
+                "y": 0.79807275533676147,
+                "z": -0.034684646874666214
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-05T23:58:42Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.079999998211860657,
+                "y": 0.080000020563602448,
+                "z": 0.079999998211860657
+            },
+            "id": "{20d25bc5-3d29-4312-ad71-e80e55cc7e0a}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394475828,
+            "lastEditedBy": "{64fb3c40-370b-48ad-bc6d-3b1ecb09a615}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/ZBL_lexx01_wall_corner.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.58999252319335938,
+                "y": 0.02838134765625,
+                "z": 0.38411998748779297
+            },
+            "queryAACube": {
+                "scale": 0.13856407999992371,
+                "x": 0.52071046829223633,
+                "y": -0.040900692343711853,
+                "z": 0.31483793258666992
+            },
+            "rotation": {
+                "w": -0.80383926630020142,
+                "x": -0.001575252041220665,
+                "y": 0.59236645698547363,
+                "z": 0.053388062864542007
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-19T21:56:29Z",
+            "density": 111,
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.060000002384185791,
+                "y": 0.060000002384185791,
+                "z": 0.060000002384185791
+            },
+            "gravity": {
+                "x": 0,
+                "y": -8,
+                "z": 0
+            },
+            "id": "{5c6e4ed4-ee51-428e-94c1-9952d9ead7ee}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394459079,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/alan/dev/EZ-Cube.fbx?55",
+            "name": "EZ-Cube",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.0051822662353515625,
+                "y": 0.0030059814453125,
+                "z": 0.036165237426757812
+            },
+            "queryAACube": {
+                "scale": 0.10392305254936218,
+                "x": -0.046779260039329529,
+                "y": -0.048955544829368591,
+                "z": -0.015796288847923279
+            },
+            "restitution": 0,
+            "rotation": {
+                "w": 0.076245896518230438,
+                "x": 0.78784686326980591,
+                "y": -0.032703842967748642,
+                "z": 0.6101834774017334
+            },
+            "shapeType": "box",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-06T00:27:06Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.13430570065975189,
+                "y": 0.013628951273858547,
+                "z": 0.13430570065975189
+            },
+            "id": "{1171efc6-0b05-4392-9e38-1622fc81c6dd}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394464039,
+            "lastEditedBy": "{46b8d291-17d0-4205-8240-27a4d64699c5}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/jazmin/dev/files/cookie/cookie.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.23549079895019531,
+                "y": 0.0175018310546875,
+                "z": 0.38557147979736328
+            },
+            "queryAACube": {
+                "scale": 0.19042529165744781,
+                "x": 0.140278160572052,
+                "y": -0.077710814774036407,
+                "z": 0.29035884141921997
+            },
+            "rotation": {
+                "w": -0.23028175532817841,
+                "x": -0.55507904291152954,
+                "y": -0.076880134642124176,
+                "z": -0.79557621479034424
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        }
+    ],
+    "Version": 65
+}

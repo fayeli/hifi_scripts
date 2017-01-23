@@ -1,0 +1,98 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "created": "2017-01-09T22:36:18Z",
+            "dimensions": {
+                "x": 1.5409572124481201,
+                "y": 1.4622975587844849,
+                "z": 0.69932878017425537
+            },
+            "id": "{39531c40-66b0-41ea-90d0-9879c9f3dfbd}",
+            "lastEdited": 1484001415916549,
+            "lastEditedBy": "{cddc54f5-c32d-4099-8db5-051df3f31476}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/tiltbrush-palette/Untitled_4.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0,
+                "y": 0.18633133172988892,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 2.2364981174468994,
+                "x": -1.1182490587234497,
+                "y": -0.93191772699356079,
+                "z": -1.1182490587234497
+            },
+            "rotation": {
+                "w": 0.7071068286895752,
+                "x": 0,
+                "y": -0.7071068286895752,
+                "z": 0
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2017-01-09T22:34:07Z",
+            "dimensions": {
+                "x": 1.8568320274353027,
+                "y": 1.7364686727523804,
+                "z": 2.2100081443786621
+            },
+            "id": "{d11450d7-9e29-4eb0-bc58-b4b5d69dbaa5}",
+            "lastEdited": 1484001286825380,
+            "lastEditedBy": "{cddc54f5-c32d-4099-8db5-051df3f31476}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/tiltbrush-palette/Untitled_2.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 2.7133424282073975,
+                "y": 0.18632358312606812,
+                "z": 2.3073329925537109
+            },
+            "queryAACube": {
+                "scale": 3.3685729503631592,
+                "x": 1.0290559530258179,
+                "y": -1.4979629516601562,
+                "z": 0.62304651737213135
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2017-01-09T22:34:07Z",
+            "dimensions": {
+                "x": 1.1585007905960083,
+                "y": 1.3975064754486084,
+                "z": 0.75611823797225952
+            },
+            "id": "{bd9ec569-a576-46b4-9cb3-22b9e9d0e88b}",
+            "lastEdited": 1484001358872612,
+            "lastEditedBy": "{cddc54f5-c32d-4099-8db5-051df3f31476}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/tiltbrush-palette/Untitled_3.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.89011800289154053,
+                "y": 0,
+                "z": 1.4955596923828125
+            },
+            "queryAACube": {
+                "scale": 1.966434121131897,
+                "x": -0.093099057674407959,
+                "y": -0.98321706056594849,
+                "z": 0.51234263181686401
+            },
+            "rotation": {
+                "w": 0.92387950420379639,
+                "x": 0,
+                "y": -0.38268345594406128,
+                "z": 0
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        }
+    ],
+    "Version": 65
+}

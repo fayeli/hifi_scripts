@@ -1,0 +1,225 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-15T00:35:44Z",
+            "dimensions": {
+                "x": 0.61740350723266602,
+                "y": 0.87644016742706299,
+                "z": 0.62416946887969971
+            },
+            "id": "{9217d17c-dafb-4e7d-b139-ee9f45ad9aaf}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394496035,
+            "lastEditedBy": "{c62d416b-ee5a-4d88-90f9-c989b4bce4ab}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/jimi/201611_WinterEvent/Tree.fbx",
+            "name": "Baby Christmas Tree",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{46079644-e29c-4813-883b-11d52b11bf9b}",
+            "position": {
+                "x": -0.15608449280261993,
+                "y": 0.98523581027984619,
+                "z": 0.17977428436279297
+            },
+            "queryAACube": {
+                "scale": 6.62567138671875,
+                "x": -18.009241104125977,
+                "y": -197.90321350097656,
+                "z": 2.6083662509918213
+            },
+            "rotation": {
+                "w": 0.83141827583312988,
+                "x": -1.52587890625e-05,
+                "y": 0.55559623241424561,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-15T00:35:44Z",
+            "dimensions": {
+                "x": 1.1030094623565674,
+                "y": 1.4541991949081421,
+                "z": 1.0594305992126465
+            },
+            "id": "{46079644-e29c-4813-883b-11d52b11bf9b}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394496503,
+            "lastEditedBy": "{c62d416b-ee5a-4d88-90f9-c989b4bce4ab}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/jimi/201611_WinterEvent/icePlatform.fbx",
+            "name": "Baby Christmas Tree Floor",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 8.0875682830810547,
+                "y": 12.936599731445312,
+                "z": 1.4312682151794434
+            },
+            "queryAACube": {
+                "scale": 2.1103835105895996,
+                "x": 7.0323762893676758,
+                "y": 11.881407737731934,
+                "z": 0.37607645988464355
+            },
+            "rotation": {
+                "w": 0.83138775825500488,
+                "x": -1.52587890625e-05,
+                "y": -0.55568778514862061,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/maracas/woodenCrate_phys.obj",
+            "created": "2016-12-15T00:44:28Z",
+            "description": "For holding balls, marbles or whatever else!",
+            "dimensions": {
+                "x": 1.1685116291046143,
+                "y": 1.157323956489563,
+                "z": 0.23995715379714966
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9,
+                "z": 0
+            },
+            "id": "{b78d4782-0249-4368-80c8-c7737b0a70ad}",
+            "lastEdited": 1484341394474630,
+            "lastEditedBy": "{781f6779-5ca5-4f10-bb84-26e7353158d6}",
+            "marketplaceID": "6632b2ee-8a52-4545-a4fa-a59477b039f5",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/maracas/woodenCrate_VR.fbx",
+            "name": "Balls & Marbles Crate",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 7.932459831237793,
+                "y": 13.035934448242188,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 1.6620463132858276,
+                "x": 7.1014366149902344,
+                "y": 12.204911231994629,
+                "z": -0.83102315664291382
+            },
+            "restitution": 0.99000000953674316,
+            "rotation": {
+                "w": -1.52587890625e-05,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1
+            },
+            "shapeType": "compound",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2016-12-15T00:20:26Z",
+            "dimensions": {
+                "x": 9.8784561157226562,
+                "y": 14.023042678833008,
+                "z": 9.9867115020751953
+            },
+            "id": "{b4282f14-c86c-49df-95f9-713186d88825}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1484341394830018,
+            "lastEditedBy": "{71658346-e457-4c28-b4a1-206fbda40725}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/jimi/201611_WinterEvent/Tree.fbx",
+            "name": "Large Christmas Tree",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "parentID": "{906066ef-03d5-4b67-a892-b7ef34e6257b}",
+            "position": {
+                "x": -2.0897188186645508,
+                "y": 16.563991546630859,
+                "z": 2.9308509826660156
+            },
+            "queryAACube": {
+                "scale": 59.545578002929688,
+                "x": -56.494117736816406,
+                "y": -223.17289733886719,
+                "z": 2.9352035522460938
+            },
+            "rotation": {
+                "w": 0.83141827583312988,
+                "x": -1.52587890625e-05,
+                "y": 0.55559623241424561,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2016-12-15T00:00:47Z",
+            "dimensions": {
+                "x": 17.648151397705078,
+                "y": 23.267187118530273,
+                "z": 16.950889587402344
+            },
+            "id": "{906066ef-03d5-4b67-a892-b7ef34e6257b}",
+            "lastEdited": 1484341394830289,
+            "lastEditedBy": "{71658346-e457-4c28-b4a1-206fbda40725}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/jimi/201611_WinterEvent/icePlatform.fbx",
+            "name": "Big Christmas Tree Floor",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 29.904115676879883
+            },
+            "queryAACube": {
+                "scale": 33.766136169433594,
+                "x": -16.883068084716797,
+                "y": -16.883068084716797,
+                "z": 13.021047592163086
+            },
+            "rotation": {
+                "w": 0.83135724067687988,
+                "x": -1.52587890625e-05,
+                "y": -0.55571830272674561,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "created": "2017-01-05T23:56:31Z",
+            "dimensions": {
+                "x": 4.4120378494262695,
+                "y": 5.8167967796325684,
+                "z": 4.2377223968505859
+            },
+            "id": "{3176138b-ab7f-4533-aef9-1e9927f96e42}",
+            "lastEdited": 1484341394475205,
+            "lastEditedBy": "{3964553b-0d1b-4699-a568-f4ea0ad2137b}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/jimi/201611_WinterEvent/icePlatform.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 7.6338930130004883,
+                "y": 10.0240478515625,
+                "z": 1.5480756759643555
+            },
+            "queryAACube": {
+                "scale": 8.4415340423583984,
+                "x": 3.4131259918212891,
+                "y": 5.8032808303833008,
+                "z": -2.6726913452148438
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        }
+    ],
+    "Version": 65
+}
