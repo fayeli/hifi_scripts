@@ -1,0 +1,91 @@
+<!--
+//  eventBridgeTest.html
+//
+//  Created by Faye Li on 18 Jan 2017
+//  Copyright 2017 High Fidelity, Inc.
+//
+//  Distributed under the Apache License, Version 2.0.
+//  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
+-->
+<html>
+    <head>
+        <title>Event Bridge Test</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700"" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                width: 100%;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                background: linear-gradient(#2b2b2b, #0f212e);
+            }
+
+            .top-bar {
+                width: 100%;
+                height: 90px;
+                background: linear-gradient(#2b2b2b, #1e1e1e);
+                font-weight: bold;
+            }
+
+            .top-bar .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 30px;
+                margin-right: 30px;
+                height: 100%;
+            }
+
+            #refresh-button {
+                width: 24px;
+                height: 24px;
+            }
+
+            .main {
+                padding: 30px;
+            }
+
+            #users-list div {
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="container">
+                <div>Event Bridge Test</div>
+            </div>
+        </div>
+        <div class="main">
+            <div id="dev-div"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            function onScriptEventReceived(event) {
+                $("#dev-div").append("<p>Received a script event, its type is " + typeof event + "</p>");
+                if (typeof event === "object") {
+                    $("#dev-div").append("<p> The object is: " + JSON.stringify(event) + "<p>");
+                }
+                if (typeof event === "string") {
+                    $("#dev-div").append("<p> The string is: " + event + "</p>");
+                }
+            }
+
+            $(document).ready(function() {
+                console.log("eventBridgeTest.html ready");
+                $("#dev-div").append("<p>ready</p>");
+                // Listen for events from hifi
+                EventBridge.scriptEventReceived.connect(onScriptEventReceived);
+                // Send two ready events to hifi, one as string, another as object
+                var eventObject = {"data": "readyEventObject"};
+                EventBridge.emitWebEvent(eventObject);
+                var eventString = "readyEventString";
+                EventBridge.emitWebEvent(eventString);
+            });
+        </script>
+    </body>
+</html>
