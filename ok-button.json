@@ -1,0 +1,204 @@
+{
+    "Entities": [
+        {
+            "backgroundColor": {
+                "blue": 174,
+                "green": 255,
+                "red": 0
+            },
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-26T20:01:05Z",
+            "dimensions": {
+                "x": 0.11077219247817993,
+                "y": 0.092474333941936493,
+                "z": 0.0099999997764825821
+            },
+            "id": "{01a963ea-3a88-41d9-b17a-499a3e6c1074}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485461774717446,
+            "lastEditedBy": "{6f13a816-7abc-42a3-8389-2df3d9d5589f}",
+            "lineHeight": 0.059999998658895493,
+            "name": "Green Button Text",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.0018768310546875,
+                "y": 0.69262707233428955,
+                "z": 0.00299835205078125
+            },
+            "queryAACube": {
+                "scale": 0.14464432001113892,
+                "x": -0.070445328950881958,
+                "y": 0.62030494213104248,
+                "z": -0.069323807954788208
+            },
+            "rotation": {
+                "w": 0.65130078792572021,
+                "x": -0.65178912878036499,
+                "y": -0.27473866939544678,
+                "z": -0.27473866939544678
+            },
+            "text": "OK",
+            "type": "Text"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "color": {
+                "blue": 174,
+                "green": 255,
+                "red": 0
+            },
+            "created": "2017-01-26T20:01:05Z",
+            "dimensions": {
+                "x": 0.20000000298023224,
+                "y": 0.040637210011482239,
+                "z": 0.20000000298023224
+            },
+            "id": "{41c57a4b-d4ef-4ff7-8c10-4303b1750f9f}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485461774717584,
+            "lastEditedBy": "{6f13a816-7abc-42a3-8389-2df3d9d5589f}",
+            "name": "Green Button Top",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0,
+                "y": 0.66696178913116455,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 0.28574708104133606,
+                "x": -0.14287354052066803,
+                "y": 0.52408826351165771,
+                "z": -0.14287354052066803
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "type": "Sphere"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "color": {
+                "blue": 174,
+                "green": 255,
+                "red": 0
+            },
+            "created": "2017-01-26T20:01:05Z",
+            "dimensions": {
+                "x": 0.20000000298023224,
+                "y": 0.040637210011482239,
+                "z": 0.20000000298023224
+            },
+            "id": "{806ac7cd-1404-4a03-b632-d72b0ecc7f33}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485461774720202,
+            "lastEditedBy": "{6f13a816-7abc-42a3-8389-2df3d9d5589f}",
+            "name": "Green Button Padding Bottom",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0,
+                "y": 0.56312572956085205,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 0.28574708104133606,
+                "x": -0.14287354052066803,
+                "y": 0.42025220394134521,
+                "z": -0.14287354052066803
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "type": "Sphere"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "color": {
+                "blue": 0,
+                "green": 0,
+                "red": 255
+            },
+            "created": "2017-01-26T20:12:00Z",
+            "dimensions": {
+                "x": 0.20000000298023224,
+                "y": 0.20000000298023224,
+                "z": 0.20000000298023224
+            },
+            "id": "{17d246a4-3dc7-4f04-8bad-535c0057d454}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485461774720353,
+            "lastEditedBy": "{6f13a816-7abc-42a3-8389-2df3d9d5589f}",
+            "name": "Invisible Box",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.00433349609375,
+                "y": 0.61044871807098389,
+                "z": 0.0013580322265625
+            },
+            "queryAACube": {
+                "scale": 0.34641015529632568,
+                "x": -0.16887158155441284,
+                "y": 0.43724364042282104,
+                "z": -0.17184704542160034
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "scriptTimestamp": 1485461612390,
+            "shape": "Cube",
+            "type": "Box",
+            "userData": "{\"grabbableKey\":{\"grabbable\":false,\"wantsTrigger\":true}}",
+            "visible": 0
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-26T20:01:05Z",
+            "dimensions": {
+                "x": 0.25,
+                "y": 1.1217999458312988,
+                "z": 0.25
+            },
+            "id": "{039b0c85-f061-4be7-a633-49e13884ba47}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485461774719881,
+            "lastEditedBy": "{6f13a816-7abc-42a3-8389-2df3d9d5589f}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/DomainContent/Tutorial/Models/end_table2_small.fbx",
+            "name": "Green Button Stand",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.0003814697265625,
+                "y": 0,
+                "z": 0.00384521484375
+            },
+            "queryAACube": {
+                "scale": 1.1761951446533203,
+                "x": -0.58771610260009766,
+                "y": -0.58809757232666016,
+                "z": -0.58425235748291016
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "simple-compound",
+            "type": "Model",
+            "userData": "{\"tag\":\"nearGrab\"}"
+        }
+    ],
+    "Version": 66
+}

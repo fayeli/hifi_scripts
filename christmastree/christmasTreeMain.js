@@ -5,8 +5,8 @@
 
 (function(){ // BEGIN LOCAL_SCOPE
     var myChannel = "Christmas-Tree-Channel";
-    var babyChristmasTree = "{9217d17c-dafb-4e7d-b139-ee9f45ad9aaf}";
-    var largeChristmasTree = "{b4282f14-c86c-49df-95f9-713186d88825}";
+    var babyChristmasTree = "{3ace2c8e-4f03-4b47-97ed-5cee3ef0880d}";
+    var largeChristmasTree = "{ffe40662-3380-4fb6-a253-ad311057a832}";
     var largeOrnaments = [];
     // baby ornament entityID : corresponding large ornament entityID map
     var myMap = {};
@@ -84,7 +84,7 @@
         var scaledDims = Vec3.multiply(babyOrnamentProps.dimensions, k);
         largeOrnamentProps.localPosition = scaledPos;
         largeOrnamentProps.dimensions = scaledDims;
-        largeOrnamentProps.rotation = babyOrnamentProps.rotation;
+        largeOrnamentProps.localRotation = babyOrnamentProps.localRotation;
         largeOrnamentProps.visible = true;
         Entities.editEntity(largeOrnament, largeOrnamentProps);
     }

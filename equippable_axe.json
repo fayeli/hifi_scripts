@@ -1,0 +1,44 @@
+{
+    "Entities": [
+        {
+            "age": 463.68121337890625,
+            "ageAsText": "0 hours 7 minutes 43 seconds",
+            "clientOnly": 0,
+            "created": "2017-01-30T20:54:07Z",
+            "description": "A hefty weapon with which to smite down one's enemies.",
+            "dimensions": {
+                "x": 0.15250825881958008,
+                "y": 1.5440366268157959,
+                "z": 0.4898267388343811
+            },
+            "gravity": {
+                "x": 0,
+                "y": -10,
+                "z": 0
+            },
+            "id": "{fccd7505-2a39-471a-ba6e-8a740dc8811f}",
+            "lastEdited": 1485810094715483,
+            "lastEditedBy": "{e2fbc4e4-a4ab-4984-b558-adc2f62e7753}",
+            "lifetime": 3600,
+            "modelURL": "http://mpassets.highfidelity.com/a1702abc-ade8-49e8-878c-6fdbd7583801-v1/BattleAxe.fbx",
+            "name": "Battle Axe",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "queryAACube": {
+                "scale": 1.6270334720611572,
+                "x": -0.81351673603057861,
+                "y": -0.81351673603057861,
+                "z": -0.81351673603057861
+            },
+            "rotation": {
+                "w": -0.59511709213256836,
+                "x": -0.27232778072357178,
+                "y": -0.70070958137512207,
+                "z": 0.28407716751098633
+            },
+            "shapeType": "simple-hull",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true},\"wearable\":{\"joints\":{\"LeftHand\":[{\"x\":-0.23937,\"y\":0.334177,\"z\":0.150116},{\"x\":-0.31183,\"y\":0.535888,\"z\":-0.37311,\"w\":-0.69021}],\"RightHand\":[{\"x\":0.11031082272529602,\"y\":0.19449540972709656,\"z\":0.0405043363571167},{\"x\":0.2807741165161133,\"y\":0.6332069635391235,\"z\":0.2997693121433258,\"w\":-0.6557632088661194}]}}}"
+        }
+    ],
+    "Version": 66
+}

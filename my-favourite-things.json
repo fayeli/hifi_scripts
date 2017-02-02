@@ -1,0 +1,670 @@
+{
+    "Entities": [
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:04:44Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.082854174077510834,
+                "y": 0.47262030839920044,
+                "z": 0.071203447878360748
+            },
+            "id": "{56f32a8c-1306-466d-ac8f-be8ac0aecbe8}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485479114360195,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.2647018432617188,
+                "y": 1.4008207321166992,
+                "z": 0.10840415954589844
+            },
+            "queryAACube": {
+                "scale": 0.48508214950561523,
+                "x": 1.0221607685089111,
+                "y": 1.1582796573638916,
+                "z": -0.13413691520690918
+            },
+            "rotation": {
+                "w": 0.39873349666595459,
+                "x": -1.52587890625e-05,
+                "y": 0.91705191135406494,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "simple-hull",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T00:55:59Z",
+            "dimensions": {
+                "x": 2.6729135513305664,
+                "y": 2.2238314151763916,
+                "z": 0.47739458084106445
+            },
+            "id": "{b2271169-d028-4364-b2b4-8cfefd883005}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485478624401340,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "http://mpassets.highfidelity.com/8f9d37b7-0381-4180-98a7-cf444015f5a1-v1/cinderblock_shelf.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.65322160720825195,
+                "y": 0.54616820812225342,
+                "z": 0.035356521606445312
+            },
+            "queryAACube": {
+                "scale": 3.5096721649169922,
+                "x": -1.1016144752502441,
+                "y": -1.2086678743362427,
+                "z": -1.7194795608520508
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:11:17Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.42398962378501892,
+                "y": 0.24331434071063995,
+                "z": 0.25906786322593689
+            },
+            "id": "{81e4d67a-35b0-4347-b5e6-3cc34ac880ca}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485479634082327,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/wearables/ahillakerHats/hotdoghat.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.034160614013671875,
+                "y": 0.073099493980407715,
+                "z": 0.081460952758789062
+            },
+            "queryAACube": {
+                "scale": 0.55324971675872803,
+                "x": -0.24246424436569214,
+                "y": -0.2035253643989563,
+                "z": -0.19516390562057495
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone4_phys.obj",
+            "created": "2017-01-27T01:28:45Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.12294673174619675,
+                "y": 0.052637919783592224,
+                "z": 0.13488562405109406
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9.8000001907348633,
+                "z": 0
+            },
+            "id": "{1f0c4c00-e7ae-4852-a1fa-3aa3420a6cd7}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485480584014803,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "marketplaceID": "c96f6407-bc01-4187-9d69-f8ea75fdbb95",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone4.fbx",
+            "name": "HiFi Rocks!! - Stone #4",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.415349006652832,
+                "y": 0.05025029182434082,
+                "z": 0
+            },
+            "queryAACube": {
+                "scale": 0.18994942307472229,
+                "x": 1.3203742504119873,
+                "y": -0.044724419713020325,
+                "z": -0.094974711537361145
+            },
+            "rotation": {
+                "w": 0.85772490501403809,
+                "x": -1.52587890625e-05,
+                "y": 0.51406121253967285,
+                "z": 1.52587890625e-05
+            },
+            "shapeType": "compound",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:06:55Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.21340146660804749,
+                "y": 0.082670643925666809,
+                "z": 0.21667212247848511
+            },
+            "id": "{094caf0b-540a-4abf-8dc2-41dc023bc896}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485480398466991,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/DomainContent/Home/JJAssets/Hats/carnationFlowerCrown.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.64800357818603516,
+                "y": 0.58837485313415527,
+                "z": 0.085763931274414062
+            },
+            "queryAACube": {
+                "scale": 0.31515303254127502,
+                "x": 0.49042707681655884,
+                "y": 0.43079835176467896,
+                "z": -0.07181258499622345
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone5_phys.obj",
+            "created": "2017-01-27T01:28:45Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.18411843478679657,
+                "y": 0.093294471502304077,
+                "z": 0.25187370181083679
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9.8000001907348633,
+                "z": 0
+            },
+            "id": "{256b8b3b-09ad-45dd-ac81-0d636c4c18e8}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485480521583863,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "marketplaceID": "c96f6407-bc01-4187-9d69-f8ea75fdbb95",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/plantcollection/Riverstone5.fbx",
+            "name": "HiFi Rocks!! - Stone #5",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.3070459365844727,
+                "y": 0,
+                "z": 0.025369644165039062
+            },
+            "queryAACube": {
+                "scale": 0.32564368844032288,
+                "x": 1.1442240476608276,
+                "y": -0.16282184422016144,
+                "z": -0.13745220005512238
+            },
+            "rotation": {
+                "w": 0.12410163879394531,
+                "x": 0.89227128028869629,
+                "y": -0.12950330972671509,
+                "z": -0.41435873508453369
+            },
+            "shapeType": "compound",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T00:55:59Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.23352158069610596,
+                "y": 0.26509436964988708,
+                "z": 0.23352158069610596
+            },
+            "id": "{608035df-5785-4f3e-a2a5-b69e9e5d3799}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485478867295485,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/wearables/ahillakerHats/flowerHat.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.52902936935424805,
+                "y": 1.2443867921829224,
+                "z": 0.12422943115234375
+            },
+            "queryAACube": {
+                "scale": 0.4234851598739624,
+                "x": 0.31728678941726685,
+                "y": 1.0326442718505859,
+                "z": -0.087513148784637451
+            },
+            "rotation": {
+                "w": 1.0018926858901978,
+                "x": -1.698656524240505e-05,
+                "y": 9.3340873718261719e-05,
+                "z": -2.5420806196052581e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:04:44Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.082854174077510834,
+                "y": 0.47262030839920044,
+                "z": 0.071203447878360748
+            },
+            "id": "{cfabbdd6-6a7c-48e7-8752-d1a32c8dbfba}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485479111384743,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.410252571105957,
+                "y": 1.4008207321166992,
+                "z": 0.13462638854980469
+            },
+            "queryAACube": {
+                "scale": 0.48508214950561523,
+                "x": 1.1677114963531494,
+                "y": 1.1582796573638916,
+                "z": -0.10791468620300293
+            },
+            "rotation": {
+                "w": 0.39873349666595459,
+                "x": -1.52587890625e-05,
+                "y": 0.91705191135406494,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "simple-hull",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:20:01Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.43245410919189453,
+                "y": 0.40779945254325867,
+                "z": 0.37418633699417114
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9.8000001907348633,
+                "z": 0
+            },
+            "id": "{d047c3f1-e718-4175-addc-ce5dc0489c02}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485480007776943,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "http://mpassets.highfidelity.com/a1deca2c-2c78-48e5-bebc-468919cb0408-v1/santaChimneyHat1.fbx",
+            "name": "Party Hats - Stuck in the Chimney Hat",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.56461620330810547,
+                "y": 0.18372690677642822,
+                "z": 0.032474517822265625
+            },
+            "queryAACube": {
+                "scale": 0.70237624645233154,
+                "x": 0.2134280800819397,
+                "y": -0.16746121644973755,
+                "z": -0.31871360540390015
+            },
+            "rotation": {
+                "w": 0.15031659603118896,
+                "x": -0.034256517887115479,
+                "y": 0.9877011775970459,
+                "z": 0.025894522666931152
+            },
+            "shapeType": "simple-hull",
+            "type": "Model"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/Balloon/redBalloon_phys.obj",
+            "created": "2017-01-27T00:58:10Z",
+            "density": 100,
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.24902009963989258,
+                "y": 0.33153706789016724,
+                "z": 0.24870689213275909
+            },
+            "gravity": {
+                "x": 0,
+                "y": -0.25,
+                "z": 0
+            },
+            "id": "{6895f360-6bc6-4719-a308-2d7a9010dba7}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485480363734004,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "marketplaceID": "82fc43ae-c33e-4eb2-b05e-dfb3d34c159e",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/Examples%20Content/production/Balloon/redBalloon.fbx",
+            "name": "Red balloon",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.15354537963867188,
+                "y": 1.253459095954895,
+                "z": 0.15396690368652344
+            },
+            "queryAACube": {
+                "scale": 0.48351109027862549,
+                "x": -0.088210165500640869,
+                "y": 1.0117034912109375,
+                "z": -0.087788641452789307
+            },
+            "restitution": 0.99000000953674316,
+            "rotation": {
+                "w": -1.52587890625e-05,
+                "x": 0.83144879341125488,
+                "y": -1.52587890625e-05,
+                "z": -0.55562674999237061
+            },
+            "shapeType": "compound",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:06:55Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.22063985466957092,
+                "y": 0.089937761425971985,
+                "z": 0.21101045608520508
+            },
+            "id": "{7b10c71d-8644-4944-b5a1-58292ef19b4d}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485479484759885,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/DomainContent/Home/JJAssets/Hats/daisyFlowerCrown.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.37724828720092773,
+                "y": 0.58323585987091064,
+                "z": 0.061046600341796875
+            },
+            "queryAACube": {
+                "scale": 0.31827056407928467,
+                "x": 0.2181130051612854,
+                "y": 0.42410057783126831,
+                "z": -0.098088681697845459
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:06:55Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.20270423591136932,
+                "y": 0.056899905204772949,
+                "z": 0.13811977207660675
+            },
+            "id": "{19c6d45e-b647-4116-b051-0012a9f8e9c8}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485479815447135,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/DomainContent/Home/JJAssets/Hats/glasses.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.9490504264831543,
+                "y": 0.57922780513763428,
+                "z": 0.067173004150390625
+            },
+            "queryAACube": {
+                "scale": 0.25180086493492126,
+                "x": 0.82314997911453247,
+                "y": 0.45332735776901245,
+                "z": -0.058727428317070007
+            },
+            "rotation": {
+                "w": 1,
+                "x": -1.52587890625e-05,
+                "y": -1.52587890625e-05,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:15:39Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.24319389462471008,
+                "y": 0.61599087715148926,
+                "z": 0.2465163916349411
+            },
+            "id": "{a318d635-469b-4a4f-b3db-48d205fb46ac}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485479826634511,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/faye/tiltbrush-exports/Cupcake.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.2419648170471191,
+                "y": 0.50778257846832275,
+                "z": 0.0882568359375
+            },
+            "queryAACube": {
+                "scale": 0.7066529393196106,
+                "x": 0.88863837718963623,
+                "y": 0.15445610880851746,
+                "z": -0.2650696337223053
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:24:23Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.11465068161487579,
+                "y": 0.21359708905220032,
+                "z": 0.10450142621994019
+            },
+            "gravity": {
+                "x": 0,
+                "y": -20,
+                "z": 0
+            },
+            "id": "{99b0d6bd-a3ba-49a1-bef4-d0610c044210}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485480359471544,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "http://mpassets.highfidelity.com/3b14841d-fb93-4023-b9e2-818786064fd6-v1/cinderblock.fbx",
+            "name": "Stackable Cinderblock",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.95163059234619141,
+                "y": 0.06325763463973999,
+                "z": 0.12012100219726562
+            },
+            "queryAACube": {
+                "scale": 0.26398682594299316,
+                "x": 0.81963717937469482,
+                "y": -0.068735778331756592,
+                "z": -0.011872410774230957
+            },
+            "rotation": {
+                "w": 0.70710676908493042,
+                "x": 0,
+                "y": 6.1817239327410789e-08,
+                "z": -0.70710676908493042
+            },
+            "shapeType": "box",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "animation": {
+                "currentFrame": 42374.33984375,
+                "running": 1,
+                "url": "https://hifi-content.s3.amazonaws.com/jimi/snail/snail_Dance2.fbx"
+            },
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:06:55Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.17798030376434326,
+                "y": 0.26962989568710327,
+                "z": 0.30998241901397705
+            },
+            "id": "{82368994-c45f-4452-bbae-1d3f0efa536b}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485479484032561,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "https://hifi-content.s3.amazonaws.com/jimi/snail/snail_Dance2.fbx",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0,
+                "y": 0.68867790699005127,
+                "z": 0.031812667846679688
+            },
+            "queryAACube": {
+                "scale": 0.44773471355438232,
+                "x": -0.22386735677719116,
+                "y": 0.46481055021286011,
+                "z": -0.19205468893051147
+            },
+            "rotation": {
+                "w": 0.52990633249282837,
+                "x": 4.8542606236878783e-06,
+                "y": -0.84805619716644287,
+                "z": -2.1026113245170563e-05
+            },
+            "shapeType": "static-mesh",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "compoundShapeURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/Scansite/buddaCopper_phys.obj?3",
+            "created": "2017-01-27T00:55:59Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.14493602514266968,
+                "y": 0.26094961166381836,
+                "z": 0.20259721577167511
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9,
+                "z": 0
+            },
+            "id": "{a8b3cfda-c957-4607-9259-a6ec68502582}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485479747622729,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "marketplaceID": "0e725933-20b9-46bf-bc97-581f1ddef207",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/Scansite/buddhaReduced.fbx?1",
+            "name": "Copper Buddha",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 0.92719888687133789,
+                "y": 1.2258404493331909,
+                "z": 0.074728012084960938
+            },
+            "queryAACube": {
+                "scale": 0.36075863242149353,
+                "x": 0.74681955575942993,
+                "y": 1.0454611778259277,
+                "z": -0.10565130412578583
+            },
+            "rotation": {
+                "w": 0.556266188621521,
+                "x": -3.6464742152020335e-05,
+                "y": -0.8323778510093689,
+                "z": -1.9489683836582117e-05
+            },
+            "shapeType": "compound",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        },
+        {
+            "clientOnly": 0,
+            "collisionless": 1,
+            "created": "2017-01-27T01:02:32Z",
+            "description": "christmas ornament",
+            "dimensions": {
+                "x": 0.082854174077510834,
+                "y": 0.47262030839920044,
+                "z": 0.071203447878360748
+            },
+            "id": "{8b20869a-c6a4-49fa-ac7e-0de021992cfd}",
+            "ignoreForCollisions": 1,
+            "lastEdited": 1485479106140803,
+            "lastEditedBy": "{c6ef5dac-1ad6-4c68-ac20-0aa352768206}",
+            "modelURL": "http://hifi-content.s3.amazonaws.com/caitlyn/production/lazybonesToybox/hangingStars/hangingStar_red.fbx?",
+            "owningAvatarID": "{00000000-0000-0000-0000-000000000000}",
+            "position": {
+                "x": 1.3317246437072754,
+                "y": 1.4008207321166992,
+                "z": 0.050783157348632812
+            },
+            "queryAACube": {
+                "scale": 0.48508214950561523,
+                "x": 1.0891835689544678,
+                "y": 1.1582796573638916,
+                "z": -0.1917579174041748
+            },
+            "rotation": {
+                "w": 0.39873349666595459,
+                "x": -1.52587890625e-05,
+                "y": 0.91705191135406494,
+                "z": -1.52587890625e-05
+            },
+            "shapeType": "simple-hull",
+            "type": "Model",
+            "userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        }
+    ],
+    "Version": 66
+}
