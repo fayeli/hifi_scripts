@@ -16,14 +16,16 @@
 	var APP_NAME = "GEMSTONE";
 	// Link to your app's HTML file
 	var APP_URL = "https://hifi-content.s3.amazonaws.com/faye/gemstoneMagicMaker/gemstoneMagicMaker.html";
-
-	// Get a reference to the tablet 
+    // Path to the icon art for your app
+    var APP_ICON = "https://hifi-content.s3.amazonaws.com/faye/gemstoneMagicMaker/gemstoneAppIcon.svg";
+	
+    // Get a reference to the tablet 
 	var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");
 
 	// "Install" your cool new app to the tablet
 	// The following lines create a button on the tablet's menu screen
 	var button = tablet.addButton({
-        icon: "gemstonesAppIcon.svg", // TODO: create icon art for our app
+        icon: APP_ICON,
         text: APP_NAME
     });
 
@@ -36,7 +38,7 @@
     // Helper function that gives us a position right in front of the user 
     function getPositionToCreateEntity() {
     	var direction = Quat.getFront(MyAvatar.orientation);
-    	var distance = 1;
+    	var distance = 0.3;
     	var position = Vec3.sum(MyAvatar.position, Vec3.multiply(direction, distance));
     	position.y += 0.5;
     	return position;
@@ -52,7 +54,8 @@
     		"position": getPositionToCreateEntity(),
     		"userData": "{\"grabbableKey\":{\"grabbable\":true}}"
     	};
-    	if (event === "Gemstone 1 button click") {
+    	if (event === "Emerald button click") {
+            props.name = "Emerald";
     		props.shape = "Dodecahedron";
     		props.color = {
                 "blue": 122,
@@ -65,12 +68,13 @@
                 "z": 0.20000000298023224
             };
             Entities.addEntity(props);
-    	} else if (event === "Gemstone 2 button click") {
+    	} else if (event === "Ruby button click") {
+            props.name = "Ruby";
     		props.shape = "Octagon";
     		props.color = {
-                "blue": 73,
-                "green": 0,
-                "red": 232
+                "blue": 160,
+                "green": 52,
+                "red": 237
             };
             props.dimensions = {
                 "x": 0.20000000298023224,
@@ -78,7 +82,8 @@
                 "z": 0.12547987699508667
             };
             Entities.addEntity(props);
-    	} else if (event === "Gemstone 3 button click") {
+    	} else if (event === "Sapphire button click") {
+            props.name = "Sapphire";
     		props.shape = "Icosahedron";
     		props.color = {
                 "blue": 255,
@@ -91,7 +96,8 @@
                 "z": 0.23340839147567749
             };
             Entities.addEntity(props);
-    	} else if (event === "Gemstone 4 button click") {
+    	} else if (event === "Quartz button click") {
+            props.name = "Quartz";
     		props.shape = "Octahedron";
     		props.color = {
                 "blue": 245,
