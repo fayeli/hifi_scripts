@@ -49,67 +49,67 @@
     	print("gemstoneApp.js received a web event: " + event);
     	
     	// Define the entity properties of for each of the gemstone, then add it to the scene
-    	var props = {
+    	var properties = {
     		"type": "Shape",
     		"position": getPositionToCreateEntity(),
     		"userData": "{\"grabbableKey\":{\"grabbable\":true}}"
     	};
     	if (event === "Emerald button click") {
-            props.name = "Emerald";
-    		props.shape = "Dodecahedron";
-    		props.color = {
+            properties.name = "Emerald";
+    		properties.shape = "Dodecahedron";
+    		properties.color = {
                 "blue": 122,
                 "green": 179,
                 "red": 16
             };
-            props.dimensions = {
+            properties.dimensions = {
                 "x": 0.20000000298023224,
                 "y": 0.26258927583694458,
                 "z": 0.20000000298023224
             };
-            Entities.addEntity(props);
+            Entities.addEntity(properties);
     	} else if (event === "Ruby button click") {
-            props.name = "Ruby";
-    		props.shape = "Octagon";
-    		props.color = {
+            properties.name = "Ruby";
+    		properties.shape = "Octagon";
+    		properties.color = {
                 "blue": 160,
                 "green": 52,
                 "red": 237
             };
-            props.dimensions = {
+            properties.dimensions = {
                 "x": 0.20000000298023224,
                 "y": 0.24431547522544861,
                 "z": 0.12547987699508667
             };
-            Entities.addEntity(props);
+            Entities.addEntity(properties);
     	} else if (event === "Sapphire button click") {
-            props.name = "Sapphire";
-    		props.shape = "Icosahedron";
-    		props.color = {
+            properties.name = "Sapphire";
+    		properties.shape = "Icosahedron";
+    		properties.color = {
                 "blue": 255,
                 "green": 115,
                 "red": 102
             };
-            props.dimensions = {
+            properties.dimensions = {
                 "x": 0.160745769739151,
                 "y": 0.20000000298023224,
                 "z": 0.23340839147567749
             };
-            Entities.addEntity(props);
+            Entities.addEntity(properties);
     	} else if (event === "Quartz button click") {
-            props.name = "Quartz";
-    		props.shape = "Octahedron";
-    		props.color = {
+            properties.name = "Quartz";
+    		properties.shape = "Octahedron";
+    		properties.color = {
                 "blue": 245,
                 "green": 142,
                 "red": 216
             };
-            props.dimensions = {
+            properties.dimensions = {
                 "x": 0.20000000298023224,
                 "y": 0.339866042137146,
                 "z": 0.20000000298023224
             };
-            Entities.addEntity(props);
+            Entities.addEntity(properties);
     	}
     }
     tablet.webEventReceived.connect(onWebEventReceived);
