@@ -117,6 +117,7 @@
                 };
                 Entities.addEntity(properties);
         	}
+        }
     }
     tablet.webEventReceived.connect(onWebEventReceived);
 
