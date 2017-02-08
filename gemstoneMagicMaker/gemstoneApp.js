@@ -38,7 +38,7 @@
     // Helper function that gives us a position right in front of the user 
     function getPositionToCreateEntity() {
     	var direction = Quat.getFront(MyAvatar.orientation);
-    	var distance = 0.3;
+    	var distance = 0.5;
     	var position = Vec3.sum(MyAvatar.position, Vec3.multiply(direction, distance));
     	position.y += 0.5;
     	return position;
@@ -46,71 +46,77 @@
 
     // Handle the events we're recieving from the web UI
     function onWebEventReceived(event) {
-    	print("gemstoneApp.js received a web event: " + event);
-    	
-    	// Define the entity properties of for each of the gemstone, then add it to the scene
-    	var properties = {
-    		"type": "Shape",
-    		"position": getPositionToCreateEntity(),
-    		"userData": "{\"grabbableKey\":{\"grabbable\":true}}"
-    	};
-    	if (event === "Emerald button click") {
-            properties.name = "Emerald";
-    		properties.shape = "Dodecahedron";
-    		properties.color = {
-                "blue": 122,
-                "green": 179,
-                "red": 16
-            };
-            properties.dimensions = {
-                "x": 0.20000000298023224,
-                "y": 0.26258927583694458,
-                "z": 0.20000000298023224
-            };
-            Entities.addEntity(properties);
-    	} else if (event === "Ruby button click") {
-            properties.name = "Ruby";
-    		properties.shape = "Octagon";
-    		properties.color = {
-                "blue": 160,
-                "green": 52,
-                "red": 237
-            };
-            properties.dimensions = {
-                "x": 0.20000000298023224,
-                "y": 0.24431547522544861,
-                "z": 0.12547987699508667
-            };
-            Entities.addEntity(properties);
-    	} else if (event === "Sapphire button click") {
-            properties.name = "Sapphire";
-    		properties.shape = "Icosahedron";
-    		properties.color = {
-                "blue": 255,
-                "green": 115,
-                "red": 102
-            };
-            properties.dimensions = {
-                "x": 0.160745769739151,
-                "y": 0.20000000298023224,
-                "z": 0.23340839147567749
-            };
-            Entities.addEntity(properties);
-    	} else if (event === "Quartz button click") {
-            properties.name = "Quartz";
-    		properties.shape = "Octahedron";
-    		properties.color = {
-                "blue": 245,
-                "green": 142,
-                "red": 216
-            };
-            properties.dimensions = {
-                "x": 0.20000000298023224,
-                "y": 0.339866042137146,
-                "z": 0.20000000298023224
-            };
-            Entities.addEntity(properties);
-    	}
+    	print("gemstoneApp.js received a web event:" + event);
+
+        // Converts the event to a JavasScript Object
+    	if (typeof event === "string") {
+            event = JSON.parse(event);
+        }
+
+        if (event.type === "click") {
+        	// Define the entity properties of for each of the gemstone, then add it to the scene
+        	var properties = {
+        		"type": "Shape",
+        		"position": getPositionToCreateEntity(),
+        		"userData": "{\"grabbableKey\":{\"grabbable\":true}}"
+        	};
+        	if (event.data  === "Emerald") {
+                properties.name = "Emerald";
+        		properties.shape = "Dodecahedron";
+        		properties.color = {
+                    "blue": 122,
+                    "green": 179,
+                    "red": 16
+                };
+                properties.dimensions = {
+                    "x": 0.20000000298023224,
+                    "y": 0.26258927583694458,
+                    "z": 0.20000000298023224
+                };
+                Entities.addEntity(properties);
+        	} else if (event.data  === "Ruby") {
+                properties.name = "Ruby";
+        		properties.shape = "Octagon";
+        		properties.color = {
+                    "blue": 160,
+                    "green": 52,
+                    "red": 237
+                };
+                properties.dimensions = {
+                    "x": 0.20000000298023224,
+                    "y": 0.24431547522544861,
+                    "z": 0.12547987699508667
+                };
+                Entities.addEntity(properties);
+        	} else if (event.data  === "Sapphire") {
+                properties.name = "Sapphire";
+        		properties.shape = "Icosahedron";
+        		properties.color = {
+                    "blue": 255,
+                    "green": 115,
+                    "red": 102
+                };
+                properties.dimensions = {
+                    "x": 0.160745769739151,
+                    "y": 0.20000000298023224,
+                    "z": 0.23340839147567749
+                };
+                Entities.addEntity(properties);
+        	} else if (event.data  === "Quartz") {
+                properties.name = "Quartz";
+        		properties.shape = "Octahedron";
+        		properties.color = {
+                    "blue": 245,
+                    "green": 142,
+                    "red": 216
+                };
+                properties.dimensions = {
+                    "x": 0.20000000298023224,
+                    "y": 0.339866042137146,
+                    "z": 0.20000000298023224
+                };
+                Entities.addEntity(properties);
+        	}
     }
     tablet.webEventReceived.connect(onWebEventReceived);
 
