@@ -13,7 +13,7 @@
 
 (function() { 
 	// Replace the ID here with the text entity's ID in your domain
-	var textEntityID = "{aa14c26c-e43a-4e49-9c5e-1ff51c9078cc}";
+	var textEntityID = "{0c0d2b5a-73f8-4fee-940d-89d39484e131}";
 	var INTERVAL_MS = 1000; // in ms, how often do we recount avatars
 	var intervalID = Script.setInterval(function() {
 		var avatarCount = AvatarList.getAvatarIdentifiers().length;
